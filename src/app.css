@@ -7,7 +7,7 @@ html {
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
+  /* Margin bottom must match footer height */
   margin-bottom: 25px;
 }
 
@@ -20,14 +20,6 @@ body {
   color: #f8f8f8;
 }
 
-.blue {
-  background-color: #1b49a0;
-}
-
-.spacing {
-	margin: 1rem;
-}
-
 .badge {
   color: #212529;
   border-radius: 0;
@@ -37,6 +29,14 @@ body {
   border-radius: 0.3rem;
   margin-bottom: 0.3rem;
   padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+}
+
+.spacing {
+	margin: 1rem;
+}
+
+.blue {
+  background-color: #1b49a0;
 }
 
 .Prepare {

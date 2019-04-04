@@ -8,7 +8,7 @@
     </nav>
     <div class="container-fluid">
       <div class="spacing">
-        <!-- the search bar form -->
+        <!-- searchbar -->
         <form v-on:submit="getfilteredData">
           <div class="form-row">
             <div class="col-lg">
@@ -22,35 +22,34 @@
             </div>
           </div>
         </form>
-        <!-- check boxes -->
+        <!-- checkboxes -->
         <div id="checkboxes" class="spacing">
           <div
-            v-for="(tag,index) in tags"
+            v-for="(checkbox,index) in checkboxes"
             :key="index"
-            class="form-check form-check-inline check-button"
-            :class="`${tag.value}`"
+            :class="`form-check form-check-inline check-button ${checkbox.value}`"
           >
             <input
               class="form-check-input"
               type="checkbox"
-              v-model="tag.checked"
+              v-model="checkbox.checked"
               v-on:change="getfilteredData"
             >
-            <label class="form-check-label">{{ tag.value }}</label>
+            <label class="form-check-label">{{ checkbox.value }}</label>
           </div>
         </div>
       </div>
-      <!-- end of checkboxes -->
       <div class="card-columns">
-        <!-- iterate data -->
+        <!-- iterate data into item-cards -->
         <item-card v-for="(item, index) in filteredData" :key="index" :item="item"></item-card>
       </div>
     </div>
+    <!-- footer -->
     <div class="footer">
-  <div class="text-center">
-    <small>North America Solution Engineering</small>
-  </div>
-</div>
+      <div class="text-center">
+        <small>North America Solution Engineering</small>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -66,7 +65,7 @@ export default {
   computed: {
     selectedFilters: function() {
       let filters = [];
-      let checkedFiters = this.tags.filter(obj => obj.checked);
+      let checkedFiters = this.checkboxes.filter(obj => obj.checked);
       checkedFiters.forEach(element => {
         filters.push(element.value);
       });
@@ -77,7 +76,7 @@ export default {
     return {
       filteredData: [],
       search: "",
-      tags: [
+      checkboxes: [
         {
           checked: false,
           value: "Prepare"
@@ -117,7 +116,7 @@ export default {
         );
         this.filteredData = filteredDataByfilters;
       }
-      // then filter according to keyword, for now this only affects the name attribute of each data
+      // then filter according to keyword, for now this only searches the tags of each item
       if (this.search !== "") {
         filteredDataBySearch = this.filteredData.filter(
           obj =>
