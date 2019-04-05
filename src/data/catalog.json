@@ -1,0 +1,125 @@
+[{
+    "name": "TGK Demo Portal",
+    "desc": "Finance demo portal showcasing latest DocuSign features and functionality",
+    "logo": "/static/tgk-logo.png",
+    "script": "https://dsdemos.docusign.com/dsportals/help/TGK.pdf",
+    "video": "https://discover.docusign.com/docusign-solution-library/wire-transfer-business-overview-take",
+    "tag": {
+      "Prepare": "Intelledox Guided Forms · PowerForms",
+      "Sign": "Click · eSignature · Responsive Signing",
+      "Act": "Payments",
+      "Manage": "Workspaces",
+      "Integrate": "Box",
+      "Industry": "Finance"
+    }
+  },
+  {
+    "name": "Salesforce Lightning Demo",
+    "desc": "Shared org demonstrating DocuSign for Salesforce Lightning as well as Salesforce Communities",
+    "logo": "/static/salesforce-logo.png",
+    "script": "https://docusigninc.app.box.com/file/299110599595",
+    "invision": "http://sedemo1.cloudapp.net/salesforceprototype",
+    "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-salesforce-3",
+    "tag": {
+      "Prepare": "Intelledox Guided Forms · PowerForms",
+      "Sign": "eSignature",
+      "Integrate": "Salesforce",
+      "Industry": "Finance · Insurance"
+    }
+  }, {
+    "name": "DocuSign Gen Demo",
+    "desc": "Generate a sales order from a Salesforce opportunity",
+    "logo": "/static/gen-logo.png",
+    "script": "https://docusigninc.app.box.com/file/431761653859",
+    "invision": "https://docusign.invisionapp.com/share/EDQSW0YHU6N#/screens",
+    "video": "https://discover.docusign.com/docusign-solution-library/docusign-gen-demo-v3",
+    "tag": {
+      "Prepare": "Gen",
+      "Sign": "eSignature",
+      "Integrate": "Salesforce"
+    }
+  }, {
+    "name": "SpringCM Demo",
+    "desc": "Generate an agreement, handle negotiations, and close an opportunity",
+    "logo": "/static/spring-logo.png",
+    "script": "https://docusigninc.app.box.com/file/331572876511",
+    "invision": "https://docusign.invisionapp.com/share/M3QTQ52ZF8P#/screens",
+    "video": "https://discover.docusign.com/docusign-solution-library/docusign-and-springcm",
+    "tag": {
+      "Prepare": "SpringCM Prepare",
+      "Sign": "eSignature",
+      "Act": "SpringCM Workflow",
+      "Manage": "SpringCm Repository",
+      "Integrate": "Salesforce"
+    }
+  }, {
+    "name": "Workday Demo",
+    "desc": "DocuSign integration for Offer Letter, Onboarding, Mass Distribute, and Title Change workflows",
+    "logo": "/static/workday-logo.png",
+    "script": "https://docusigninc.app.box.com/folder/18144844229",
+    "invision": "http://sedemo1.cloudapp.net/workdayTitleChange",
+    "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-workday-demo-3",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "Workday"
+    }
+  },
+  {
+    "name": "SAP SuccessFactors Demo",
+    "desc": "Recruiting and Onboarding scenario with remote signing integration",
+    "logo": "/static/successfactors-logo.png",
+    "script": "https://docusigninc.app.box.com/file/423716624810",
+    "invision": "http://sedemo1.cloudapp.net/Successfactorsprototype/",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "SAP SuccessFactors"
+    }
+  },
+  {
+    "name": "SAP Ariba Demo",
+    "desc": "DocuSign integration with document tagging and remote signing",
+    "logo": "/static/ariba-logo.png",
+    "script": "https://docusigninc.app.box.com/file/27827226284",
+    "invision": "http://dsdemos.docusign.com/AribaPrototype/",
+    "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-sap-ariba-demo-video",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "SAP Ariba"
+    }
+  },
+  {
+    "name": "Microsoft Dynamics Demo",
+    "desc": "Remote signing of NDA with DocuSign integration",
+    "logo": "/static/dynamics-logo.png",
+    "script": "https://docusigninc.app.box.com/file/349348098351",
+    "invision": "http://dsdemos.docusign.com/DynamicsPrototype",
+    "video": "https://discover.docusign.com/youtube-all-videos-2/docusign-for-microsoft-dynamics-automate-e-sign-and-manage-agreements-2",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "Microsoft Dynamics"
+    }
+  },
+  {
+    "name": "Pega Demo",
+    "desc": "Industry demo scenarios for Pegasystems customers",
+    "logo": "/static/pega-logo.png",
+    "script": "https://docusigninc.app.box.com/folder/7515434849",
+    "video": "https://discover.docusign.com/wistia-sales-webinars/pega-docusign-ubank-sd",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "Pegasystems",
+      "Industry": "Finance · Healthcare"
+    }
+  },
+  {
+    "name": "Seal Intelligent Insights Demo",
+    "desc": "Overview of searching and filtering, term extraction, and side-by-side comparisons",
+    "logo": "/static/seal-logo.png",
+    "script": "https://docusigninc.app.box.com/file/318921204702",
+    "tag": {
+      "Sign": "eSignature",
+      "Manage": "Seal Intelligent Insights"
+    }
+  }
+
+]
