@@ -120,6 +120,32 @@
       "Sign": "eSignature",
       "Manage": "Seal Intelligent Insights"
     }
+  },
+  {
+    "name": "Microsoft Sharepoint Demo",
+    "desc": "Embedded signing within Office 365 web apps",
+    "logo": "/static/sharepoint-logo.png",
+    "script": "https://docusigninc.app.box.com/file/139434380814",
+    "invision": "http://sedemo1.cloudapp.net/SharepointPrototype/01.html",
+    "video": "https://discover.docusign.com/youtube-all-videos-2/docusign-sharepoint-online-e-sign-and-manage-agreements-2",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "Sharepoint"
+    }
+  },
+  {
+    "name": "eOriginal Demo",
+    "desc": "Use asset vaulting to store authoritative copies of transferable instruments",
+    "logo": "/static/eoriginal-logo.png",
+    "script": "https://docusigninc.app.box.com/file/38032443842",
+    "invision": "http://sedemo1.cloudapp.net/emortgageprototype/",
+    "video": "https://discover.docusign.com/docusign-solution-library/docusign-and-eoriginal-overview-2",
+    "tag": {
+      "Sign": "eSignature",
+      "Manage": "Asset Vaulting",
+      "Integrate": "eOriginal",
+      "Industry": "Finance"
+    }
   }
 
 ]
