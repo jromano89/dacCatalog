@@ -1,11 +1,12 @@
-[{
+[
+  {
     "name": "TGK Demo Portal",
     "desc": "Finance demo portal showcasing latest DocuSign features and functionality",
     "logo": "/static/tgk-logo.png",
     "script": "https://dsdemos.docusign.com/dsportals/help/TGK.pdf",
     "video": "https://discover.docusign.com/docusign-solution-library/wire-transfer-business-overview-take",
     "tag": {
-      "Prepare": "Intelledox Guided Forms · PowerForms",
+      "Prepare": "Intelledox Guided Forms",
       "Sign": "Click · eSignature · Responsive Signing",
       "Act": "Payments",
       "Manage": "Workspaces",
@@ -21,12 +22,13 @@
     "invision": "http://sedemo1.cloudapp.net/salesforceprototype",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-salesforce-3",
     "tag": {
-      "Prepare": "Intelledox Guided Forms · PowerForms",
+      "Prepare": "Intelledox Guided Forms",
       "Sign": "eSignature",
       "Integrate": "Salesforce",
       "Industry": "Finance · Insurance"
     }
-  }, {
+  },
+  {
     "name": "DocuSign Gen Demo",
     "desc": "Generate a sales order from a Salesforce opportunity",
     "logo": "/static/gen-logo.png",
@@ -38,7 +40,21 @@
       "Sign": "eSignature",
       "Integrate": "Salesforce"
     }
-  }, {
+  },
+  {
+    "name": "Allura Demo Portal",
+    "desc": "Insurance demo portal showcasing latest DocuSign features and functionality",
+    "logo": "/static/allura-logo.png",
+    "script": "https://dsdemos.docusign.com/dsportals/help/Allura.pdf",
+    "video": "https://discover.docusign.com/docusign-solution-library/alluraclaims-nigo-demo-video-2",
+    "tag": {
+      "Prepare": "Intelledox Guided Forms",
+      "Sign": "eSignature",
+      "Integrate": "Salesforce",
+      "Industry": "Insurance"
+    }
+  },
+  {
     "name": "SpringCM Demo",
     "desc": "Generate an agreement, handle negotiations, and close an opportunity",
     "logo": "/static/spring-logo.png",
@@ -52,7 +68,8 @@
       "Manage": "SpringCm Repository",
       "Integrate": "Salesforce"
     }
-  }, {
+  },
+  {
     "name": "Workday Demo",
     "desc": "DocuSign integration for Offer Letter, Onboarding, Mass Distribute, and Title Change workflows",
     "logo": "/static/workday-logo.png",
@@ -104,6 +121,7 @@
     "desc": "Industry demo scenarios for Pegasystems customers",
     "logo": "/static/pega-logo.png",
     "script": "https://docusigninc.app.box.com/folder/7515434849",
+    "invision": "https://docusigninc.app.box.com/file/118319998851",
     "video": "https://discover.docusign.com/wistia-sales-webinars/pega-docusign-ubank-sd",
     "tag": {
       "Sign": "eSignature",
@@ -147,5 +165,4 @@
       "Industry": "Finance"
     }
   }
-
 ]
