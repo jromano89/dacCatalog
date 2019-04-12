@@ -6,7 +6,7 @@
     "script": "https://dsdemos.docusign.com/dsportals/help/TGK.pdf",
     "video": "https://discover.docusign.com/docusign-solution-library/wire-transfer-business-overview-take",
     "tag": {
-      "Prepare": "Intelledox Guided Forms",
+      "Prepare": "Intelledox Guided Forms · PowerForms",
       "Sign": "Click · eSignature · Responsive Signing",
       "Act": "Payments",
       "Manage": "Workspaces",
@@ -22,7 +22,7 @@
     "invision": "http://sedemo1.cloudapp.net/salesforceprototype",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-salesforce-3",
     "tag": {
-      "Prepare": "Intelledox Guided Forms",
+      "Prepare": "Intelledox Guided Forms · PowerForms",
       "Sign": "eSignature",
       "Integrate": "Salesforce",
       "Industry": "Finance · Insurance"
@@ -48,7 +48,7 @@
     "script": "https://dsdemos.docusign.com/dsportals/help/Allura.pdf",
     "video": "https://discover.docusign.com/docusign-solution-library/alluraclaims-nigo-demo-video-2",
     "tag": {
-      "Prepare": "Intelledox Guided Forms",
+      "Prepare": "Intelledox Guided Forms · PowerForms",
       "Sign": "eSignature",
       "Integrate": "Salesforce",
       "Industry": "Insurance"
@@ -163,6 +163,31 @@
       "Manage": "Asset Vaulting",
       "Integrate": "eOriginal",
       "Industry": "Finance"
+    }
+  },
+  {
+    "name": "DocuSign Service Cloud Demo",
+    "desc": "Show the integration between custom applications and Salesforce using Docusign",
+    "logo": "/static/servicecloud-logo.png",
+    "script": "https://docusigninc.app.box.com/file/133946967714",
+    "video": "https://discover.docusign.com/docusign-solution-library/allurasfservicecloud",
+    "tag": {
+      "Prepare": "PowerForms",
+      "Sign": "eSignature",
+      "Integrate": "Salesforce",
+      "Industry": "Insurance"
+    }
+  },
+  {
+    "name": "Apttus CPQ + CLM Demo",
+    "desc": "API integration to DocuSign with Apttus Contract Management",
+    "logo": "/static/apttus-logo.png",
+    "script": "https://docusigninc.app.box.com/file/29026032092",
+    "invision": "https://docusigninc.app.box.com/file/235012631800",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "Apttus · Salesforce",
+      "Industry": "Insurance"
     }
   }
 ]
