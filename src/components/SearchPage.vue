@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar navbar-dark blue">
       <a class="navbar-brand" href="#">
-        <img src="/static/docusign-icon.png" height="25">
+        <img src="static/docusign-icon.png" height="25">
         DocuSign Agreement Cloud Catalog
       </a>
     </nav>

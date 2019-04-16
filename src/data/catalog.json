@@ -2,7 +2,7 @@
   {
     "name": "TGK Demo Portal",
     "desc": "Finance demo portal showcasing latest DocuSign features and functionality",
-    "logo": "/static/tgk-logo.png",
+    "logo": "static/tgk-logo.png",
     "script": "https://dsdemos.docusign.com/dsportals/help/TGK.pdf",
     "video": "https://discover.docusign.com/docusign-solution-library/wire-transfer-business-overview-take",
     "tag": {
@@ -17,7 +17,7 @@
   {
     "name": "Salesforce Lightning Demo",
     "desc": "Shared org demonstrating DocuSign for Salesforce Lightning as well as Salesforce Communities",
-    "logo": "/static/salesforce-logo.png",
+    "logo": "static/salesforce-logo.png",
     "script": "https://docusigninc.app.box.com/file/299110599595",
     "invision": "http://sedemo1.cloudapp.net/salesforceprototype",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-salesforce-3",
@@ -31,7 +31,7 @@
   {
     "name": "DocuSign Gen Demo",
     "desc": "Generate a sales order from a Salesforce opportunity",
-    "logo": "/static/gen-logo.png",
+    "logo": "static/gen-logo.png",
     "script": "https://docusigninc.app.box.com/file/431761653859",
     "invision": "https://docusign.invisionapp.com/share/EDQSW0YHU6N#/screens",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-gen-demo-v3",
@@ -44,7 +44,7 @@
   {
     "name": "Allura Demo Portal",
     "desc": "Insurance demo portal showcasing latest DocuSign features and functionality",
-    "logo": "/static/allura-logo.png",
+    "logo": "static/allura-logo.png",
     "script": "https://dsdemos.docusign.com/dsportals/help/Allura.pdf",
     "video": "https://discover.docusign.com/docusign-solution-library/alluraclaims-nigo-demo-video-2",
     "tag": {
@@ -57,7 +57,7 @@
   {
     "name": "SpringCM Demo",
     "desc": "Generate an agreement, handle negotiations, and close an opportunity",
-    "logo": "/static/spring-logo.png",
+    "logo": "static/spring-logo.png",
     "script": "https://docusigninc.app.box.com/file/331572876511",
     "invision": "https://docusign.invisionapp.com/share/M3QTQ52ZF8P#/screens",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-and-springcm",
@@ -72,7 +72,7 @@
   {
     "name": "Workday Demo",
     "desc": "DocuSign integration for Offer Letter, Onboarding, Mass Distribute, and Title Change workflows",
-    "logo": "/static/workday-logo.png",
+    "logo": "static/workday-logo.png",
     "script": "https://docusigninc.app.box.com/folder/18144844229",
     "invision": "http://sedemo1.cloudapp.net/workdayTitleChange",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-workday-demo-3",
@@ -84,7 +84,7 @@
   {
     "name": "SAP SuccessFactors Demo",
     "desc": "Recruiting and Onboarding scenario with remote signing integration",
-    "logo": "/static/successfactors-logo.png",
+    "logo": "static/successfactors-logo.png",
     "script": "https://docusigninc.app.box.com/file/423716624810",
     "invision": "http://sedemo1.cloudapp.net/Successfactorsprototype/",
     "tag": {
@@ -95,7 +95,7 @@
   {
     "name": "SAP Ariba Demo",
     "desc": "DocuSign integration with document tagging and remote signing",
-    "logo": "/static/ariba-logo.png",
+    "logo": "static/ariba-logo.png",
     "script": "https://docusigninc.app.box.com/file/27827226284",
     "invision": "http://dsdemos.docusign.com/AribaPrototype/",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-sap-ariba-demo-video",
@@ -107,7 +107,7 @@
   {
     "name": "Microsoft Dynamics Demo",
     "desc": "Remote signing of NDA with DocuSign integration",
-    "logo": "/static/dynamics-logo.png",
+    "logo": "static/dynamics-logo.png",
     "script": "https://docusigninc.app.box.com/file/349348098351",
     "invision": "http://dsdemos.docusign.com/DynamicsPrototype",
     "video": "https://discover.docusign.com/youtube-all-videos-2/docusign-for-microsoft-dynamics-automate-e-sign-and-manage-agreements-2",
@@ -119,7 +119,7 @@
   {
     "name": "Pega Demo",
     "desc": "Industry demo scenarios for Pegasystems customers",
-    "logo": "/static/pega-logo.png",
+    "logo": "static/pega-logo.png",
     "script": "https://docusigninc.app.box.com/folder/7515434849",
     "invision": "https://docusigninc.app.box.com/file/118319998851",
     "video": "https://discover.docusign.com/wistia-sales-webinars/pega-docusign-ubank-sd",
@@ -132,7 +132,7 @@
   {
     "name": "Seal Intelligent Insights Demo",
     "desc": "Overview of searching and filtering, term extraction, and side-by-side comparisons",
-    "logo": "/static/seal-logo.png",
+    "logo": "static/seal-logo.png",
     "script": "https://docusigninc.app.box.com/file/318921204702",
     "tag": {
       "Sign": "eSignature",
@@ -142,7 +142,7 @@
   {
     "name": "Microsoft Sharepoint Demo",
     "desc": "Embedded signing within Office 365 web apps",
-    "logo": "/static/sharepoint-logo.png",
+    "logo": "static/sharepoint-logo.png",
     "script": "https://docusigninc.app.box.com/file/139434380814",
     "invision": "http://sedemo1.cloudapp.net/SharepointPrototype/01.html",
     "video": "https://discover.docusign.com/youtube-all-videos-2/docusign-sharepoint-online-e-sign-and-manage-agreements-2",
@@ -154,7 +154,7 @@
   {
     "name": "eOriginal Demo",
     "desc": "Use asset vaulting to store authoritative copies of transferable instruments",
-    "logo": "/static/eoriginal-logo.png",
+    "logo": "static/eoriginal-logo.png",
     "script": "https://docusigninc.app.box.com/file/38032443842",
     "invision": "http://sedemo1.cloudapp.net/emortgageprototype/",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-and-eoriginal-overview-2",
@@ -168,7 +168,7 @@
   {
     "name": "DocuSign Service Cloud Demo",
     "desc": "Show the integration between custom applications and Salesforce using Docusign",
-    "logo": "/static/servicecloud-logo.png",
+    "logo": "static/servicecloud-logo.png",
     "script": "https://docusigninc.app.box.com/file/133946967714",
     "video": "https://discover.docusign.com/docusign-solution-library/allurasfservicecloud",
     "tag": {
@@ -181,7 +181,7 @@
   {
     "name": "Apttus CPQ + CLM Demo",
     "desc": "API integration to DocuSign with Apttus Contract Management",
-    "logo": "/static/apttus-logo.png",
+    "logo": "static/apttus-logo.png",
     "script": "https://docusigninc.app.box.com/file/29026032092",
     "invision": "https://docusigninc.app.box.com/file/235012631800",
     "tag": {

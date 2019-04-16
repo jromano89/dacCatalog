@@ -7,13 +7,13 @@
         <small class="card-text">{{ item.desc}}</small>
         <div>
           <a :href="item.script" v-if="item.script != null" target="_blank">
-            <img class="spacing" src="/static/documentation-icon.png" width="30">
+            <img class="spacing" src="static/documentation-icon.png" width="30">
           </a>
           <a :href="item.invision" v-if="item.invision != null" target="_blank">
-            <img class="spacing" src="/static/invision-icon.png" width="30">
+            <img class="spacing" src="static/invision-icon.png" width="30">
           </a>
           <a :href="item.video" v-if="item.video != null" target="_blank">
-            <img class="spacing" src="/static/video-icon.png" width="30">
+            <img class="spacing" src="static/video-icon.png" width="30">
           </a>
         </div>
       </div>
