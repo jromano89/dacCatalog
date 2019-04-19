@@ -4,6 +4,7 @@
     "desc": "Finance demo portal showcasing latest DocuSign features and functionality",
     "logo": "static/tgk-logo.png",
     "script": "https://dsdemos.docusign.com/dsportals/help/TGK.pdf",
+    "invision": "https://docusign.invisionapp.com/share/M3QTQ52ZF8P",
     "video": "https://discover.docusign.com/docusign-solution-library/wire-transfer-business-overview-take",
     "tag": {
       "Prepare": "Intelledox Guided Forms · PowerForms",
@@ -55,11 +56,11 @@
     }
   },
   {
-    "name": "SpringCM Demo",
+    "name": "SpringCM (B2B Sales) Demo",
     "desc": "Generate an agreement, handle negotiations, and close an opportunity",
     "logo": "static/spring-logo.png",
     "script": "https://docusigninc.app.box.com/file/331572876511",
-    "invision": "https://docusign.invisionapp.com/share/M3QTQ52ZF8P#/screens",
+    "invision": "https://docusign.invisionapp.com/share/UQR6O14ECSJ",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-and-springcm",
     "tag": {
       "Prepare": "SpringCM Prepare",
@@ -71,7 +72,7 @@
   },
   {
     "name": "Workday Demo",
-    "desc": "DocuSign integration for Offer Letter, Onboarding, Mass Distribute, and Title Change workflows",
+    "desc": "DocuSign integration for offer letter, onboarding, mass distribute, and title change workflows",
     "logo": "static/workday-logo.png",
     "script": "https://docusigninc.app.box.com/folder/18144844229",
     "invision": "http://sedemo1.cloudapp.net/workdayTitleChange",
@@ -83,10 +84,11 @@
   },
   {
     "name": "SAP SuccessFactors Demo",
-    "desc": "Recruiting and Onboarding scenario with remote signing integration",
+    "desc": "Recruiting and onboarding scenarios with remote signing integration",
     "logo": "static/successfactors-logo.png",
     "script": "https://docusigninc.app.box.com/file/423716624810",
     "invision": "http://sedemo1.cloudapp.net/Successfactorsprototype/",
+    "video": "https://docusigninc.app.box.com/file/93691290285",
     "tag": {
       "Sign": "eSignature",
       "Integrate": "SAP SuccessFactors"
@@ -121,7 +123,6 @@
     "desc": "Industry demo scenarios for Pegasystems customers",
     "logo": "static/pega-logo.png",
     "script": "https://docusigninc.app.box.com/folder/7515434849",
-    "invision": "https://docusigninc.app.box.com/file/118319998851",
     "video": "https://discover.docusign.com/wistia-sales-webinars/pega-docusign-ubank-sd",
     "tag": {
       "Sign": "eSignature",
@@ -189,5 +190,63 @@
       "Integrate": "Apttus · Salesforce",
       "Industry": "Insurance"
     }
+  },
+  {
+    "name": "Google G-Suite Demo",
+    "desc": "Use DocuSign connector from Google Drive and Gmail",
+    "logo": "static/google-logo.png",
+    "script": "https://docusigninc.app.box.com/file/235984683710",
+    "invision": "https://docusign.invisionapp.com/share/2QRMZEB7AUF",
+    "video": "https://discover.docusign.com/docusign-solution-library/google-demo-send-and-sign-2",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "Google"
+    }
+  },
+  {
+    "name": "SAP Hybris Demo",
+    "desc": "Send a sales quote to customer for eSignature",
+    "logo": "static/hybris-logo.png",
+    "script": "https://docusigninc.app.box.com/file/146934788135",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "SAP Hybris"
+    }
+  },
+  {
+    "name": "Oracle NetSuite Demo",
+    "desc": "Sending and Signing from a sales opportunity",
+    "logo": "static/netsuite-logo.png",
+    "script": "https://docusigninc.app.box.com/file/19785607703",
+    "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-netsuite-quick-overview",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "Oracle NetSuite"
+    }
+  },
+  {
+    "name": "Open Text ECM Demo",
+    "desc": "Embedded signing inside SAP Extended ECM",
+    "logo": "static/opentext-logo.png",
+    "script": "https://docusigninc.app.box.com/file/250371520524",
+    "video": "https://docusigninc.app.box.com/file/250371242720",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "SAP OpenText ECM"
+    }
+  },
+  {
+    "name": "Procore Demo",
+    "desc": "Generate a subcontract agreement",
+    "logo": "static/procore-logo.png",
+    "script": "https://docusigninc.app.box.com/file/229514545642",
+    "video": "https://drive.google.com/file/d/0B5nfNLBwi8VdbzBLc2tDYzRVTUE/view",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "Procore",
+      "Industry": "Construction"
+    }
   }
+
+
 ]

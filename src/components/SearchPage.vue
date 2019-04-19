@@ -116,15 +116,14 @@ export default {
         );
         this.filteredData = filteredDataByfilters;
       }
-      // then filter according to keyword, for now this only searches the tags of each item
+      // then filter according to keyword
       if (this.search !== "") {
-        filteredDataBySearch = this.filteredData.filter(
-          obj =>
-            Object.values(obj.tag)
-              .toString()
-              .toLowerCase()
-              .indexOf(this.search.toLowerCase()) >= 0
-        );
+        filteredDataBySearch = this.filteredData.filter(obj => {
+          let tileString =
+            Object.values(obj.tag).toString() + obj.desc + obj.name;
+          tileString = tileString.toLowerCase();
+          return tileString.indexOf(this.search.toLowerCase()) >= 0;
+        });
         this.filteredData = filteredDataBySearch;
       }
     }
