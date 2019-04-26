@@ -1,6 +1,8 @@
 <template>
   <div class="card p-3">
     <div class="text-center">
+      <img v-if="item.dac == true" class="float-left" src="static/placeholder.png" width="25">
+      <img v-if="item.dac == true" class="float-right" src="static/dac-icon.png" width="25">
       <img :src="item.logo" width="100">
       <div class="card-body">
         <h5 class="card-title">{{ item.name}}</h5>

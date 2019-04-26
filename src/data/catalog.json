@@ -1,22 +1,48 @@
 [
   {
-    "name": "TGK Demo Portal",
-    "desc": "Finance demo portal showcasing latest DocuSign features and functionality",
-    "logo": "static/tgk-logo.png",
-    "script": "https://dsdemos.docusign.com/dsportals/help/TGK.pdf",
-    "invision": "https://docusign.invisionapp.com/share/M3QTQ52ZF8P",
-    "video": "https://discover.docusign.com/docusign-solution-library/wire-transfer-business-overview-take",
+    "name": "TGK Trade Confirmation",
+    "desc": "SpringCM workflow integrated into a customer environment with visibility into transaction status",
+    "logo": "static/tgk_spring-logo.png",
+    "script": "https://docusigninc.app.box.com/file/447528740004",
+    "dac": true,
     "tag": {
-      "Prepare": "Intelledox Guided Forms · PowerForms",
-      "Sign": "Click · eSignature · Responsive Signing",
-      "Act": "Payments",
-      "Manage": "Workspaces",
-      "Integrate": "Box",
+      "Sign": "eSignature",
+      "Act": "SpringCM Workflow",
+      "Manage": "SpringCM Repository",
       "Industry": "Finance"
     }
   },
   {
-    "name": "Salesforce Lightning Demo",
+    "name": "DocuSign Gen",
+    "desc": "Generate a sales order from a Salesforce opportunity",
+    "logo": "static/gen-logo.png",
+    "script": "https://docusigninc.app.box.com/file/431761653859",
+    "invision": "https://docusign.invisionapp.com/share/EDQSW0YHU6N#/screens",
+    "video": "https://discover.docusign.com/docusign-solution-library/docusign-gen-demo-v3",
+    "tag": {
+      "Prepare": "Gen",
+      "Sign": "eSignature",
+      "Integrate": "Salesforce"
+    }
+  },
+  {
+    "name": "SpringCM Full CLM + CPQ",
+    "desc": "Generate an agreement, handle negotiations, and close an opportunity",
+    "logo": "static/sf_spring-logo.png",
+    "script": "https://docusigninc.app.box.com/file/447232686635",
+    "invision": "https://docusign.invisionapp.com/share/UQR6O14ECSJ",
+    "video": "https://discover.docusign.com/docusign-solution-library/docusign-and-springcm",
+    "dac": true,
+    "tag": {
+      "Prepare": "SpringCM Prepare",
+      "Sign": "eSignature",
+      "Act": "SpringCM Workflow",
+      "Manage": "SpringCM Repository",
+      "Integrate": "Salesforce"
+    }
+  },
+  {
+    "name": "Salesforce Lightning",
     "desc": "Shared org demonstrating DocuSign for Salesforce Lightning as well as Salesforce Communities",
     "logo": "static/salesforce-logo.png",
     "script": "https://docusigninc.app.box.com/file/299110599595",
@@ -30,16 +56,32 @@
     }
   },
   {
-    "name": "DocuSign Gen Demo",
-    "desc": "Generate a sales order from a Salesforce opportunity",
-    "logo": "static/gen-logo.png",
-    "script": "https://docusigninc.app.box.com/file/431761653859",
-    "invision": "https://docusign.invisionapp.com/share/EDQSW0YHU6N#/screens",
-    "video": "https://discover.docusign.com/docusign-solution-library/docusign-gen-demo-v3",
+    "name": "TGK Demo Portal",
+    "desc": "Finance demo portal showcasing latest DocuSign features and functionality",
+    "logo": "static/tgk-logo.png",
+    "script": "https://dsdemos.docusign.com/dsportals/help/TGK.pdf",
+    "invision": "https://docusign.invisionapp.com/share/M3QTQ52ZF8P",
+    "video": "https://discover.docusign.com/docusign-solution-library/wire-transfer-business-overview-take",
+    "dac": true,
     "tag": {
-      "Prepare": "Gen",
+      "Prepare": "Intelledox Guided Forms · PowerForms",
+      "Sign": "Click · eSignature · Responsive Signing",
+      "Act": "Payments",
+      "Manage": "Workspaces",
+      "Integrate": "Box",
+      "Industry": "Finance"
+    }
+  },
+  {
+    "name": "SAP SuccessFactors",
+    "desc": "Recruiting and onboarding scenarios with remote signing integration",
+    "logo": "static/successfactors-logo.png",
+    "script": "https://docusigninc.app.box.com/file/423716624810",
+    "invision": "http://sedemo1.cloudapp.net/Successfactorsprototype/",
+    "video": "https://docusigninc.app.box.com/file/93691290285",
+    "tag": {
       "Sign": "eSignature",
-      "Integrate": "Salesforce"
+      "Integrate": "SAP SuccessFactors"
     }
   },
   {
@@ -56,22 +98,21 @@
     }
   },
   {
-    "name": "SpringCM (B2B Sales) Demo",
-    "desc": "Generate an agreement, handle negotiations, and close an opportunity",
-    "logo": "static/spring-logo.png",
-    "script": "https://docusigninc.app.box.com/file/331572876511",
-    "invision": "https://docusign.invisionapp.com/share/UQR6O14ECSJ",
-    "video": "https://discover.docusign.com/docusign-solution-library/docusign-and-springcm",
+    "name": "Corporate Card",
+    "desc": "B2B sales scenario showing how a finserv modernized their system of agreement",
+    "logo": "static/sf_ix_spring-logo.png",
+    "script": "https://docusigninc.app.box.com/folder/74804466312",
+    "dac": true,
     "tag": {
-      "Prepare": "SpringCM Prepare",
+      "Prepare": "Intelledox Guided Forms · SpringCM Prepare",
       "Sign": "eSignature",
       "Act": "SpringCM Workflow",
-      "Manage": "SpringCm Repository",
-      "Integrate": "Salesforce"
+      "Integrate": "Salesforce",
+      "Industry": "Finance"
     }
   },
   {
-    "name": "Workday Demo",
+    "name": "Workday",
     "desc": "DocuSign integration for offer letter, onboarding, mass distribute, and title change workflows",
     "logo": "static/workday-logo.png",
     "script": "https://docusigninc.app.box.com/folder/18144844229",
@@ -83,19 +124,7 @@
     }
   },
   {
-    "name": "SAP SuccessFactors Demo",
-    "desc": "Recruiting and onboarding scenarios with remote signing integration",
-    "logo": "static/successfactors-logo.png",
-    "script": "https://docusigninc.app.box.com/file/423716624810",
-    "invision": "http://sedemo1.cloudapp.net/Successfactorsprototype/",
-    "video": "https://docusigninc.app.box.com/file/93691290285",
-    "tag": {
-      "Sign": "eSignature",
-      "Integrate": "SAP SuccessFactors"
-    }
-  },
-  {
-    "name": "SAP Ariba Demo",
+    "name": "SAP Ariba",
     "desc": "DocuSign integration with document tagging and remote signing",
     "logo": "static/ariba-logo.png",
     "script": "https://docusigninc.app.box.com/file/27827226284",
@@ -107,7 +136,7 @@
     }
   },
   {
-    "name": "Microsoft Dynamics Demo",
+    "name": "Microsoft Dynamics",
     "desc": "Remote signing of NDA with DocuSign integration",
     "logo": "static/dynamics-logo.png",
     "script": "https://docusigninc.app.box.com/file/349348098351",
@@ -119,41 +148,7 @@
     }
   },
   {
-    "name": "Pega Demo",
-    "desc": "Industry demo scenarios for Pegasystems customers",
-    "logo": "static/pega-logo.png",
-    "script": "https://docusigninc.app.box.com/folder/7515434849",
-    "video": "https://discover.docusign.com/wistia-sales-webinars/pega-docusign-ubank-sd",
-    "tag": {
-      "Sign": "eSignature",
-      "Integrate": "Pegasystems",
-      "Industry": "Finance · Healthcare"
-    }
-  },
-  {
-    "name": "Seal Intelligent Insights Demo",
-    "desc": "Overview of searching and filtering, term extraction, and side-by-side comparisons",
-    "logo": "static/seal-logo.png",
-    "script": "https://docusigninc.app.box.com/file/318921204702",
-    "tag": {
-      "Sign": "eSignature",
-      "Manage": "Seal Intelligent Insights"
-    }
-  },
-  {
-    "name": "Microsoft Sharepoint Demo",
-    "desc": "Embedded signing within Office 365 web apps",
-    "logo": "static/sharepoint-logo.png",
-    "script": "https://docusigninc.app.box.com/file/139434380814",
-    "invision": "http://sedemo1.cloudapp.net/SharepointPrototype/01.html",
-    "video": "https://discover.docusign.com/youtube-all-videos-2/docusign-sharepoint-online-e-sign-and-manage-agreements-2",
-    "tag": {
-      "Sign": "eSignature",
-      "Integrate": "Sharepoint"
-    }
-  },
-  {
-    "name": "eOriginal Demo",
+    "name": "eOriginal",
     "desc": "Use asset vaulting to store authoritative copies of transferable instruments",
     "logo": "static/eoriginal-logo.png",
     "script": "https://docusigninc.app.box.com/file/38032443842",
@@ -167,7 +162,7 @@
     }
   },
   {
-    "name": "DocuSign Service Cloud Demo",
+    "name": "Salesforce Service Cloud",
     "desc": "Show the integration between custom applications and Salesforce using Docusign",
     "logo": "static/servicecloud-logo.png",
     "script": "https://docusigninc.app.box.com/file/133946967714",
@@ -180,19 +175,75 @@
     }
   },
   {
-    "name": "Apttus CPQ + CLM Demo",
-    "desc": "API integration to DocuSign with Apttus Contract Management",
-    "logo": "static/apttus-logo.png",
-    "script": "https://docusigninc.app.box.com/file/29026032092",
-    "invision": "https://docusigninc.app.box.com/file/235012631800",
+    "name": "SAP Hybris",
+    "desc": "Send a sales quote to customer for eSignature",
+    "logo": "static/hybris-logo.png",
+    "script": "https://docusigninc.app.box.com/file/146934788135",
     "tag": {
       "Sign": "eSignature",
-      "Integrate": "Apttus · Salesforce",
-      "Industry": "Insurance"
+      "Integrate": "SAP Hybris"
     }
   },
   {
-    "name": "Google G-Suite Demo",
+    "name": "Oracle NetSuite",
+    "desc": "Sending and Signing from a sales opportunity",
+    "logo": "static/netsuite-logo.png",
+    "script": "https://docusigninc.app.box.com/file/19785607703",
+    "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-netsuite-quick-overview",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "Oracle NetSuite"
+    }
+  },
+  {
+    "name": "Seal Intelligent Insights",
+    "desc": "Stories that can be added on to any demo to align with agreement cloud vision",
+    "logo": "static/seal-logo.png",
+    "script": "https://docusigninc.app.box.com/folder/74808686243",
+    "dac": true,
+    "tag": {
+      "Sign": "eSignature",
+      "Manage": "Seal Intelligent Insights"
+    }
+  },
+  {
+    "name": "SpringCM Standalone",
+    "desc": "Generate an NDA for approval and signature by 3rd party",
+    "logo": "static/spring-logo.png",
+    "script": "https://docusigninc.app.box.com/file/447131161851",
+    "dac": true,
+    "tag": {
+      "Prepare": "SpringCM Prepare",
+      "Sign": "eSignature",
+      "Act": "SpringCM Workflow",
+      "Manage": "SpringCM Repository"
+    }
+  },
+  {
+    "name": "Open Text ECM",
+    "desc": "Embedded signing inside SAP Extended ECM",
+    "logo": "static/opentext-logo.png",
+    "script": "https://docusigninc.app.box.com/file/250371520524",
+    "video": "https://docusigninc.app.box.com/file/250371242720",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "SAP OpenText ECM"
+    }
+  },
+  {
+    "name": "Procore",
+    "desc": "Demo video and story for generating a subcontract agreement",
+    "logo": "static/procore-logo.png",
+    "script": "https://docusigninc.app.box.com/file/229514545642",
+    "video": "https://drive.google.com/file/d/0B5nfNLBwi8VdbzBLc2tDYzRVTUE/view",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "Procore",
+      "Industry": "Construction"
+    }
+  },
+  {
+    "name": "Google G-Suite",
     "desc": "Use DocuSign connector from Google Drive and Gmail",
     "logo": "static/google-logo.png",
     "script": "https://docusigninc.app.box.com/file/235984683710",
@@ -204,49 +255,40 @@
     }
   },
   {
-    "name": "SAP Hybris Demo",
-    "desc": "Send a sales quote to customer for eSignature",
-    "logo": "static/hybris-logo.png",
-    "script": "https://docusigninc.app.box.com/file/146934788135",
+    "name": "Microsoft Sharepoint",
+    "desc": "Embedded signing within Office 365 web apps",
+    "logo": "static/sharepoint-logo.png",
+    "script": "https://docusigninc.app.box.com/file/139434380814",
+    "invision": "http://sedemo1.cloudapp.net/SharepointPrototype/01.html",
+    "video": "https://discover.docusign.com/youtube-all-videos-2/docusign-sharepoint-online-e-sign-and-manage-agreements-2",
     "tag": {
       "Sign": "eSignature",
-      "Integrate": "SAP Hybris"
+      "Integrate": "Sharepoint"
+    }
+  },  
+  {
+    "name": "Pega",
+    "desc": "Industry demo scenarios for Pegasystems customers",
+    "logo": "static/pega-logo.png",
+    "script": "https://docusigninc.app.box.com/folder/7515434849",
+    "video": "https://discover.docusign.com/wistia-sales-webinars/pega-docusign-ubank-sd",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "Pegasystems",
+      "Industry": "Finance · Healthcare"
     }
   },
   {
-    "name": "Oracle NetSuite Demo",
-    "desc": "Sending and Signing from a sales opportunity",
-    "logo": "static/netsuite-logo.png",
-    "script": "https://docusigninc.app.box.com/file/19785607703",
-    "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-netsuite-quick-overview",
+    "name": "Apttus CPQ + CLM",
+    "desc": "API integration to DocuSign with Apttus Contract Management",
+    "logo": "static/apttus-logo.png",
+    "script": "https://docusigninc.app.box.com/file/29026032092",
+    "invision": "https://docusigninc.app.box.com/file/235012631800",
     "tag": {
       "Sign": "eSignature",
-      "Integrate": "Oracle NetSuite"
-    }
-  },
-  {
-    "name": "Open Text ECM Demo",
-    "desc": "Embedded signing inside SAP Extended ECM",
-    "logo": "static/opentext-logo.png",
-    "script": "https://docusigninc.app.box.com/file/250371520524",
-    "video": "https://docusigninc.app.box.com/file/250371242720",
-    "tag": {
-      "Sign": "eSignature",
-      "Integrate": "SAP OpenText ECM"
-    }
-  },
-  {
-    "name": "Procore Demo",
-    "desc": "Generate a subcontract agreement",
-    "logo": "static/procore-logo.png",
-    "script": "https://docusigninc.app.box.com/file/229514545642",
-    "video": "https://drive.google.com/file/d/0B5nfNLBwi8VdbzBLc2tDYzRVTUE/view",
-    "tag": {
-      "Sign": "eSignature",
-      "Integrate": "Procore",
-      "Industry": "Construction"
+      "Integrate": "Apttus · Salesforce",
+      "Industry": "Insurance"
     }
   }
-
 
 ]
