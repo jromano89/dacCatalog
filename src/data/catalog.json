@@ -16,7 +16,7 @@
     "name": "DocuSign Gen",
     "desc": "Generate a sales order from a Salesforce opportunity",
     "logo": "static/gen-logo.png",
-    "script": "https://docusigninc.app.box.com/file/431761653859",
+    "script": "https://docusigninc.app.box.com/file/434736387068",
     "invision": "https://docusign.invisionapp.com/share/EDQSW0YHU6N#/screens",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-gen-demo-v3",
     "tag": {
@@ -62,7 +62,6 @@
     "script": "https://dsdemos.docusign.com/dsportals/help/TGK.pdf",
     "invision": "https://docusign.invisionapp.com/share/M3QTQ52ZF8P",
     "video": "https://discover.docusign.com/docusign-solution-library/wire-transfer-business-overview-take",
-    "dac": true,
     "tag": {
       "Prepare": "Intelledox Guided Forms · PowerForms",
       "Sign": "Click · eSignature · Responsive Signing",
@@ -73,15 +72,14 @@
     }
   },
   {
-    "name": "SAP SuccessFactors",
-    "desc": "Recruiting and onboarding scenarios with remote signing integration",
-    "logo": "static/successfactors-logo.png",
-    "script": "https://docusigninc.app.box.com/file/423716624810",
-    "invision": "http://sedemo1.cloudapp.net/Successfactorsprototype/",
-    "video": "https://docusigninc.app.box.com/file/93691290285",
+    "name": "Open Text ECM",
+    "desc": "Embedded signing inside SAP Extended ECM",
+    "logo": "static/opentext-logo.png",
+    "script": "https://docusigninc.app.box.com/file/250371520524",
+    "video": "https://docusigninc.app.box.com/file/250371242720",
     "tag": {
       "Sign": "eSignature",
-      "Integrate": "SAP SuccessFactors"
+      "Integrate": "SAP OpenText ECM"
     }
   },
   {
@@ -98,7 +96,7 @@
     }
   },
   {
-    "name": "Corporate Card",
+    "name": "Corporate Card Demo",
     "desc": "B2B sales scenario showing how a FinServ modernized their system of agreement",
     "logo": "static/sf_ix_spring-logo.png",
     "script": "https://docusigninc.app.box.com/file/449084259089",
@@ -200,9 +198,7 @@
     "desc": "Stories that can be added on to any demo to align with agreement cloud vision",
     "logo": "static/seal-logo.png",
     "script": "https://docusigninc.app.box.com/folder/74808686243",
-    "dac": true,
     "tag": {
-      "Sign": "eSignature",
       "Manage": "Seal Intelligent Insights"
     }
   },
@@ -211,23 +207,23 @@
     "desc": "Generate an NDA for approval and signature by 3rd party",
     "logo": "static/spring-logo.png",
     "script": "https://docusigninc.app.box.com/file/447131161851",
-    "dac": true,
     "tag": {
       "Prepare": "SpringCM Prepare",
       "Sign": "eSignature",
       "Act": "SpringCM Workflow",
       "Manage": "SpringCM Repository"
     }
-  },
+  },  
   {
-    "name": "Open Text ECM",
-    "desc": "Embedded signing inside SAP Extended ECM",
-    "logo": "static/opentext-logo.png",
-    "script": "https://docusigninc.app.box.com/file/250371520524",
-    "video": "https://docusigninc.app.box.com/file/250371242720",
+    "name": "SAP SuccessFactors",
+    "desc": "Recruiting and onboarding scenarios with remote signing integration",
+    "logo": "static/successfactors-logo.png",
+    "script": "https://docusigninc.app.box.com/file/423716624810",
+    "invision": "http://sedemo1.cloudapp.net/Successfactorsprototype/",
+    "video": "https://docusigninc.app.box.com/file/93691290285",
     "tag": {
       "Sign": "eSignature",
-      "Integrate": "SAP OpenText ECM"
+      "Integrate": "SAP SuccessFactors"
     }
   },
   {
