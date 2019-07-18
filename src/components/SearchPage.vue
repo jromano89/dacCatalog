@@ -7,7 +7,7 @@
       </a>
     </nav>
     <div class="container-fluid">
-      <div class="spacing">
+      <div class="m-3">
         <!-- searchbar -->
         <form v-on:submit="getfilteredData">
           <div class="form-row">
@@ -22,24 +22,30 @@
             </div>
           </div>
         </form>
-        <!-- checkboxes -->
-        <div id="checkboxes" class="spacing">
-          <div
-            v-for="(checkbox,index) in checkboxes"
-            :key="index"
-            :class="`form-check form-check-inline check-button ${checkbox.value}`"
-          >
-            <input
-              class="form-check-input"
-              type="checkbox"
-              v-model="checkbox.checked"
-              v-on:change="getfilteredData"
+        <div class="d-flex flex-row">
+          <!-- checkboxes -->
+          <div id="checkboxes" class="mx-3 mt-3">
+            <div
+              v-for="(checkbox,index) in checkboxes"
+              :key="index"
+              :class="`form-check form-check-inline check-button ${checkbox.value}`"
             >
-            <label class="form-check-label">{{ checkbox.value }}</label>
+              <input
+                class="form-check-input"
+                type="checkbox"
+                v-model="checkbox.checked"
+                v-on:change="getfilteredData"
+              >
+              <label class="form-check-label">{{ checkbox.value }}</label>
+            </div>
           </div>
+          <!-- sort button -->
+          <span class="mr-3 mt-3 ml-auto">
+          <button type="button" class="btn btn-sm btn-primary blue" v-on:click="sortData">Sort A-Z</button>
+          </span>
         </div>
       </div>
-      <div class="card-columns">
+      <div class="card-deck">
         <!-- iterate data into item-cards -->
         <item-card v-for="(item, index) in filteredData" :key="index" :item="item"></item-card>
       </div>
@@ -47,7 +53,7 @@
     <!-- footer -->
     <div class="footer">
       <div class="text-center">
-        <small>North America Solution Engineering</small>
+        <small>©2019 North America Solution Engineering</small>
       </div>
     </div>
   </div>
@@ -124,8 +130,21 @@ export default {
           tileString = tileString.toLowerCase();
           return tileString.indexOf(this.search.toLowerCase()) >= 0;
         });
-        this.filteredData = filteredDataBySearch;
+        this.filteredData = filteredDataBySearch
       }
+    },
+    sortData: function() {
+      this.filteredData = this.filteredData.sort(function(a, b){
+        var nameA = a.name.toUpperCase(); 
+        var nameB = b.name.toUpperCase(); 
+        if (nameA < nameB) {
+          return -1;
+        }
+        if (nameA > nameB) {
+          return 1;
+        }
+        return 0;
+      });
     }
   },
   mounted() {
