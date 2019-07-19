@@ -28,7 +28,7 @@
             <div
               v-for="(checkbox,index) in checkboxes"
               :key="index"
-              :class="`form-check form-check-inline check-button ${checkbox.value}`"
+              :class="`form-check form-check-inline border-radius check-button ${checkbox.value}`"
             >
               <input
                 class="form-check-input"

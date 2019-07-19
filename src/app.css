@@ -22,7 +22,7 @@ body {
 
 .badge {
   color: #212529;
-  border-radius: 0;
+  border-radius: 0.2rem;
 }
 
 .check-button {
