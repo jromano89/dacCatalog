@@ -1,10 +1,10 @@
 <template>
   <div>
-    <nav class="navbar navbar-dark blue">
-      <a class="navbar-brand" href="#">
-        <img src="static/docusign-icon.png" height="25">
-        DocuSign Agreement Cloud Catalog
-      </a>
+    <nav class="navbar navbar-light header">
+      <div class="navbar-brand" href="#">
+          <strong>DocuSign</strong> Agreement Cloud Catalog
+      </div>
+      <img class="float-right" src="static/dac-icon.png" width="25">
     </nav>
     <div class="container-fluid">
       <div class="m-3">
@@ -24,11 +24,11 @@
         </form>
         <div class="d-flex flex-row">
           <!-- checkboxes -->
-          <div id="checkboxes" class="mx-3 mt-3">
+          <div id="checkboxes" class="ml-2 mt-3">
             <div
               v-for="(checkbox,index) in checkboxes"
               :key="index"
-              :class="`form-check form-check-inline border-radius check-button ${checkbox.value}`"
+              :class="`form-check form-check-inline check-button ${checkbox.value}`"
             >
               <input
                 class="form-check-input"
@@ -40,19 +40,19 @@
             </div>
           </div>
           <!-- sort button -->
-          <span class="mr-3 mt-3 ml-auto">
+          <span class="mr-2 mt-3 ml-auto">
           <button type="button" class="btn btn-sm btn-primary blue" v-on:click="sortData">Sort A-Z</button>
           </span>
         </div>
       </div>
-      <div class="card-deck">
+      <div class="card-deck px-1">
         <!-- iterate data into item-cards -->
         <item-card v-for="(item, index) in filteredData" :key="index" :item="item"></item-card>
       </div>
     </div>
     <!-- footer -->
-    <div class="footer">
-      <div class="text-center">
+    <div class="footer blue">
+      <div class="text-center mt-1">
         <small>©2019 North America Solution Engineering</small>
       </div>
     </div>

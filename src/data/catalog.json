@@ -5,7 +5,6 @@
     "logo": "static/tgk_spring-logo.png",
     "link": "https://dsdemos.esigndemos.com/dsportals/finance/TradeConfirm.aspx",
     "script": "https://docusigninc.app.box.com/file/447528740004",
-    "dac": true,
     "tag": {
       "Sign": "eSignature",
       "Act": "SpringCM Workflow",
@@ -15,12 +14,13 @@
   },
   {
     "name": "Guided Forms Demos",
-    "desc": "Intelledox prototypes for Click, Responsive, and Identify",
+    "desc": "Intelledox prototypes for Click, Responsive, and Identify features as well as Industry examples",
     "logo": "static/ix-logo.png",
     "link": "https://www.dsguidedforms.com",
     "tag": {
       "Prepare": "Intelledox Guided Forms",
-      "Sign": "Click · eSignature · Identify · Responsive"
+      "Sign": "Click · eSignature · Identify · Responsive",
+      "Industry": "Insurance · Finance"
     }
   },
   {
@@ -29,7 +29,6 @@
     "logo": "static/ix_spring-logo.png",
     "link": "https://dsdemos.esigndemos.com/dsportals/finance/CommercialLoan.aspx",
     "script": "https://docusigninc.app.box.com/file/483029692471",
-    "dac": true,
     "tag": {
       "Prepare": "Intelledox Guided Forms · SpringCM Prepare",
       "Sign": "eSignature",
@@ -44,7 +43,6 @@
     "logo": "static/sf_ix_spring-logo.png",
     "link": "https://ixscm.my.salesforce.com",
     "script": "https://docusigninc.app.box.com/file/483032986507",
-    "dac": true,
     "tag": {
       "Prepare": "Intelledox Guided Forms · SpringCM Prepare",
       "Sign": "eSignature",
@@ -95,7 +93,6 @@
     "script": "https://docusigninc.app.box.com/file/447232686635",
     "clickthrough": "https://docusign.invisionapp.com/share/UQR6O14ECSJ",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-and-springcm",
-    "dac": true,
     "tag": {
       "Prepare": "SpringCM Prepare",
       "Sign": "eSignature",
