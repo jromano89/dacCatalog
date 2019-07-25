@@ -5,7 +5,9 @@
 html {
   position: relative;
   min-height: 100%;
+  background-color: #a4c8e7;
 }
+
 body {
   /* Margin bottom must match footer height */
   margin-bottom: 2rem;
@@ -13,7 +15,6 @@ body {
 
 .header {
   background-color: #f8f8f8;
-
 }
 
 .footer {
@@ -22,6 +23,7 @@ body {
   width: 100%;
   height: 2rem;
   color: #f8f8f8;
+  
 }
 
 .badge {

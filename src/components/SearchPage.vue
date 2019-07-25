@@ -45,7 +45,7 @@
           </span>
         </div>
       </div>
-      <div class="card-deck px-1">
+      <div class="card-deck px-1 pb-2">
         <!-- iterate data into item-cards -->
         <item-card v-for="(item, index) in filteredData" :key="index" :item="item"></item-card>
       </div>
