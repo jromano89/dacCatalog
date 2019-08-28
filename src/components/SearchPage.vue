@@ -1,13 +1,15 @@
 <template>
   <div>
-    <nav class="navbar navbar-light header">
-      <div class="navbar-brand" href="#">
-          <strong>DocuSign</strong> Agreement Cloud Catalog
+    <nav class="navbar navbar-dark blue">
+      <div class="navbar-brand d-flex flex-row" href="#">
+    <img class="ds-logo" src="static/docusign-logo.png" height="26px">
+    <div class="ds-logo-text">Agreement Cloud Catalog</div>
       </div>
-      <img class="float-right" src="static/dac-icon.png" width="25">
+      <img class="float-right" src="static/dac-icon.png" height="26px">
     </nav>
     <div class="container-fluid">
-      <div class="m-3">
+      <div class="px-2" style="background-image: url(static/bg-search.svg)">
+      <div class="px-3 pt-3 pb-2">
         <!-- searchbar -->
         <form v-on:submit="getfilteredData">
           <div class="form-row">
@@ -41,17 +43,18 @@
           </div>
           <!-- sort button -->
           <span class="mr-2 mt-3 ml-auto">
-          <button type="button" class="btn btn-sm btn-primary blue" v-on:click="sortData">Sort A-Z</button>
+          <button type="button" class="btn btn-sm btn-outline-warning" v-on:click="sortData">Sort A-Z</button>
           </span>
         </div>
       </div>
-      <div class="card-deck px-1 pb-2">
+      </div>
+      <div class="card-deck px-3 py-2">
         <!-- iterate data into item-cards -->
         <item-card v-for="(item, index) in filteredData" :key="index" :item="item"></item-card>
       </div>
     </div>
     <!-- footer -->
-    <div class="footer blue">
+    <div class="footer">
       <div class="text-center mt-1">
         <small>©2019 North America Solution Engineering</small>
       </div>

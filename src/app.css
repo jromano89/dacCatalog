@@ -1,11 +1,19 @@
 #app {
-  background-color: #a4c8e7;
+  background-color: #f5f5f5;
 }
 
 html {
   position: relative;
   min-height: 100%;
-  background-color: #a4c8e7;
+}
+
+.navbar {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.container-fluid {
+  padding: 0 !important;
 }
 
 body {
@@ -13,21 +21,27 @@ body {
   margin-bottom: 2rem;
 }
 
-.header {
-  background-color: #f8f8f8;
-}
-
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 2rem;
-  color: #f8f8f8;
-  
+  background-color: #646464;
+  color: #f5f5f5;
+}
+
+.ds-logo {
+  padding-right: 0.9rem;
+  border-right: 1px solid #ffffff;
+}
+
+.ds-logo-text {
+  padding-left: 0.9rem;
+  font-size: 1rem;
 }
 
 .badge {
-  color: #212529;
+  color: #323232;
   border-radius: 0.1rem;
 }
 
@@ -42,25 +56,25 @@ body {
 }
 
 .Prepare {
-  background-color: #6de946;
+  background-color: #27ee36;
 }
 
 .Sign {
-  background-color: #def851;
+  background-color: #d6fb00;
 }
 
 .Act {
-  background-color: #58c4fa;
+  background-color: #0bbff6;
 }
 
 .Manage {
-  background-color: #eb52d7;
+  background-color: #ff13f4;
 }
 
 .Integrate {
-  background-color: #d8d9d9;
+  background-color: #c8c8c8;
 }
 
 .Industry {
-  background-color: #ef8532;
+  background-color: #ff7d00;
 }
