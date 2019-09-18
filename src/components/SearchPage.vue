@@ -1,5 +1,6 @@
 <template>
   <div>
+     <!-- navbar -->
     <nav class="navbar navbar-dark blue">
       <div class="navbar-brand d-flex flex-row" href="#">
     <img class="ds-logo" src="static/docusign-logo.png" height="26px">
@@ -25,20 +26,14 @@
           </div>
         </form>
         <div class="d-flex flex-row">
-          <!-- checkboxes -->
-          <div id="checkboxes" class="ml-2 mt-3">
+          <!-- dac labels -->
+          <div class="ml-2 mt-3">
             <div
-              v-for="(checkbox,index) in checkboxes"
+              v-for="(label,index) in labels"
               :key="index"
-              :class="`form-check form-check-inline check-button ${checkbox.value}`"
+              :class="`form-check form-check-inline label-button ${label.value}`"
             >
-              <input
-                class="form-check-input"
-                type="checkbox"
-                v-model="checkbox.checked"
-                v-on:change="getfilteredData"
-              >
-              <label class="form-check-label">{{ checkbox.value }}</label>
+              <label class="form-check-label">{{ label.value }}</label>
             </div>
           </div>
           <!-- sort button -->
@@ -48,15 +43,15 @@
         </div>
       </div>
       </div>
+      <!-- iterate data into item-cards -->
       <div class="card-deck px-3 py-2">
-        <!-- iterate data into item-cards -->
         <item-card v-for="(item, index) in filteredData" :key="index" :item="item"></item-card>
       </div>
     </div>
     <!-- footer -->
     <div class="footer">
       <div class="text-center mt-1">
-        <small>©2019 North America Solution Engineering</small>
+        <small>©2019 Solution Architecture</small>
       </div>
     </div>
   </div>
@@ -71,43 +66,27 @@ export default {
   components: {
     "item-card": ItemCard
   },
-  computed: {
-    selectedFilters: function() {
-      let filters = [];
-      let checkedFiters = this.checkboxes.filter(obj => obj.checked);
-      checkedFiters.forEach(element => {
-        filters.push(element.value);
-      });
-      return filters;
-    }
-  },
   data() {
     return {
       filteredData: [],
       search: "",
-      checkboxes: [
+      labels: [
         {
-          checked: false,
           value: "Prepare"
         },
         {
-          checked: false,
           value: "Sign"
         },
         {
-          checked: false,
           value: "Act"
         },
         {
-          checked: false,
           value: "Manage"
         },
         {
-          checked: false,
           value: "Integrate"
         },
         {
-          checked: false,
           value: "Industry"
         }
       ]
@@ -116,16 +95,8 @@ export default {
   methods: {
     getfilteredData: function() {
       this.filteredData = data;
-      let filteredDataByfilters = [];
       let filteredDataBySearch = [];
-      // first check if filters were selected
-      if (this.selectedFilters.length > 0) {
-        filteredDataByfilters = this.filteredData.filter(obj =>
-          this.selectedFilters.every(val => obj.tag[val] != null)
-        );
-        this.filteredData = filteredDataByfilters;
-      }
-      // then filter according to keyword
+      //  filter according to keyword
       if (this.search !== "") {
         filteredDataBySearch = this.filteredData.filter(obj => {
           let tileString =
