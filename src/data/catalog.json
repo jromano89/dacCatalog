@@ -17,7 +17,7 @@
     "desc": "Intelledox prototypes for Click, Responsive, and Identify features as well as Industry examples",
     "logo": "static/ix-logo.png",
     "link": "https://www.dsguidedforms.com",
-    "clickthrough": "https://tinyurl.com/yyckrce3",
+    "ppt": "https://tinyurl.com/yyckrce3",
     "video": "https://tinyurl.com/y57o6by3",
     "tag": {
       "Prepare": "Intelledox Guided Forms",
@@ -30,13 +30,27 @@
     "desc": "Shared org demonstrating DocuSign for Salesforce Lightning as well as Salesforce Communities",
     "logo": "static/salesforce-logo.png",
     "script": "https://docusigninc.app.box.com/file/299110599595",
-    "clickthrough": "https://dsdemos.esigndemos.com/salesforceprototype",
+    "invision": "https://dsdemos.esigndemos.com/salesforceprototype",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-salesforce-3",
     "tag": {
       "Prepare": "Intelledox Guided Forms · PowerForms",
       "Sign": "eSignature",
       "Integrate": "Salesforce",
       "Industry": "Finance · Insurance"
+    }
+  },
+  {
+    "name": "Agreement Cloud for B2B Sales",
+    "desc": "Slide Decks showing full DAC story for both SMB and Enterprise",
+    "logo": "static/tally-logo.png",
+    "smb": "https://docusigninc.app.box.com/s/va66t4vrejveefoenw10xr37v49fsxhe/file/518494426432",
+    "ent": "https://docusigninc.app.box.com/s/va66t4vrejveefoenw10xr37v49fsxhe/file/518244262470",
+    "tag": {
+      "Prepare": "DocuSign Gen · SpringCM Prepare",
+      "Sign": "eSignature",
+      "Act": "Payments · SpringCM Workflow",
+      "Manage": "Seal Intelligent Insights",
+      "Integrate": "Salesforce"
     }
   },
   {
@@ -51,6 +65,16 @@
       "Act": "SpringCM Workflow",
       "Manage": "Seal Intelligent Insights",
       "Industry": "Finance"
+    }
+  },
+  {
+    "name": "DocuSign Identify (AES)",
+    "desc": "Click-through demo of ID Verification with paths for multiple countries and Standards Based Signatures (SBS)",
+    "logo": "static/identify-logo.png",
+    "invision": "https://docusign.invisionapp.com/share/RJTSBE1XN7Q",
+    "video": "https://discover.docusign.com/docusign-solution-library/docusign-identify",
+    "tag": {
+      "Sign": "eSignature · Identify "
     }
   },
   {
@@ -71,7 +95,7 @@
     "desc": "DocuSign integration for offer letter, onboarding, mass distribute, and title change workflows",
     "logo": "static/workday-logo.png",
     "script": "https://docusigninc.app.box.com/folder/18144844229",
-    "clickthrough": "https://dsdemos.esigndemos.com/workdayTitleChange",
+    "invision": "https://dsdemos.esigndemos.com/workdayTitleChange",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-workday-demo-3",
     "tag": {
       "Sign": "eSignature",
@@ -84,11 +108,22 @@
     "logo": "static/successfactors-logo.png",
     "link": "https://pmsalesdemo8.successfactors.com/login?company=SFPART037645",
     "script": "https://docusigninc.app.box.com/folder/7969158821",
-    "clickthrough": "https://dsdemos.esigndemos.com/Successfactorsprototype/",
+    "invision": "https://dsdemos.esigndemos.com/Successfactorsprototype/",
     "video": "https://docusigninc.app.box.com/file/93691290285",
     "tag": {
       "Sign": "eSignature",
       "Integrate": "SAP SuccessFactors"
+    }
+  },
+  {
+    "name": "Rooms for Mortgage Lender Closing",
+    "desc": "Click-through demo showing collaboration between lender, settlement agent, and borrower",
+    "logo": "static/rooms-logo.png",
+    "script": "https://docusigninc.app.box.com/file/493051867239",
+    "invision": "https://docusign.invisionapp.com/share/Z5TTBXNYSJ7",
+    "video": "https://docusigninc.box.com/s/z6zhzmy867axcbijd3yub0f2y42ris4k",
+    "tag": {
+      "Industry": "Rooms for Mortgage · Real Estate"
     }
   },
   {
@@ -106,7 +141,7 @@
     "desc": "Generate a sales order from a Salesforce opportunity",
     "logo": "static/gen-logo.png",
     "script": "https://docusigninc.app.box.com/file/434736387068",
-    "clickthrough": "https://docusign.invisionapp.com/share/EDQSW0YHU6N#/screens",
+    "invision": "https://docusign.invisionapp.com/share/EDQSW0YHU6N#/screens",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-gen-demo-v3",
     "tag": {
       "Prepare": "DocuSign Gen",
@@ -119,7 +154,7 @@
     "desc": "Generate master agreement from within Salesforce, handle negotiations, and close an opportunity",
     "logo": "static/sf_spring-logo.png",
     "script": "https://docusigninc.app.box.com/file/447225808724",
-    "clickthrough": "https://docusign.invisionapp.com/share/2SQS0FBEJ9D",
+    "invision": "https://docusign.invisionapp.com/share/2SQS0FBEJ9D",
     "video": "https://docusigninc.app.box.com/file/416665797374",
     "tag": {
       "Prepare": "SpringCM Prepare",
@@ -134,7 +169,7 @@
     "desc": "Remote signing of NDA with DocuSign integration",
     "logo": "static/dynamics-logo.png",
     "script": "https://docusigninc.app.box.com/file/349348098351",
-    "clickthrough": "https://dsdemos.esigndemos.com/DynamicsPrototype",
+    "invision": "https://dsdemos.esigndemos.com/DynamicsPrototype",
     "video": "https://discover.docusign.com/youtube-all-videos-2/docusign-for-microsoft-dynamics-automate-e-sign-and-manage-agreements-2",
     "tag": {
       "Sign": "eSignature",
@@ -146,7 +181,7 @@
     "desc": "Script for generating an NDA for signature by 3rd party, and click-through of B2B procurement scenario",
     "logo": "static/spring-logo.png",
     "script": "https://docusigninc.app.box.com/file/317327259125",
-    "clickthrough": "https://docusign.invisionapp.com/share/UQR6O14ECSJ",
+    "invision": "https://docusign.invisionapp.com/share/UQR6O14ECSJ",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-and-springcm",
     "tag": {
       "Prepare": "SpringCM Prepare",
@@ -223,7 +258,7 @@
     "logo": "static/tgk-logo.png",
     "link": "https://dsdemos.esigndemos.com/dsportals/finance/index.html",
     "script": "https://dsdemos.esigndemos.com/dsportals/help/TGK.pdf",
-    "clickthrough": "https://docusign.invisionapp.com/share/M3QTQ52ZF8P",
+    "invision": "https://docusign.invisionapp.com/share/M3QTQ52ZF8P",
     "video": "https://discover.docusign.com/docusign-solution-library/wire-transfer-business-overview-take",
     "tag": {
       "Prepare": "Intelledox Guided Forms · PowerForms",
@@ -262,7 +297,7 @@
     "desc": "API integration to DocuSign with Apttus Contract Management",
     "logo": "static/apttus-logo.png",
     "script": "https://docusigninc.app.box.com/file/29026032092",
-    "clickthrough": "https://docusigninc.app.box.com/file/235012631800",
+    "ppt": "https://docusigninc.app.box.com/file/235012631800",
     "tag": {
       "Sign": "eSignature",
       "Integrate": "Apttus · Salesforce",
@@ -274,7 +309,7 @@
     "desc": "Use asset vaulting to store authoritative copies of transferable instruments",
     "logo": "static/eoriginal-logo.png",
     "script": "https://docusigninc.app.box.com/file/38032443842",
-    "clickthrough": "https://dsdemos.esigndemos.com/emortgageprototype/",
+    "invision": "https://dsdemos.esigndemos.com/emortgageprototype/",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-and-eoriginal-overview-2",
     "tag": {
       "Sign": "eSignature",
@@ -288,7 +323,7 @@
     "desc": "Use DocuSign connector from Google Drive and Gmail",
     "logo": "static/google-logo.png",
     "script": "https://docusigninc.app.box.com/file/235984688996",
-    "clickthrough": "https://sforce.co/1eNWDIm",
+    "ppt": "https://sforce.co/1eNWDIm",
     "video": "https://discover.docusign.com/docusign-solution-library/google-demo-send-and-sign-2",
     "tag": {
       "Sign": "eSignature",
@@ -300,7 +335,7 @@
     "desc": "Embedded signing within Office 365 web apps",
     "logo": "static/sharepoint-logo.png",
     "script": "https://docusigninc.app.box.com/file/19785711005",
-    "clickthrough": "https://dsdemos.esigndemos.com/SharepointPrototype/01.html",
+    "invision": "https://dsdemos.esigndemos.com/SharepointPrototype/01.html",
     "video": "https://discover.docusign.com/youtube-all-videos-2/docusign-sharepoint-online-e-sign-and-manage-agreements-2",
     "tag": {
       "Sign": "eSignature",
@@ -323,7 +358,7 @@
     "desc": "Sending and Signing from a sales opportunity",
     "logo": "static/netsuite-logo.png",
     "script": "https://docusigninc.app.box.com/file/19785607703",
-    "clickthrough": "https://dsdemos.esigndemos.com/NetsuitePrototype/",
+    "ppt": "https://docusigninc.app.box.com/file/521362356973",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-netsuite-quick-overview",
     "tag": {
       "Sign": "eSignature",
@@ -360,7 +395,7 @@
     "logo": "static/ariba-logo.png",
     "link": "https://s1.ariba.com/Buyer/Main/ad/loginPage/SSOActions?&awsso_ap=ACM&awsso_hpk=true&passwordadapter=PasswordAdapter1&realm=Demo2",
     "script": "https://docusigninc.app.box.com/file/27827226284",
-    "clickthrough": "https://dsdemos.esigndemos.com/AribaPrototype/",
+    "invision": "https://dsdemos.esigndemos.com/AribaPrototype/",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-sap-ariba-demo-video",
     "tag": {
       "Sign": "eSignature",
@@ -372,7 +407,7 @@
     "desc": "Send a sales quote to customer for eSignature",
     "logo": "static/hybris-logo.png",
     "script": "https://docusigninc.app.box.com/file/146934788135",
-    "clickthrough": "https://docusigninc.app.box.com/file/145080085268",
+    "ppt": "https://docusigninc.app.box.com/file/145080085268",
     "tag": {
       "Sign": "eSignature",
       "Integrate": "SAP Hybris"

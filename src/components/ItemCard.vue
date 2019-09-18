@@ -14,11 +14,20 @@
           <a :href="item.script" v-if="item.script != null" target="_blank">
             <img class="mx-2" src="static/script-icon.png" width="30">
           </a>
-          <a :href="item.clickthrough" v-if="item.clickthrough != null" target="_blank">
-            <img class="mx-2" src="static/clickthrough-icon.png" width="30">
+          <a :href="item.invision" v-if="item.invision != null" target="_blank">
+            <img class="mx-2" src="static/invision-icon.png" width="30">
+          </a>
+          <a :href="item.ppt" v-if="item.ppt != null" target="_blank">
+            <img class="mx-2" src="static/ppt-icon.png" width="30">
           </a>
           <a :href="item.video" v-if="item.video != null" target="_blank">
             <img class="mx-2" src="static/video-icon.png" width="30">
+          </a>
+          <a :href="item.smb" v-if="item.smb != null" target="_blank">
+            <img class="mx-2" src="static/smb-icon.png" width="30">
+          </a>
+          <a :href="item.ent" v-if="item.ent != null" target="_blank">
+            <img class="mx-2" src="static/ent-icon.png" width="30">
           </a>
         </div>
       </div>
