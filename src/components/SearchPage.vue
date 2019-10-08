@@ -21,6 +21,7 @@
                 placeholder="Search Demo Content"
                 v-model="search"
                 v-on:keyup="getfilteredData"
+                @keydown.enter.prevent
               >
             </div>
           </div>
@@ -98,6 +99,7 @@ export default {
       let filteredDataBySearch = [];
       //  filter according to keyword
       if (this.search !== "") {
+        this.$router.push({ path: "/", query: { search: this.search }});
         filteredDataBySearch = this.filteredData.filter(obj => {
           let tileString =
             Object.values(obj.tag).toString() + obj.desc + obj.name;
@@ -105,8 +107,11 @@ export default {
           return tileString.indexOf(this.search.toLowerCase()) >= 0;
         });
         this.filteredData = filteredDataBySearch
+      } else {
+        this.$router.push({ path: "/"});
       }
     },
+
     sortData: function() {
       this.filteredData = this.filteredData.sort(function(a, b){
         var nameA = a.name.toUpperCase(); 
@@ -122,6 +127,12 @@ export default {
     }
   },
   mounted() {
+    // Read URL parameter
+    this.urlParams = new URLSearchParams(window.location.search);
+    let searchParam = this.urlParams.get("search");
+    if (searchParam != null) {
+      this.search = searchParam;
+    }
     this.getfilteredData();
   }
 };
