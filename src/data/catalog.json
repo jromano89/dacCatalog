@@ -32,7 +32,7 @@
     "ppt": "https://docusigninc.app.box.com/s/99n6l84rl52729m9o9b7uibkd5pdoovg",
     "video": "https://docusign.wistia.com/medias/n6jp2v4eq3",
     "tag": {
-      "Prepare": "Intelledox Guided Forms · PowerForms",
+      "Prepare": "Guided Forms · PowerForms",
       "Sign": "eSignature",
       "Integrate": "Salesforce",
       "Industry": "Finance · Insurance"
@@ -54,6 +54,7 @@
     "desc": "Stories that can be added on to any demo for indexing agreements and discovering insights",
     "logo": "static/seal-logo.png",
     "script": "https://docusigninc.app.box.com/file/521360165402",
+    "ppt": "https://docusigninc.app.box.com/file/519692396822",
     "video": "https://docusign.wistia.com/medias/6nv3hswn5e",
     "tag": {
       "Manage": "Seal Intelligent Insights"
@@ -66,7 +67,7 @@
     "link": "https://dsdemos.esigndemos.com/dsportals/finance/CommercialLoan.aspx",
     "script": "https://docusigninc.app.box.com/file/483029692471",
     "tag": {
-      "Prepare": "Intelledox Guided Forms · SpringCM Prepare",
+      "Prepare": "Guided Forms · SpringCM Prepare",
       "Sign": "eSignature",
       "Act": "SpringCM Workflow",
       "Manage": "Seal Intelligent Insights",
@@ -92,8 +93,8 @@
     "logo": "static/successfactors-logo.png",
     "link": "https://pmsalesdemo8.successfactors.com/login?company=SFPART037645",
     "script": "https://docusigninc.app.box.com/folder/7969158821",
-    "invision": "https://dsdemos.esigndemos.com/Successfactorsprototype/",
-    "video": "https://docusigninc.app.box.com/file/93691290285",
+    "invision": "https://dsdemos.esigndemos.com/Successfactorsprototype/index.html",
+    "video": "https://docusign.wistia.com/medias/morqih4pf8",
     "tag": {
       "Sign": "eSignature",
       "Integrate": "SAP SuccessFactors"
@@ -107,7 +108,7 @@
     "ppt": "https://tinyurl.com/yyckrce3",
     "video": "https://docusign.wistia.com/medias/fen1sx4cgj",
     "tag": {
-      "Prepare": "Intelledox Guided Forms",
+      "Prepare": "Guided Forms",
       "Sign": "Click · eSignature · Identify · Responsive",
       "Industry": "Insurance · Finance"
     }
@@ -146,7 +147,7 @@
     "logo": "static/sf_ix_spring-logo.png",
     "script": "https://docusigninc.app.box.com/file/483032986507",
     "tag": {
-      "Prepare": "Intelledox Guided Forms · SpringCM Prepare",
+      "Prepare": "Guided Forms · SpringCM Prepare",
       "Sign": "eSignature",
       "Act": "SpringCM Workflow",
       "Integrate": "Salesforce",
@@ -191,108 +192,6 @@
       "Act": "Payments · SpringCM Workflow",
       "Manage": "Seal Intelligent Insights",
       "Integrate": "Salesforce"
-    }
-  },
-  {
-    "name": "Allura Demo Portal",
-    "desc": "Insurance demo portal showcasing latest DocuSign features and functionality",
-    "logo": "static/allura-logo.png",
-    "link": "https://dsdemos.esigndemos.com/dsportals/insurance/index.html",
-    "script": "https://dsdemos.esigndemos.com/dsportals/help/Allura.pdf",
-    "video": "https://discover.docusign.com/docusign-solution-library/alluraclaims-nigo-demo-video-2",
-    "tag": {
-      "Prepare": "Intelledox Guided Forms · PowerForms",
-      "Sign": "eSignature",
-      "Integrate": "Salesforce",
-      "Industry": "Insurance"
-    }
-  },
-  {
-    "name": "Ciencia Demo Portal",
-    "desc": "Life Sciences demo portal showcasing latest DocuSign features and functionality",
-    "logo": "static/ciencia-logo.png",
-    "link": "https://dsdemos.esigndemos.com/dsportals/science/index.html",
-    "script": "https://dsdemos.esigndemos.com/dsportals/help/Ciencia.pdf",
-    "tag": {
-      "Prepare": "PowerForms",
-      "Sign": "eSignature",
-      "Industry": "CFR Part 11 · Life Sciences"
-    }
-  },
-  {
-    "name": "DSF Limited Demo Portal",
-    "desc": "Oil & Gas demo portal showcasing latest DocuSign features and functionality",
-    "logo": "static/dsf-logo.png",
-    "link": "https://dsdemos.esigndemos.com/DSFLimited/OilGas/index.aspx",
-    "script": "https://dsdemos.esigndemos.com/DSFLimited/OilGas/OilGasHelp.pdf",
-    "tag": {
-      "Prepare": "PowerForms",
-      "Sign": "eSignature",
-      "Industry": "Oil & Gas"
-    }
-  },
-  {
-    "name": "New York State Demo Portal",
-    "desc": "Public Sector demo portal showcasing latest DocuSign features and functionality",
-    "logo": "static/nystate-logo.png",
-    "link": "https://dsdemos.esigndemos.com/dsportals/publicsector/index.html",
-    "script": "https://dsdemos.esigndemos.com/dsportals/help/NewYorkState.pdf",
-    "tag": {
-      "Prepare": "PowerForms",
-      "Sign": "eSignature",
-      "Industry": "Public Sector"
-    }
-  },
-  {
-    "name": "Saluda Demo Portal",
-    "desc": "Healthcare demo portal showcasing latest DocuSign features and functionality",
-    "logo": "static/saluda-logo.png",
-    "link": "https://dsdemos.esigndemos.com/dsportals/health/index.html",
-    "script": "https://dsdemos.esigndemos.com/dsportals/help/Saluda.pdf",
-    "tag": {
-      "Prepare": "Intelledox Guided Forms · PowerForms",
-      "Sign": "eSignature",
-      "Industry": "Healthcare"
-    }
-  },
-  {
-    "name": "TGK Demo Portal",
-    "desc": "Finance demo portal showcasing latest DocuSign features and functionality",
-    "logo": "static/tgk-logo.png",
-    "link": "https://dsdemos.esigndemos.com/dsportals/finance/index.html",
-    "script": "https://dsdemos.esigndemos.com/dsportals/help/TGK.pdf",
-    "invision": "https://docusign.invisionapp.com/share/M3QTQ52ZF8P",
-    "video": "https://discover.docusign.com/docusign-solution-library/wire-transfer-business-overview-take",
-    "tag": {
-      "Prepare": "Intelledox Guided Forms · PowerForms",
-      "Sign": "Click · eSignature · eWitness · Responsive Signing",
-      "Act": "Payments",
-      "Manage": "Workspaces",
-      "Integrate": "Box",
-      "Industry": "Finance"
-    }
-  },
-  {
-    "name": "U College Demo Portal",
-    "desc": "Education demo portal showcasing latest DocuSign features and functionality",
-    "logo": "static/ucollege-logo.png",
-    "link": "https://dsdemos.esigndemos.com/UCollege%20Portal/publicsector/index.aspx",
-    "tag": {
-      "Prepare": "Intelledox Guided Forms · PowerForms",
-      "Sign": "eSignature",
-      "Industry": "Education"
-    }
-  },
-  {
-    "name": "WorldWide Co Demo Portal",
-    "desc": "Telecom demo portal showcasing latest DocuSign features and functionality",
-    "logo": "static/telecom-logo.png",
-    "link": "https://dsdemos.esigndemos.com/dsportals/telecom/index.aspx",
-    "script": "https://dsdemos.esigndemos.com/dsportals/help/WorldWideCo.pdf",
-    "tag": {
-      "Prepare": "PowerForms",
-      "Sign": "eSignature",
-      "Industry": "Telecom"
     }
   },
   {
@@ -415,5 +314,107 @@
       "Sign": "eSignature",
       "Integrate": "SAP Hybris"
     }
-  }
+  },
+    {
+      "name": "Allura Demo Portal",
+      "desc": "Insurance demo portal showcasing latest DocuSign features and functionality",
+      "logo": "static/allura-logo.png",
+      "link": "https://dsdemos.esigndemos.com/dsportals/insurance/index.html",
+      "script": "https://dsdemos.esigndemos.com/dsportals/help/Allura.pdf",
+      "video": "https://discover.docusign.com/docusign-solution-library/alluraclaims-nigo-demo-video-2",
+      "tag": {
+        "Prepare": "Guided Forms · PowerForms",
+        "Sign": "eSignature",
+        "Integrate": "Salesforce",
+        "Industry": "Insurance"
+      }
+    },
+    {
+      "name": "Ciencia Demo Portal",
+      "desc": "Life Sciences demo portal showcasing latest DocuSign features and functionality",
+      "logo": "static/ciencia-logo.png",
+      "link": "https://dsdemos.esigndemos.com/dsportals/science/index.html",
+      "script": "https://dsdemos.esigndemos.com/dsportals/help/Ciencia.pdf",
+      "tag": {
+        "Prepare": "PowerForms",
+        "Sign": "eSignature",
+        "Industry": "CFR Part 11 · Life Sciences"
+      }
+    },
+    {
+      "name": "DSF Limited Demo Portal",
+      "desc": "Oil & Gas demo portal showcasing latest DocuSign features and functionality",
+      "logo": "static/dsf-logo.png",
+      "link": "https://dsdemos.esigndemos.com/DSFLimited/OilGas/index.aspx",
+      "script": "https://dsdemos.esigndemos.com/DSFLimited/OilGas/OilGasHelp.pdf",
+      "tag": {
+        "Prepare": "PowerForms",
+        "Sign": "eSignature",
+        "Industry": "Oil & Gas"
+      }
+    },
+    {
+      "name": "New York State Demo Portal",
+      "desc": "Public Sector demo portal showcasing latest DocuSign features and functionality",
+      "logo": "static/nystate-logo.png",
+      "link": "https://dsdemos.esigndemos.com/dsportals/publicsector/index.html",
+      "script": "https://dsdemos.esigndemos.com/dsportals/help/NewYorkState.pdf",
+      "tag": {
+        "Prepare": "PowerForms",
+        "Sign": "eSignature",
+        "Industry": "Public Sector"
+      }
+    },
+    {
+      "name": "Saluda Demo Portal",
+      "desc": "Healthcare demo portal showcasing latest DocuSign features and functionality",
+      "logo": "static/saluda-logo.png",
+      "link": "https://dsdemos.esigndemos.com/dsportals/health/index.html",
+      "script": "https://dsdemos.esigndemos.com/dsportals/help/Saluda.pdf",
+      "tag": {
+        "Prepare": "Guided Forms · PowerForms",
+        "Sign": "eSignature",
+        "Industry": "Healthcare"
+      }
+    },
+    {
+      "name": "TGK Demo Portal",
+      "desc": "Finance demo portal showcasing latest DocuSign features and functionality",
+      "logo": "static/tgk-logo.png",
+      "link": "https://dsdemos.esigndemos.com/dsportals/finance/index.html",
+      "script": "https://dsdemos.esigndemos.com/dsportals/help/TGK.pdf",
+      "invision": "https://docusign.invisionapp.com/share/M3QTQ52ZF8P",
+      "video": "https://discover.docusign.com/docusign-solution-library/wire-transfer-business-overview-take",
+      "tag": {
+        "Prepare": "Clause · Guided Forms · PowerForms",
+        "Sign": "Click · eSignature · eWitness · Responsive Signing",
+        "Act": "Payments",
+        "Manage": "Workspaces",
+        "Integrate": "Box",
+        "Industry": "Finance"
+      }
+    },
+    {
+      "name": "U College Demo Portal",
+      "desc": "Education demo portal showcasing latest DocuSign features and functionality",
+      "logo": "static/ucollege-logo.png",
+      "link": "https://dsdemos.esigndemos.com/UCollege/edu",
+      "tag": {
+        "Prepare": "Guided Forms · PowerForms",
+        "Sign": "eSignature",
+        "Industry": "Education"
+      }
+    },
+    {
+      "name": "WorldWide Co Demo Portal",
+      "desc": "Telecom demo portal showcasing latest DocuSign features and functionality",
+      "logo": "static/telecom-logo.png",
+      "link": "https://dsdemos.esigndemos.com/dsportals/telecom/index.aspx",
+      "script": "https://dsdemos.esigndemos.com/dsportals/help/WorldWideCo.pdf",
+      "tag": {
+        "Prepare": "PowerForms",
+        "Sign": "eSignature",
+        "Industry": "Telecom"
+      }
+    }
 ]

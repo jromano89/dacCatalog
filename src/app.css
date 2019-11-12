@@ -43,7 +43,9 @@ body {
 
 .badge {
   color: #323232;
-  border-radius: 0.1rem;
+  border-radius: 0.2rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
 }
 
 .label-button {
