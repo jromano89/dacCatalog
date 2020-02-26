@@ -36,7 +36,7 @@
     <!-- footer -->
     <div class="footer">
       <div class="text-center mt-1">
-        <small>©2019 Solution Architecture</small>
+        <small>©2020 Solution Architecture</small>
       </div>
     </div>
   </div>
@@ -86,7 +86,7 @@ export default {
         this.$router.push({ path: "/", query: { search: this.search } });
         filteredDataBySearch = this.filteredData.filter(obj => {
           let tileString =
-            Object.values(obj.tag).toString() + obj.desc + obj.name;
+            Object.values(obj.tag).toString() + obj.name;
           tileString = tileString.toLowerCase();
           return tileString.indexOf(this.search.toLowerCase()) >= 0;
         });

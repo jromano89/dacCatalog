@@ -1,5 +1,5 @@
 <template>
-  <div class="card p-2 m-2" style="min-width: 18rem;">
+  <div class="card p-2 m-2" style="min-width: 19rem; max-width: 25rem;">
     <div class="text-center">
       <img v-if="item.dac == true" class="float-left" src="static/placeholder.png" width="25">
       <img :src="item.logo" width="100">
@@ -17,17 +17,14 @@
           <a :href="item.invision" v-if="item.invision != null" target="_blank">
             <img class="mx-2" src="static/invision-icon.png" width="30">
           </a>
-          <a :href="item.ppt" v-if="item.ppt != null" target="_blank">
-            <img class="mx-2" src="static/ppt-icon.png" width="30">
-          </a>
           <a :href="item.video" v-if="item.video != null" target="_blank">
             <img class="mx-2" src="static/video-icon.png" width="30">
           </a>
-          <a :href="item.smb" v-if="item.smb != null" target="_blank">
-            <img class="mx-2" src="static/smb-icon.png" width="30">
+          <a :href="item.ppt" v-if="item.ppt != null" target="_blank">
+            <img class="mx-2" src="static/ppt-icon.png" width="30">
           </a>
-          <a :href="item.ent" v-if="item.ent != null" target="_blank">
-            <img class="mx-2" src="static/ent-icon.png" width="30">
+          <a :href="item.sf" v-if="item.sf != null" target="_blank">
+            <img class="mx-2" src="static/sf-icon.png" width="30">
           </a>
         </div>
       </div>
