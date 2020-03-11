@@ -1,9 +1,9 @@
 <template>
-  <div class="card p-2 m-2" style="min-width: 19rem; max-width: 22rem;">
+  <div class="card p-2 m-2" style="min-width: 20rem; max-width: 22rem;">
     <div class="text-center">
       <img v-if="item.dac == true" class="float-left" src="static/placeholder.png" width="25">
       <img :src="item.logo" width="100">
-      <div class="card-body">
+      <div class="card-body px-1">
         <h5 class="card-title"><span v-html="item.name"></span></h5>
         <small class="card-text">{{ item.desc}}</small>
         <div class="mt-3">
@@ -25,6 +25,9 @@
           </a>
           <a :href="item.sf" v-if="item.sf != null" target="_blank">
             <img class="mx-2" src="static/sf-icon.png" width="30">
+          </a>
+          <a :href="item.pckg" v-if="item.pckg != null" target="_blank">
+            <img class="mx-2" src="static/box-icon.png" width="30">
           </a>
         </div>
       </div>
