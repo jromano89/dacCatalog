@@ -1,5 +1,15 @@
 [
   {
+    "name": "Pocket Demos",
+    "desc": "Bite-sized demos, optimized for mobile, to show DocuSign features on the go",
+    "logo": "static/pocket-logo.png",
+    "link": "https://dsdemos.esigndemos.com/docusignproductdemos",
+    "tag": {
+      "Sign": "Click · eSignature · Identify · Responsive",
+      "Act": "Payments"
+    }
+  },
+  {
     "name": "DocuSign Click",
     "desc": "Clickwrap demo running on Prod for snappier performance",
     "logo": "static/click-logo.png",
@@ -14,7 +24,7 @@
   },
   {
     "name": "Rooms for Mortgage",
-    "desc": "Lender closing scenario showing collaboration between lender, settlement agent, and borrower",
+    "desc": "Lender closing scenario showing how to improve the borrowing experience",
     "logo": "static/mortgage-logo.png",
     "script": "https://docusigninc.app.box.com/file/493051867239",
     "invision": "https://docusign.invisionapp.com/share/Z5TTBXNYSJ7",
@@ -42,7 +52,7 @@
     "name": "DocuSign eSignature for Salesforce",
     "desc": "Demo kit with common DocuSign for Salesforce use cases",
     "logo": "static/salesforce-logo.png",
-    "script": "https://www.demokit.io/docusign",
+    "link": "https://www.demokit.io/docusign",
     "ppt": "https://docs.google.com/presentation/d/1hTmOtSbZ8VfPyqRL0FB3UBjwg0w9zeCZPOWAv2dfShg/edit?usp=sharing",
     "video": "https://vimeo.com/370159968/c7dce6701b",
     "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F9400000004QmFCAU/view",
@@ -111,7 +121,7 @@
     }
   },
   {
-    "name": "Guided Forms powered by Intelledox",
+    "name": "Guided Forms <small>powered by Intelledox</small>",
     "desc": "Polished prototypes incorporating Click, Responsive, and Identify",
     "logo": "static/ix-logo.png",
     "link": "https://www.dsguidedforms.com",
@@ -120,8 +130,7 @@
     "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XbAQCA0/view",
     "tag": {
       "Prepare": "Guided Forms",
-      "Sign": "Click · eSignature · Identify · Responsive",
-      "Industry": "Insurance · Finance"
+      "Sign": "Click · eSignature · Identify · Responsive"
     }
   },
   {
@@ -158,6 +167,17 @@
     "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000LNavSAG/view",
     "tag": {
       "Sign": "eSignature · Responsive"
+    }
+  },
+  {
+    "name": "PowerForms",
+    "desc": "GennWatt demo with direct and embedded PowerForms",
+    "logo": "static/powerform-logo.png",
+    "link": "https://dsdemos.esigndemos.com/GennWatt/embedded.html",
+    "video": "https://support.docusign.com/en/videos/Powerforms-DocuSign-Solution-Engineering",
+    "tag": {
+      "Prepare": "PowerForms",
+      "Sign": "eSignature"
     }
   },
   {
@@ -214,7 +234,7 @@
     }
   },
   {
-    "name": "DocuSign eNote powered by eOriginal",
+    "name": "DocuSign eNote <small>powered by eOriginal</small>",
     "desc": "Use asset vaulting to store authoritative copies of transferable instruments",
     "logo": "static/eoriginal-logo.png",
     "script": "https://docusigninc.app.box.com/file/38032443842",
@@ -260,6 +280,7 @@
     "desc": "Sending and Signing from a sales opportunity",
     "logo": "static/netsuite-logo.png",
     "script": "https://docusigninc.app.box.com/file/19785607703",
+    "invision": "https://dsdemos.esigndemos.com/NetsuitePrototype/",
     "video": "https://discover.docusign.com/docusign-solution-library/docusign-for-netsuite-quick-overview",
     "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XlG4CAK/view",
     "tag": {
@@ -269,14 +290,29 @@
   },
   {
     "name": "ServiceNow",
-    "desc": "Onboarding scenario with ServiceNow HR Service Delivery integration",
+    "desc": "Integrations with ServiceNow HR Onboarding and Service Portal",
     "logo": "static/servicenow-logo.png",
-    "invision": "https://docusign.lightning.force.com/lightning/r/ContentDocument/0691W00000ERVbuQAH/view",
+    "invision": "https://dsdemos.esigndemos.com/servicenowprototype/",
+    "ppt": "https://docusign.lightning.force.com/lightning/r/ContentDocument/0691W00000ERVbuQAH/view",
     "video": "https://docusign.wistia.com/medias/7qlrcl3koa",
     "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000bzTRCAY/view",
     "tag": {
       "Sign": "eSignature",
       "Integrate": "ServiceNow"
+    }
+  },
+  {
+    "name": "Oracle PeopleSoft",
+    "desc": "DocuSign integration with PeopleSoft Supplier Contract Management",
+    "logo": "static/peoplesoft-logo.png",
+    "script": "https://docusign.lightning.force.com/lightning/r/ContentDocument/0691W0000071JRdQAM/view",
+    "invision": "https://dsdemos.esigndemos.com/PeoplesoftPrototype/",
+    "video": "https://docusign.wistia.com/medias/7xcsatxbur",
+    "ppt": "https://docusigninc.app.box.com/file/97746567366",
+    "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XlG4CAK/view",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "PeopleSoft"
     }
   },
   {
@@ -302,6 +338,19 @@
     "tag": {
       "Sign": "eSignature",
       "Integrate": "Google"
+    }
+  },
+  {
+    "name": "Hyland OnBase",
+    "desc": "Automatically package OnBase documents for eSignature",
+    "logo": "static/onbase-logo.png",
+    "script": "https://docusigninc.app.box.com/file/581472526208",
+    "invision": "https://dsdemos.esigndemos.com/onbasePrototype/",
+    "video": "https://docusign.wistia.com/medias/23cptsw8wh",
+    "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000bzXOCAY/view",
+    "tag": {
+      "Sign": "eSignature",
+      "Integrate": "Hyland OnBase"
     }
   },
   {
@@ -342,7 +391,7 @@
     }
   },
   {
-    "name": "SpringCM Classic",
+    "name": "SpringCM",
     "desc": "Demo Assets for CLM.CM with classic SpringCM branding",
     "logo": "static/spring-logo.png",
     "script": "https://docusigninc.app.box.com/file/317327259125",
@@ -355,15 +404,6 @@
       "Act": "SpringCM Workflow",
       "Manage": "SpringCM Repository",
       "Integrate": "Salesforce"
-    }
-  },
-  {
-    "name": "Pocket Demos",
-    "desc": "Bite-sized demos, optimized for mobile, to show DocuSign features on the go",
-    "logo": "static/pocket-logo.png",
-    "link": "https://dsdemos.esigndemos.com/docusignproductdemos",
-    "tag": {
-      "Sign": "Click · eSignature · Identify · Responsive"
     }
   },
     {

@@ -29,7 +29,7 @@
         </div>
       </div>
       <!-- iterate data into item-cards -->
-      <div class="card-deck px-3 py-2">
+      <div class="card-deck justify-content-center px-3 py-2">
         <item-card v-for="(item, index) in filteredData" :key="index" :item="item"></item-card>
       </div>
     </div>

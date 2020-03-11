@@ -1,10 +1,10 @@
 <template>
-  <div class="card p-2 m-2" style="min-width: 19rem; max-width: 25rem;">
+  <div class="card p-2 m-2" style="min-width: 19rem; max-width: 22rem;">
     <div class="text-center">
       <img v-if="item.dac == true" class="float-left" src="static/placeholder.png" width="25">
       <img :src="item.logo" width="100">
       <div class="card-body">
-        <h5 class="card-title">{{ item.name}}</h5>
+        <h5 class="card-title"><span v-html="item.name"></span></h5>
         <small class="card-text">{{ item.desc}}</small>
         <div class="mt-3">
 
