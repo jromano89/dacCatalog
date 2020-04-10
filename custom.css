@@ -1,0 +1,89 @@
+#app {
+    background-color: #f5f5f5;
+  }
+  
+  html {
+    position: relative;
+    min-height: 100%;
+    background-color: #f5f5f5;
+  }
+  
+  .navbar {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
+  
+  .card {
+    min-width: 20.2rem; 
+    max-width: 20.2rem;
+  }
+  
+  .container-fluid {
+    padding: 0 !important;
+  }
+  
+  body {
+    /* Margin bottom must match footer height */
+    margin-bottom: 2rem;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    background-color: #646464;
+    color: #f5f5f5;
+  }
+  
+  .ds-logo {
+    padding-right: 0.9rem;
+    border-right: 1px solid #ffffff;
+  }
+  
+  .ds-logo-text {
+    padding-left: 0.9rem;
+    font-size: 1rem;
+  }
+  
+  .badge {
+    color: #323232;
+    border-radius: 0.2rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+  
+  .label-button {
+    border-radius: 0.3rem;
+    margin-bottom: 0.3rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  }
+  
+  .blue {
+    background-color: #1b49a0;
+  }
+  
+  .Prepare {
+    background-color: #27ee36;
+  }
+  
+  .Sign {
+    background-color: #d6fb00;
+  }
+  
+  .Act {
+    background-color: #0bbff6;
+  }
+  
+  .Manage {
+    background-color: #ff13f4;
+  }
+  
+  .Integrate {
+    background-color: #c8c8c8;
+  }
+  
+  .Industry {
+    background-color: #ff7d00;
+  }
+  

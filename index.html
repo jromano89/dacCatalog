@@ -2,41 +2,78 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>DocuSign Agreement Cloud Catalog</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
-    integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous" />
-  <link rel="shortcut icon" type="image/png" href="static/favicon.png" />
+    <title>DAC Catalog</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/http-vue-loader@1.4.2/src/httpVueLoader.min.js"></script>
+    <script src="main.js" type="module"></script>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140351915-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "UA-140351915-1");
-  </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140351915-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-140351915-1");
+    </script>
 
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-    w[l] = w[l] || []; w[l].push({
-      'gtm.start':
-        new Date().getTime(), event: 'gtm.js'
-    }); var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-5B7H4GP');</script>
-
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5B7H4GP');</script>
 </head>
 
 <body>
-  <div id="app"></div>
-  <!-- built files will be auto injected -->
+    <div id="app">
+        <!-- navbar -->
+        <nav class="navbar navbar-dark blue">
+            <div class="navbar-brand d-flex flex-row" href="#">
+                <img class="ds-logo" src="img/docusign-logo.png" height="26px" />
+                <div class="ds-logo-text">Agreement Cloud Catalog</div>
+            </div>
+            <div class="float-right d-none d-md-block">
+                <small><a class="text-light mx-3" href="https://forms.gle/buoDXaiNngtv2Uao8" target="_blank">Feedback</a></small>
+                <img class="float-right" src="img/dac-icon.png" height="26px" />
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="px-2" style="background-image: url(img/bg-search.svg)">
+                <div class="px-3 pt-3 pb-4">
+                    <!-- searchbar -->
+                    <form v-on:submit="getfilteredData">
+                        <div class="form-row">
+                            <div class="col-lg">
+                                <input type="text" class="form-control" placeholder="Search Demo Content"
+                                    v-model="search" v-on:keyup="getfilteredData" @keydown.enter.prevent />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- iterate data into item-cards -->
+            <div class="card-deck justify-content-center px-3 py-2">
+                <item-card v-for="(item, index) in filteredData" :key="index" :item="item"></item-card>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="text-center mt-1">
+                <small>&copy;2020 Solution Architecture</small>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
