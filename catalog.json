@@ -1,4 +1,41 @@
-[
+[  
+  {
+    "name": "Agreement Cloud Vision Story",
+    "desc": "End-to-end assets for the full DocuSign Agreement Cloud vision",
+    "logo": "img/cloud-logo.png",
+    "script": "https://docs.google.com/document/d/1dvaun88syhNVEufAJPlGVoy_5QfXcFdJrBcuetzec5I/edit?usp=sharing",
+    "video": "https://docusign.highspot.com/items/5ed84d0fa4dfa013066ffe0e?lfrm=shp.0",
+    "tag": {
+      "Prepare": "CLM Prepare",
+      "Sign": "eSignature",
+      "Act": "CLM Workflow",
+      "Manage": "Seal Intelligent Insights"
+    }
+  },  
+  {
+    "name": "DocuSign Analyzer",
+    "desc": "AI Analysis and Workflow Automation within DocuSign CLM",
+    "logo": "img/analyzer-logo.png",
+    "video": "https://drive.google.com/file/d/1qTEGQYLz8cOT23gQHkYFRrmXIxCY8hm9/view?usp=sharing",
+    "ace": "https://docusign.highspot.com/items/5e6baa0f66bbaa120b18ebbd?lfrm=srp.0",
+    "tag": {
+      "Act": "CLM Workflow · Analyzer",
+      "Manage": "Seal Intelligent Insights"
+    }
+   },
+   {
+    "name": "PPP Loan Forgiveness",
+    "desc": "Automating the process of loan forgiveness forms for the SBA Paycheck Protection Program",
+    "logo": "img/ppp-logo.png",
+	"link": "https://nademo-sciq.na20-sb.smartcommunications.cloud/Produce/wizard/7bee260b-2ad1-4459-8e53-97e7b1b59aab",
+    "video": "https://smart-communications.wistia.com/medias/klcnxm82o4",
+    "ace": "https://docusign.highspot.com/items/5e90973e030dc84d13d5216a?lfrm=srp.0",
+    "tag": {
+	  "Prepare": "Guided Forms",
+	  "Sign": "eSignature",
+      "Industry": "Finance · SBA"
+    }
+  },
   {
     "name": "Pocket Demos",
     "desc": "Bite-sized demos, optimized for mobile, to show DocuSign features on the go",
@@ -20,6 +57,17 @@
     "tag": {
       "Sign": "eSignature",
       "Integrate": "Salesforce"
+    }
+  },
+  {
+    "name": "DocuSign for Salesforce CPQ",
+    "desc": "Demo assets for our integration with Salesforce CPQ",
+    "logo": "img/cpq-logo.png",
+    "script": "https://docs.google.com/document/d/19vY1kyBm2yLkskTIjM7EF2cidtu2JFXak2LekIN5r_Q/edit",
+    "tag": {
+      "Prepare": "DocuSign Gen",
+      "Sign": "eSignature",
+      "Integrate": "Salesforce · CPQ"
     }
   },
   {
@@ -316,7 +364,7 @@
     "name": "Workday",
     "desc": "DocuSign integration for offer letter, onboarding, mass distribute, and title change workflows",
     "logo": "img/workday-logo.png",
-    "script": "https://docusigninc.app.box.com/file/266507470134",
+    "script": "https://docusigninc.app.box.com/file/370637466034",
     "invision": "https://dsdemos.esigndemos.com/workdayTitleChange",
     "ppt": "https://docusign.lightning.force.com/lightning/r/ContentDocument/0691W000009clUNQAY/view",
     "video": "https://vimeo.com/385007568",
@@ -371,7 +419,7 @@
     "name": "Microsoft Sharepoint",
     "desc": "Embedded signing within Office 365 SharePoint and Outlook cloud apps",
     "logo": "img/sharepoint-logo.png",
-    "script": "https://docusigninc.app.box.com/file/19785711005",
+    "script": "https://docusigninc.app.box.com/file/139434380814",
     "invision": "https://dsdemos.esigndemos.com/SharepointPrototype/01.html",
     "video": "https://www.docusign.com/product-videos/improve-the-hiring-experience-with-docusign-sharepoint-online",
     "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F9400000004LJ9CAM/view",
@@ -554,6 +602,7 @@
     "logo": "img/api-logo.png",
     "link": "https://innov8ive.app/hmd/index.aspx",
     "folder": "https://docusigninc.app.box.com/folder/57151127727",
+	"video": "https://docusigninc.app.box.com/s/nt6999efl25ipu0fgzquoysml0nge3dv",
     "tag": {
       "Sign": "eSignature",
       "Integrate": "Custom API · JotForm"
@@ -623,6 +672,20 @@
     }
   },
   {
+    "name": "Public Sector Demo Portal",
+    "desc": "Generic Public Sector demo portal showcasing latest DocuSign features and functionality",
+    "logo": "img/pubsec-logo.png",
+    "link": "https://dsdemos.esigndemos.com/dsportals/publicsector2",
+    "script": "https://dsdemos.esigndemos.com/dsportals/help/PubSec_Help.pdf",
+    "ace": "https://docusign.highspot.com/items/5e2f4a94c2479155e1356f78?lfrm=srp.18",
+    "tag": {
+      "Prepare": "Guided Forms · PowerForms",
+      "Sign": "eSignature · PIV",
+      "Act": "Payments",
+      "Industry": "Public Sector"
+    }
+  },
+  {
     "name": "Saluda Demo Portal",
     "desc": "Healthcare demo portal showcasing latest DocuSign features and functionality",
     "logo": "img/saluda-logo.png",
@@ -640,8 +703,8 @@
     "name": "TGK Demo Portal",
     "desc": "Finance demo portal showcasing latest DocuSign features and functionality",
     "logo": "img/tgk-logo.png",
-    "link": "https://dsdemos.esigndemos.com/dsportals/finance/index.html",
-    "script": "https://dsdemos.esigndemos.com/dsportals/help/TGK.pdf",
+    "link": "https://dsdemos.esigndemos.com/dsportals/finance2",
+    "script": "https://dsdemos.esigndemos.com/dsportals/help/TGK_Help.pdf",
     "invision": "https://docusign.invisionapp.com/share/M3QTQ52ZF8P",
     "video": "https://docusign.wistia.com/medias/lv2j6m1uj7",
     "ace": "https://docusign.highspot.com/items/5e2f3b8d628ba204cb14a29a?lfrm=srp.4",
@@ -650,18 +713,6 @@
       "Sign": "Click · eSignature · eWitness · Responsive",
       "Act": "Payments",
       "Industry": "Finance"
-    }
-  },
-  {
-    "name": "U College Demo Portal",
-    "desc": "Education demo portal showcasing latest DocuSign features and functionality",
-    "logo": "img/ucollege-logo.png",
-    "link": "https://dsdemos.esigndemos.com/UCollege/edu",
-    "ace": "https://docusign.highspot.com/items/5e2f4ad5c7143360c1097dcc?lfrm=srp.14",
-    "tag": {
-      "Prepare": "Guided Forms · PowerForms",
-      "Sign": "eSignature",
-      "Industry": "Education"
     }
   },
   {
@@ -674,6 +725,18 @@
     "tag": {
       "Sign": "eSignature",
       "Industry": "Construction"
+    }
+  },
+  {
+    "name": "U College Demo Portal",
+    "desc": "Education demo portal showcasing latest DocuSign features and functionality",
+    "logo": "img/ucollege-logo.png",
+    "link": "https://dsdemos.esigndemos.com/UCollege/edu",
+    "ace": "https://docusign.highspot.com/items/5e2f4ad5c7143360c1097dcc?lfrm=srp.14",
+    "tag": {
+      "Prepare": "Guided Forms · PowerForms",
+      "Sign": "eSignature",
+      "Industry": "Education"
     }
   },
   {
