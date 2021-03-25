@@ -1,45 +1,35 @@
 <template>
-  <div class="card p-2 mx-auto m-sm-2">
+  <div class="card border-0 p-2 mx-auto m-sm-2">
     <div class="text-center">
-      <img :src="item.logo" width="100" />
-      <div class="card-body px-0">
-        <h5 class="card-title"><span v-html="item.name"></span></h5>
-        <small class="card-text">{{ item.desc }}</small>
-        <div class="mt-3">
-          <a :href="item.link" v-if="item.link != null" target="_blank">
-            <img class="mx-2" src="img/link-icon.png" width="30" />
-          </a>
-          <a :href="item.script" v-if="item.script != null" target="_blank">
-            <img class="mx-2" src="img/script-icon.png" width="30" />
-          </a>
-          <a :href="item.invision" v-if="item.invision != null" target="_blank">
-            <img class="mx-2" src="img/invision-icon.png" width="30" />
-          </a>
-          <img v-if="item.videos" :id="`${item.desc}`" class="mx-2" src="img/video-icon.png" width="30"/>
-          <b-popover v-if="item.videos" :target="`${item.desc}`" title="Videos" html="true" triggers="hover">
-            <a v-for="video in item.videos" :key="video.title" :href="video.url" target="_blank">&#8226; {{video.title}}<br /></a>
+      <img :src="item.logo" height="50px" />
+      <div class="card-body p-0">
+        <h5 class="card-title text-dark my-2"><span v-html="item.name"></span></h5>
+        <div class="mx-2">
+          
+          <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1" icon="link-45deg" v-if="item.demos" :id="`demos-${item.name}`" ></b-icon>
+          <b-popover v-if="item.demos" :target="`demos-${item.name}`" title="Demos" html="true" triggers="hover" placement="bottomright">
+            <a v-for="resource in item.demos" :key="resource.title" :href="resource.url" target="_blank">&#8226; {{resource.title}}<br /></a>
           </b-popover>
-          <a :href="item.pdf" v-if="item.pdf != null" target="_blank">
-            <img class="mx-2" src="img/pdf-icon.png" width="30" />
+
+          <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1" icon="file-earmark-text-fill" v-if="item.docs" :id="`docs-${item.name}`" ></b-icon>
+          <b-popover v-if="item.docs" :target="`docs-${item.name}`" title="Documentation" html="true" triggers="hover" placement="bottomright">
+            <a v-for="resource in item.docs" :key="resource.title" :href="resource.url" target="_blank">&#8226; {{resource.title}}<br /></a>
+          </b-popover>
+          
+          <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1" icon="play-circle-fill" v-if="item.videos" :id="`videos-${item.name}`" ></b-icon>
+          <b-popover v-if="item.videos" :target="`videos-${item.name}`" title="Videos" html="true" triggers="hover" placement="bottomright">
+            <a v-for="resource in item.videos" :key="resource.title" :href="resource.url" target="_blank">&#8226; {{resource.title}}<br /></a>
+          </b-popover>
+
+          <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1" icon="info-circle-fill" v-if="item.resources" :id="`resources-${item.name}`" ></b-icon>
+          <b-popover v-if="item.resources" :target="`resources-${item.name}`" title="Resources" html="true" triggers="hover" placement="bottomright">
+            <a v-for="resource in item.resources" :key="resource.title" :href="resource.url" target="_blank">&#8226; {{resource.title}}<br /></a>
+          </b-popover>
+
+          <a :href="item.git" v-if="item.git != null" target="_blank">
+            <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1" icon="github"></b-icon>
           </a>
-          <a :href="item.ppt" v-if="item.ppt != null" target="_blank">
-            <img class="mx-2" src="img/ppt-icon.png" width="30" />
-          </a>
-          <a :href="item.builder" v-if="item.builder != null" target="_blank">
-            <img class="mx-2" src="img/builder-icon.png" width="30" />
-          </a>
-          <a :href="item.sf" v-if="item.sf != null" target="_blank">
-            <img class="mx-2" src="img/sf-icon.png" width="30" />
-          </a>
-          <a :href="item.ace" v-if="item.ace != null" target="_blank">
-            <img class="mx-2" src="img/ace-icon.png" width="30" />
-          </a>
-          <a :href="item.pkg" v-if="item.pkg != null" target="_blank">
-            <img class="mx-2" src="img/pkg-icon.png" width="30" />
-          </a>
-          <a :href="item.folder" v-if="item.folder != null" target="_blank">
-            <img class="mx-2" src="img/folder-icon.png" width="30" />
-          </a>
+          
         </div>
       </div>
       <div class="mb-0">

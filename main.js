@@ -1,6 +1,6 @@
 // initialize Vue application
 var fullData;
-var app = new Vue({
+const app = new Vue({
     el: "#app",
     // load item-card component
     components: {
@@ -46,7 +46,7 @@ var app = new Vue({
                 this.setQueryStringParameter('search', this.search);
                 filteredDataBySearch = this.filteredData.filter((obj) => {
                     let tileString =
-                        Object.values(obj.tag).toString() + obj.name;
+                        Object.values(obj.tag).toString() + obj.name + obj.search;
                     tileString = tileString.toLowerCase();
                     return tileString.indexOf(this.search.toLowerCase()) >= 0;
                 });
@@ -54,27 +54,13 @@ var app = new Vue({
             } else {
                 window.history.replaceState({}, "", window.location.pathname);
             }
-        },
-        // unused sort method
-        sortData() {
-            this.filteredData = this.filteredData.sort((a, b) => {
-                const nameA = a.name.toUpperCase();
-                const nameB = b.name.toUpperCase();
-                if (nameA < nameB) {
-                    return -1;
-                }
-                if (nameA > nameB) {
-                    return 1;
-                }
-                return 0;
-            });
-        },
+        }
     },
 
     mounted() {
         // get search param from url
-        const urlParams = new URLSearchParams(window.location.search);
-        const searchParam = urlParams.get('search');
+        var urlParams = new URLSearchParams(window.location.search);
+        var searchParam = urlParams.get('search');
         if (searchParam) {
             this.search = searchParam;
         } else {
@@ -88,10 +74,10 @@ var app = new Vue({
                 // invoke search method since components are bound to filtered data set
                 this.getfilteredData();
             });
-        
+
         // function for updating url param
         this.setQueryStringParameter = function (name, value) {
-            const params = new URLSearchParams(window.location.search);
+            var params = new URLSearchParams(window.location.search);
             params.set(name, value);
             window.history.replaceState({}, "", decodeURIComponent(`${window.location.pathname}?${params}`));
         }
