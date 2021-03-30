@@ -1,86 +1,56 @@
-// initialize Vue application
-var fullData;
 const app = new Vue({
-    el: "#app",
-    // load item-card component
-    components: {
-        'item-card': window.httpVueLoader('./ItemCard.vue')
-    },
-
-    // create global variables
+    el: "#vue-app",
     data() {
         return {
+            catalogData: [],
             filteredData: [],
             search: '',
             labels: [
-                {
-                    value: 'Prepare',
-                },
-                {
-                    value: 'Sign',
-                },
-                {
-                    value: 'Act',
-                },
-                {
-                    value: 'Manage',
-                },
-                {
-                    value: 'Integrate',
-                },
-                {
-                    value: 'Industry',
-                },
+                { value: 'Prepare' },
+                { value: 'Sign' },
+                { value: 'Act' },
+                { value: 'Manage' },
+                { value: 'Integrate' },
+                { value: 'Industry' },
             ],
         };
     },
     methods: {
-        // search method 
-        getfilteredData() {
-            // reset to full data set
-            this.filteredData = fullData;
-            let filteredDataBySearch = [];
-
-            //  filter according to keyword
+        searchCatalog() {
             if (this.search !== '') {
                 this.setQueryStringParameter('search', this.search);
-                filteredDataBySearch = this.filteredData.filter((obj) => {
-                    let tileString =
-                        Object.values(obj.tag).toString() + obj.name + obj.search;
-                    tileString = tileString.toLowerCase();
-                    return tileString.indexOf(this.search.toLowerCase()) >= 0;
+                this.filteredData = this.catalogData.filter((obj) => {
+                    let searchString = Object.values(obj.tag).toString() + obj.name + obj.search;
+                    searchString = searchString.toLowerCase();
+                    return searchString.indexOf(this.search.toLowerCase()) >= 0;
                 });
-                this.filteredData = filteredDataBySearch;
             } else {
+                this.filteredData = this.catalogData;
                 window.history.replaceState({}, "", window.location.pathname);
             }
-        }
-    },
-
-    mounted() {
-        // get search param from url
-        var urlParams = new URLSearchParams(window.location.search);
-        var searchParam = urlParams.get('search');
-        if (searchParam) {
-            this.search = searchParam;
-        } else {
-            this.search = '';
-        }
-        // import data from json
-        fetch('./catalog.json')
-            .then(response => response.json())
-            .then(obj => {
-                fullData = obj;
-                // invoke search method since components are bound to filtered data set
-                this.getfilteredData();
-            });
-
-        // function for updating url param
-        this.setQueryStringParameter = function (name, value) {
+        },
+        setQueryStringParameter(name, value) {
             var params = new URLSearchParams(window.location.search);
             params.set(name, value);
             window.history.replaceState({}, "", decodeURIComponent(`${window.location.pathname}?${params}`));
+        },
+        initSearch() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var searchParam = urlParams.get('search');
+            if (searchParam) {
+                this.search = searchParam;
+            } else {
+                this.search = '';
+            }
         }
-
     },
+    mounted() {
+        fetch('./catalog.json')
+            .then(res => res.json())
+            .then(data => {
+                this.catalogData = data;
+                this.initSearch();
+                this.searchCatalog();
+            });
+    }
 });

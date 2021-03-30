@@ -668,7 +668,7 @@
         "logo": "img/mortgage-logo.png",
         "demos": [
             {
-                "title": "Rooms for Mortgage Clickthrough",
+                "title": "R4M Clickthrough",
                 "url": "https://docusign.invisionapp.com/share/Z5TTBXNYSJ7"
             }
         ],
@@ -698,7 +698,7 @@
             "Sign": "eSignature",
             "Industry": "Rooms for Mortgage"
         },
-        "search": "Digital Closing, Real Estate"
+        "search": "Digital Closing, Real Estate, R4M"
     },
     {
         "name": "Rooms for Real Estate",
@@ -730,23 +730,6 @@
             "Industry": "Rooms for Real Estate"
         },
         "search": "Digital Closing, Real Estate"
-    },
-    {
-        "name": "21 CFR Part 11",
-        "desc": "DocuSign's Life Sciences Modules for 21 CFR Part 11 compliance",
-        "logo": "img/part11-logo.png",
-        "resource": "https://drive.google.com/file/d/1yveKS6Rauzn-_NmJP7Nn-7176gNCM0RS/view?usp=sharing",
-        "videos": [
-            {
-                "title": "Sign a CFR Part 11 Document",
-                "url": "https://support.docusign.com/en/videos/Sign-a-CFR-Part-11"
-            }
-        ],
-        "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000cDYmSAM/view",
-        "tag": {
-            "Sign": "eSignature",
-            "Industry": "FDA Part 11 Module"
-        }
     },
     {
         "name": "Asset Vaulting <small>powered by eOriginal</small>",
@@ -1135,8 +1118,7 @@
     },
     {
         "name": "Allura Demo Portal",
-        "desc": "Insurance demo portal showcasing latest DocuSign features and functionality",
-        "logo": "img/allura-logo.png",
+        "logo": "img/insurance-logo.png",
         "link": "https://dsdemos.esigndemos.com/dsportals/insurance/index.html",
         "resource": "https://dsdemos.esigndemos.com/dsportals/help/Allura.pdf",
         "videos": [
@@ -1155,20 +1137,39 @@
     },
     {
         "name": "Ciencia Demo Portal",
-        "desc": "Life Sciences demo portal showcasing latest DocuSign features and functionality",
-        "logo": "img/ciencia-logo.png",
-        "link": "https://dsdemos.esigndemos.com/dsportals/science2",
-        "resource": "https://dsdemos.esigndemos.com/dsportals/help/Ciencia.pdf",
+        "logo": "img/lifesciences-logo.png",
+        "demos": [
+            {
+                "title": "Ciencia Demo Portal",
+                "url": "https://dsdemos.esigndemos.com/dsportals/science2"
+            },
+            {
+                "title": "Ciencia Help File",
+                "url": "https://dsdemos.esigndemos.com/dsportals/help/Ciencia.pdf"
+            }
+        ],
+        "videos": [
+            {
+                "title": "Demo: Sign a CFR Part 11 Document",
+                "url": "https://support.docusign.com/en/videos/Sign-a-CFR-Part-11"
+            }
+        ],
+        "resources": [
+            {
+                "title": "Chatter: CFR Part 11 + Validator",
+                "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W0000008f3cSAA/view"
+            }
+        ],
         "tag": {
             "Prepare": "PowerForms",
             "Sign": "eSignature",
             "Integrate": "API · Connect",
-            "Industry": "CFR Part 11 · Life Sciences"
-        }
+            "Industry": "FDA Part 11 Module · Life Sciences"
+        },
+        "search": "21 CFR Part 11, Validator for Life Sciences"
     },
     {
         "name": "Public Sector Demo Portal",
-        "desc": "Public Sector demo portal showcasing latest DocuSign features and functionality",
         "logo": "img/pubsec-logo.png",
         "link": "https://dsdemos.esigndemos.com/dsportals/publicsector2",
         "resource": "https://dsdemos.esigndemos.com/dsportals/help/PubSec_Help.pdf",
@@ -1183,8 +1184,7 @@
     },
     {
         "name": "Saluda Demo Portal",
-        "desc": "Healthcare demo portal showcasing latest DocuSign features and functionality",
-        "logo": "img/saluda-logo.png",
+        "logo": "img/healthcare-logo.png",
         "link": "https://dsdemos.esigndemos.com/dsportals/health2",
         "resource": "https://dsdemos.esigndemos.com/dsportals/help/Saluda.pdf",
         "ace": "https://docusign.highspot.com/items/5e2f3cc1c79c5231d0cea2a5?lfrm=srp.9",
@@ -1197,8 +1197,7 @@
     },
     {
         "name": "TGK Demo Portal",
-        "desc": "Finance demo portal showcasing latest DocuSign features and functionality",
-        "logo": "img/tgk-logo.png",
+        "logo": "img/finance-logo.png",
         "link": "https://dsdemos.esigndemos.com/dsportals/finance2",
         "resource": "https://dsdemos.esigndemos.com/dsportals/help/TGK_Help.pdf",
         "invision": "https://docusign.invisionapp.com/share/M3QTQ52ZF8P",
@@ -1212,33 +1211,20 @@
                 "url": "https://docusign.wistia.com/medias/lv2j6m1uj7"
             }
         ],
-        "ace": "https://docusign.highspot.com/items/5e2f3b8d628ba204cb14a29a?lfrm=srp.4",
+        "resources": [
+            {
+                "title": "Financial Services Smart Page",
+                "url": "https://docusign.highspot.com/items/5e2f3b8d628ba204cb14a29a"
+            }
+        ],
         "tag": {
             "Prepare": "Data Verification · Guided Forms",
             "Sign": "ARR · Click · Identify · eWitness · Responsive",
             "Act": "Payments",
             "Integrate": "API · Connect",
             "Industry": "Finance"
-        }
-    },
-    {
-        "name": "WorldWide Co Demo Portal",
-        "desc": "Telecom demo portal showcasing latest DocuSign features and functionality",
-        "logo": "img/telecom-logo.png",
-        "link": "https://dsdemos.esigndemos.com/dsportals/telecom/index.aspx",
-        "resource": "https://dsdemos.esigndemos.com/dsportals/help/WorldWideCo.pdf",
-        "videos": [
-            {
-                "title": "Telco Retail Demo",
-                "url": "https://docusign.wistia.com/medias/2lb5013jyw"
-            }
-        ],
-        "tag": {
-            "Prepare": "PowerForms",
-            "Sign": "eSignature",
-            "Integrate": "API · Connect",
-            "Industry": "Telecom"
-        }
+        },
+        "search": "Fins, Financial Services"
     },
     {
         "name": "DocuSign Portal Builder",
@@ -1250,23 +1236,37 @@
     },
     {
         "name": "LoanCo Sample App",
-        "desc": "Mock finance portal showing common ways of interacting with the DocuSign API",
         "logo": "img/loanco-logo.png",
-        "link": "https://loanco.sampleapps.docusign.com",
-        "ace": "https://docusign.highspot.com/items/5e2f3b8d628ba204cb14a29a",
+        "demos": [
+            {
+                "title": "LoanCo Sample App",
+                "url": "https://loanco.sampleapps.docusign.com"
+            }
+        ],
+        "resources": [
+            {
+                "title": "Financial Services Smart Page",
+                "url": "https://docusign.highspot.com/items/5e2f3b8d628ba204cb14a29a"
+            }
+        ],
         "git": "https://github.com/docusign/sample-app-loanco-nodejs",
         "tag": {
             "Sign": "eSignature",
             "Integrate": "API",
             "Industry": "Finance"
-        }
+        },
+        "search": "Fins, Financial Services"
     },
     {
         "name": "MyClickwrap Sample App",
-        "desc": "Discover the ease and power of the DocuSign Click API",
         "logo": "img/myclick-logo.png",
+        "demos": [
+            {
+                "title": "MyClickwrap Sample App",
+                "url": "https://myclickwrap.sampleapps.docusign.com"
+            }
+        ],
         "link": "https://myclickwrap.sampleapps.docusign.com",
-        "ace": "https://docusign.highspot.com/items/5e2b78bd78e87d273b5cabff",
         "git": "https://github.com/docusign/sample-app-myclickwrap-csharp",
         "tag": {
             "Sign": "Click",
@@ -1275,10 +1275,19 @@
     },
     {
         "name": "MyHR Sample App",
-        "desc": "Mock HR portal showing common ways of interacting with the DocuSign API",
         "logo": "img/myhr-logo.png",
-        "link": "https://myhr.sampleapps.docusign.com",
-        "ace": "https://docusign.highspot.com/items/5e2f4b04c79c523177cef745",
+        "demos": [
+            {
+                "title": "MyHR Sample App",
+                "url": "https://myhr.sampleapps.docusign.com"
+            }
+        ],
+        "resources": [
+            {
+                "title": "HR Smart Page",
+                "url": "https://docusign.highspot.com/items/5e2f4b04c79c523177cef745"
+            }
+        ],
         "git": "https://github.com/docusign/sample-app-myhr-csharp",
         "tag": {
             "Sign": "Click · eSignature · Identify",
@@ -1288,10 +1297,13 @@
     },
     {
         "name": "MyRealEstate Sample App",
-        "desc": "Showcase the potential integration of the Docusign Rooms API into a RealEstate CR",
         "logo": "img/myrealestate-logo.png",
-        "link": "https://myrealestate.sampleapps.docusign.com",
-        "ace": "https://docusign.highspot.com/items/5e4c8bd3a2e3a944d816c686?lfrm=srp.2",
+        "demos": [
+            {
+                "title": "MyRealEstate Sample App",
+                "url": "https://myrealestate.sampleapps.docusign.com"
+            }
+        ],
         "git": "https://github.com/docusign/sample-app-myrealestate-nodejs",
         "tag": {
             "Integrate": "Rooms API",
@@ -1300,10 +1312,19 @@
     },
     {
         "name": "MySure Sample App",
-        "desc": "Mock insurance portal showing common ways of interacting with the DocuSign API",
         "logo": "img/mysure-logo.png",
-        "link": "https://mysure.sampleapps.docusign.com",
-        "ace": "https://docusign.highspot.com/items/5e2f3c893f65f66905a44b73",
+        "demos": [
+            {
+                "title": "MySure Sample App",
+                "url": "https://mysure.sampleapps.docusign.com"
+            }
+        ],
+        "resources": [
+            {
+                "title": "Insurance Smart Page",
+                "url": "https://docusign.highspot.com/items/5e2f3c893f65f66905a44b73"
+            }
+        ],
         "git": "https://github.com/docusign/sample-app-mysure-python",
         "tag": {
             "Sign": "Click · eSignature",
@@ -1314,10 +1335,19 @@
     },
     {
         "name": "MyUni Sample App",
-        "desc": "Mock education portal showing common ways of interacting with the DocuSign API",
         "logo": "img/myuni-logo.png",
-        "link": "https://myuni.sampleapps.docusign.com",
-        "ace": "https://docusign.highspot.com/items/5e2f4ad5c7143360c1097dcc",
+        "demos": [
+            {
+                "title": "MyUni Sample App",
+                "url": "https://myuni.sampleapps.docusign.com"
+            }
+        ],
+        "resources": [
+            {
+                "title": "EDU Smart Page",
+                "url": "https://docusign.highspot.com/items/5e2f4ad5c7143360c1097dcc"
+            }
+        ],
         "git": "https://github.com/docusign/sample-app-myuni-python",
         "tag": {
             "Sign": "Click · eSignature",

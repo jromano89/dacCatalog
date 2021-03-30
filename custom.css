@@ -1,7 +1,11 @@
 html {
   position: relative;
   min-height: 100%;
-  background-color: #fff
+  background-color: #fff;
+}
+
+.b-popover {
+  padding-bottom: 0.5rem;
 }
 
 .ds-logo {
@@ -26,10 +30,6 @@ html {
 .searchbar:focus-within {
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #27ee36, #d6fb00, #0bbff6, #ff13f4);
-}
-
-.container-fluid {
-  padding: 0 !important;
 }
 
 .card {
