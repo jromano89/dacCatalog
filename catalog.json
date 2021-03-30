@@ -253,6 +253,10 @@
                 "url": "https://docusign.wistia.com/medias/3v24h6q1fl"
             },
             {
+                "title": "Demo: Signing Insights",
+                "url": "https://docusign.highspot.com/items/601de718b7b7391da73377f8?lfrm=srp.0"
+            },
+            {
                 "title": "Feature Gallery",
                 "url": "https://support.docusign.com/en/videos"
             },
@@ -279,7 +283,7 @@
             "Prepare": "Data Verification · PowerForms",
             "Sign": "eSignature · Responsive · SMS Delivery"
         },
-        "search": "Architecture, Drawing, Embedded Sending, Smart Sections"
+        "search": "Architecture, Drawing, Embedded Sending, Signing Insights, Smart Sections"
     },
     {
         "name": "DocuSign for Salesforce",
@@ -808,6 +812,40 @@
         }
     },
     {
+        "name": "DocuSign for Oracle",
+        "logo": "img/oracle-logo.png",
+        "demos": [
+            {
+                "title": "Salesforce Clickthrough",
+                "url": "https://docusign.invisionapp.com/share/AKWY8WINH8W#/screens"
+            },
+            {
+                "title": "Salesforce Demo Kit",
+                "url": "https://www.demokit.io/docusign"
+            }
+        ],
+        "videos": [
+            {
+                "title": "Agreement Cloud for Salesforce",
+                "url": "https://vimeo.com/374193763/71e0bc03aa"
+            },
+            {
+                "title": "DocuSign eSignature for Salesforce",
+                "url": "https://vimeo.com/370159968/c7dce6701b"
+            }
+        ],
+        "resources": [
+            {
+                "title": "Salesforce Chatter",
+                "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XlG4CAK/view"
+            }
+        ],
+        "tag": {
+            "Sign": "eSignature",
+            "Integrate": "Oracle HCM Cloud · NetSuite · PeopleSoft"
+        }
+    },
+    {
         "name": "Google G Suite",
         "desc": "DocuSign extension for Google Chrome, Drive, Gmail and Docs",
         "logo": "img/google-logo.png",
@@ -893,58 +931,6 @@
         "tag": {
             "Sign": "eSignature",
             "Integrate": "OpenText"
-        }
-    },
-    {
-        "name": "Oracle HCM Cloud",
-        "desc": "Oracle HCM Cloud integration with Onboarding Checklists",
-        "logo": "img/oraclehcm-logo.png",
-        "resource": "https://docusign.lightning.force.com/lightning/r/ContentDocument/0691W00000AFAWoQAP/view",
-        "videos": [
-            {
-                "title": "Onboarding Checklists Integration",
-                "url": "https://docusign.lightning.force.com/lightning/r/ContentDocument/0691W00000G5l1DQAR/view"
-            }
-        ],
-        "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XlG4CAK/view",
-        "tag": {
-            "Sign": "eSignature",
-            "Integrate": "Oracle HCM Cloud"
-        }
-    },
-    {
-        "name": "Oracle NetSuite",
-        "desc": "Sending and Signing from a sales opportunity with DocuSign connector",
-        "logo": "img/netsuite-logo.png",
-        "resource": "https://drive.google.com/file/d/1ullmPI2vacSekO1DalMkcaCxbkaXLKDy/view?usp=sharing",
-        "invision": "https://dsdemos.esigndemos.com/NetsuitePrototype/",
-        "videos": [
-            {
-                "title": "Integration Overview",
-                "url": "https://docusign.wistia.com/medias/k4qc9qvndw"
-            }
-        ],
-        "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XlG4CAK/view",
-        "tag": {
-            "Sign": "eSignature",
-            "Integrate": "Oracle NetSuite"
-        }
-    },
-    {
-        "name": "Oracle PeopleSoft",
-        "desc": "DocuSign integration with PeopleSoft Supplier Contract Management",
-        "logo": "img/peoplesoft-logo.png",
-        "invision": "https://dsdemos.esigndemos.com/PeoplesoftPrototype/",
-        "videos": [
-            {
-                "title": "Supplier Contract Demo",
-                "url": "https://docusign.wistia.com/medias/7xcsatxbur"
-            }
-        ],
-        "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XlG4CAK/view",
-        "tag": {
-            "Sign": "eSignature",
-            "Integrate": "PeopleSoft"
         }
     },
     {
