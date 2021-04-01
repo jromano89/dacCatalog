@@ -16,7 +16,7 @@
             {
                 "title": "Demo | Full Agreement Cloud",
                 "url": "https://docusign.highspot.com/items/5ed84d0fa4dfa013066ffe0e?lfrm=shp.0",
-                "desc": "3m"
+                "desc": "8m"
             }
         ],
         "tags": {
@@ -32,12 +32,14 @@
         "logo": "img/admin-logo.png",
         "videos": [
             {
-                "title": "Demo | Organization Management",
-                "url": "https://docusign.highspot.com/items/5eb44dc081171724b2a4a1a1"
+                "title": "Demo | Org Management",
+                "url": "https://docusign.highspot.com/items/5eb44dc081171724b2a4a1a1",
+                "desc": "5m"
             },
             {
                 "title": "Demo | Single Sign-On ",
-                "url": "https://support.docusign.com/en/videos/Single-Sign-On-DocuSign-Solution-Engineering"
+                "url": "https://support.docusign.com/en/videos/Single-Sign-On-DocuSign-Solution-Engineering",
+                "desc": "3m"
             }
         ],
         "resources": [
@@ -66,34 +68,39 @@
         ],
         "docs": [
             {
-                "title": "Script | Analyzer (Salesforce)",
+                "title": "<b>Analyzer Demo Guide</b>",
+                "url": "https://docs.google.com/document/d/1P2fHEM682-0Bz9IUHL9g82AUIJBwylJTPX9olScVRk0/edit?usp=sharing",
+                "desc": "Highlighted"
+            },
+            {
+                "title": "Script | Analyzer <small>(Salesforce)</small>",
                 "url": "https://docs.google.com/document/d/1vKyiq9dxBIemNkMSuLknenM8asaEO29wvhadMjr-G8U/edit?usp=sharing"
             },
             {
-                "title": "Script | Analyzer (Standalone)",
+                "title": "Script | Analyzer <small>(Standalone)</small>",
                 "url": "https://docs.google.com/document/d/15m2iE_SlBmSPcij7LScKqF_piiLMk1Of8JYJSRZSDsY/edit?usp=sharing"
-            },
-            {
-                "title": "Solution Engineering Guide",
-                "url": "https://docs.google.com/document/d/1P2fHEM682-0Bz9IUHL9g82AUIJBwylJTPX9olScVRk0/edit?usp=sharing"
             }
         ],
         "videos": [
             {
                 "title": "Demo | Analyzer in CLM ",
-                "url": "https://docusign.highspot.com/items/5ef27d43a2e3a97e5fa03d71?lfrm=shp.0"
+                "url": "https://docusign.highspot.com/items/5ef27d43a2e3a97e5fa03d71?lfrm=shp.0",
+                "desc": "6m"
             },
             {
                 "title": "Demo | CLM+",
-                "url": "https://docusign.highspot.com/items/5fa46b28628ba25035d528a6"
+                "url": "https://docusign.highspot.com/items/5fa46b28628ba25035d528a6",
+                "desc": "4m"
             },
             {
                 "title": "Demo | Word Add-In",
-                "url": "https://docusign.highspot.com/items/5f4eac2566bbaa0a163a29ee?lfrm=shp.0"
+                "url": "https://docusign.highspot.com/items/5f4eac2566bbaa0a163a29ee?lfrm=shp.0",
+                "desc": "7m"
             },
             {
                 "title": "Marketing Video",
-                "url": "https://docusign.highspot.com/items/5f748799659e936d665e659a"
+                "url": "https://docusign.highspot.com/items/5f748799659e936d665e659a",
+                "desc": "2m"
             }
         ],
         "resources": [
@@ -120,7 +127,7 @@
                 "url": "https://dsdemos.esigndemos.com/ClickBuilder"
             },
             {
-                "title": "MyClickwrap Sample App",
+                "title": "MyClickwrap Sample",
                 "url": "https://myclickwrap.sampleapps.docusign.com/myclickwrap"
             },
             {
@@ -137,11 +144,13 @@
         "videos": [
             {
                 "title": "Demo | Terms of Use",
-                "url": "https://docusign.highspot.com/items/5f34822c628ba278719bbf9d"
+                "url": "https://docusign.highspot.com/items/5f34822c628ba278719bbf9d",
+                "desc": "5m"
             },
             {
                 "title": "Marketing Video",
-                "url": "https://docusign.wistia.com/medias/k0yzapd15a"
+                "url": "https://docusign.wistia.com/medias/k0yzapd15a",
+                "desc": "2m"
             }
         ],
         "resources": [
@@ -157,17 +166,11 @@
         "tags": {
             "Sign": "DocuSign Click"
         },
-        "search": "Clickwrap"
+        "search": "MyClickwrap Sample App"
     },
     {
         "name": "DocuSign CLM",
         "logo": "img/clm-logo.png",
-        "highlights": [
-            {
-                "title": "CLM Demo Guide",
-                "url": "https://docs.google.com/document/d/1nl-TpOftuVVwhZ75WeIAaHG_qepEBkkclW_EapNXl94"
-            }
-        ],
         "demos": [
             {
                 "title": "CLM Clickthrough",
@@ -195,20 +198,24 @@
         ],
         "videos": [
             {
-                "title": "Demo | MSA (Salesforce)",
-                "url": "https://docusign.wistia.com/medias/85gnr7fzyg"
+                "title": "Demo | MSA <small>(Salesforce)</small>",
+                "url": "https://docusign.wistia.com/medias/85gnr7fzyg",
+                "desc": "11m"
             },
             {
-                "title": "Demo | Procurement (Standalone)",
-                "url": "https://docusign.highspot.com/items/5ed17b35b7b73918f705040a"
+                "title": "Demo | Procurement <small>(Standalone)</small>",
+                "url": "https://docusign.highspot.com/items/5ed17b35b7b73918f705040a",
+                "desc": "16m"
             },
             {
                 "title": "Marketing Video",
-                "url": "https://docusign.highspot.com/items/5e289f9a8117176207daad0a"
+                "url": "https://docusign.highspot.com/items/5e289f9a8117176207daad0a",
+                "desc": "2m"
             },
             {
                 "title": "Value Selling CLM",
-                "url": "https://drive.google.com/file/d/1ddjmHFkbu8FQMxLYxWWXQhv6-y8ceV9h/view?usp=sharing"
+                "url": "https://drive.google.com/file/d/1ddjmHFkbu8FQMxLYxWWXQhv6-y8ceV9h/view?usp=sharing",
+                "desc": "29m"
             }
         ],
         "resources": [

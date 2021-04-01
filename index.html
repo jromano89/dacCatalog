@@ -55,8 +55,8 @@
                         target="_blank">SE Central</a>
                 </small>
                 <small class="dropdown">
-                    <a class="text-light mx-3 dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">North America</a>
+                    <a class="text-light mx-3 dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">North America</a>
                     <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdown">
                         <small><a class="dropdown-item" href="https://paperpreventers.co.uk/DAC"
                                 target="_blank">EMEA</a></small>
@@ -92,15 +92,6 @@
                         <div class="card-body p-0">
                             <h5 class="card-title text-dark my-2"><span v-html="item.name"></span></h5>
                             <div class="mx-2">
-
-                                <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1"
-                                    icon="star-fill" v-if="item.highlights" :id="`highlights-${item.name}`"></b-icon>
-                                <b-popover v-if="item.highlights" :target="`highlights-${item.name}`"
-                                    title="Highlighted Assets" html="true" triggers="hover" placement="bottomright">
-                                    <div v-for="resource in item.highlights">&#8226;
-                                        <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a><br />
-                                    </div>
-                                </b-popover>
 
                                 <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1"
                                     icon="link-45deg" v-if="item.demos" :id="`demos-${item.name}`"></b-icon>
