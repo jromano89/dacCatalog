@@ -15,7 +15,8 @@
         "videos": [
             {
                 "title": "Demo | Full Agreement Cloud",
-                "url": "https://docusign.highspot.com/items/5ed84d0fa4dfa013066ffe0e?lfrm=shp.0"
+                "url": "https://docusign.highspot.com/items/5ed84d0fa4dfa013066ffe0e?lfrm=shp.0",
+                "desc": "3m"
             }
         ],
         "tags": {
@@ -123,7 +124,7 @@
                 "url": "https://myclickwrap.sampleapps.docusign.com/myclickwrap"
             },
             {
-                "title": "Tally Sign | Click",
+                "title": "Tally Sign: Click",
                 "url": "https://sign.tallydemo.com/Home/Click"
             }
         ],
@@ -161,6 +162,12 @@
     {
         "name": "DocuSign CLM",
         "logo": "img/clm-logo.png",
+        "highlights": [
+            {
+                "title": "CLM Demo Guide",
+                "url": "https://docs.google.com/document/d/1nl-TpOftuVVwhZ75WeIAaHG_qepEBkkclW_EapNXl94"
+            }
+        ],
         "demos": [
             {
                 "title": "CLM Clickthrough",
@@ -173,8 +180,9 @@
         ],
         "docs": [
             {
-                "title": "CLM Demo Guide",
-                "url": "https://docs.google.com/document/d/1nl-TpOftuVVwhZ75WeIAaHG_qepEBkkclW_EapNXl94"
+                "title": "<b>CLM Demo Guide</b>",
+                "url": "https://docs.google.com/document/d/1nl-TpOftuVVwhZ75WeIAaHG_qepEBkkclW_EapNXl94",
+                "desc": "Highlighted Asset"
             },
             {
                 "title": "CLM Release Guide",
@@ -321,18 +329,19 @@
         ],
         "resources": [
             {
-                "title": "ACE Smart Page",
+                "title": "ACE | Salesforce",
                 "url": "https://docusign.highspot.com/items/5f52c3ecb7b73972b151ecfb?lfrm=srp.1#"
             },
             {
-                "title": "Salesforce Chatter",
+                "title": "Partnering to WIN | Salesforce",
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F9400000004QmFCAU/view"
             }
         ],
         "tags": {
             "Sign": "eSignature",
             "Integrate": "Salesforce"
-        }
+        },
+        "search": "sfdc, efs, dfs"
     },
     {
         "name": "DocuSign Gen",
@@ -365,11 +374,11 @@
         ],
         "resources": [
             {
-                "title": "ACE Smart Page",
+                "title": "ACE | DocuSign Gen",
                 "url": "https://docusign.highspot.com/items/5e3af47bf7794d2e22015298"
             },
             {
-                "title": "Salesforce Chatter",
+                "title": "Chatter | DocuSign Gen",
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000LpFPSA0/view"
             }
         ],
@@ -388,11 +397,11 @@
                 "url": "https://docusign.invisionapp.com/share/D9U0ZM743KH"
             },
             {
-                "title": "Tally Sign | IDV",
+                "title": "Tally Sign: IDV",
                 "url": "https://sign.tallydemo.com/Home/Identify"
             },
             {
-                "title": "Tally Sign | Phone Auth",
+                "title": "Tally Sign: Phone Auth",
                 "url": "https://sign.tallydemo.com/Home/Authentication"
             }
         ],
@@ -418,18 +427,18 @@
         ],
         "resources": [
             {
-                "title": "ACE Smart Page",
+                "title": "ACE | Identify",
                 "url": "https://docusign.highspot.com/items/5e2b7784030dc81bd1dc6b60"
             },
             {
-                "title": "Salesforce Chatter",
+                "title": "Chatter | Identify",
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000LpFZSA0/view"
             }
         ],
         "tags": {
             "Sign": "ID Verification · Phone Authentication"
         },
-        "search": "Identity"
+        "search": "Identity, IDV"
     },
     {
         "name": "DocuSign Insight",
@@ -448,17 +457,18 @@
         ],
         "resources": [
             {
-                "title": "ACE Smart Page",
-                "url": "https://docusign.highspot.com/items/5e45be078117173c776ae4bd?lfrm=shp.0"
+                "title": "ACE | Analyzer",
+                "url": "https://docusign.highspot.com/items/5f4d6822a2e3a97d28f921c2?lfrm=srp.2"
             },
             {
-                "title": "Salesforce Chatter",
+                "title": "Chatter | Analyzer & Insight",
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000cBj7SAE/view"
             }
         ],
         "tags": {
             "Manage": "Insight"
-        }
+        },
+        "search": "Seal Intelligent Insights"
     },
     {
         "name": "DocuSign Monitor",
@@ -483,11 +493,11 @@
         ],
         "resources": [
             {
-                "title": "ACE Smart Page",
+                "title": "ACE | Monitor",
                 "url": "https://docusign.highspot.com/items/5e73a631b7b7391f3c6775cb"
             },
             {
-                "title": "Salesforce Chatter",
+                "title": "Chatter | Monitor",
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W0000008n9xSAA/view"
             }
         ],
@@ -498,7 +508,6 @@
     },
     {
         "name": "DocuSign Negotiate",
-        "desc": "Send document for approval, internal / external review, and redlining",
         "logo": "img/negotiate-logo.png",
         "demos": [
             {
@@ -571,7 +580,7 @@
         "logo": "img/payments-logo.png",
         "demos": [
             {
-                "title": "Tally Sign | Payments",
+                "title": "Tally Sign: Payments",
                 "url": "https://sign.tallydemo.com/Home/Payments"
             }
         ],
@@ -1283,7 +1292,7 @@
             "Integrate": "Connect",
             "Industry": "Public Sector"
         },
-        "search": "API, PIV, Demo Portal"
+        "search": "API, PIV, PubSec Demo Portal"
     },
     {
         "name": "DAC for Real Estate",

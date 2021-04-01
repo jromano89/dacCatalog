@@ -94,11 +94,21 @@
                             <div class="mx-2">
 
                                 <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1"
+                                    icon="star-fill" v-if="item.highlights" :id="`highlights-${item.name}`"></b-icon>
+                                <b-popover v-if="item.highlights" :target="`highlights-${item.name}`"
+                                    title="Highlighted Assets" html="true" triggers="hover" placement="bottomright">
+                                    <div v-for="resource in item.highlights">&#8226;
+                                        <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a><br />
+                                    </div>
+                                </b-popover>
+
+                                <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1"
                                     icon="link-45deg" v-if="item.demos" :id="`demos-${item.name}`"></b-icon>
                                 <b-popover v-if="item.demos" :target="`demos-${item.name}`" title="Demos & Tools"
                                     html="true" triggers="hover" placement="bottomright">
-                                    <a v-for="resource in item.demos" :key="resource.title" :href="resource.url"
-                                        target="_blank">&#8226; {{resource.title}}<br /></a>
+                                    <div v-for="resource in item.demos">&#8226;
+                                        <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a><br />
+                                    </div>
                                 </b-popover>
 
                                 <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1"
@@ -106,16 +116,21 @@
                                 </b-icon>
                                 <b-popover v-if="item.docs" :target="`docs-${item.name}`" title="Documentation"
                                     html="true" triggers="hover" placement="bottomright">
-                                    <a v-for="resource in item.docs" :key="resource.title" :href="resource.url"
-                                        target="_blank">&#8226; {{resource.title}}<br /></a>
+                                    <div v-for="resource in item.docs">&#8226;
+                                        <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a>
+                                        <small class="text-secondary">{{resource.desc}}</small><br />
+                                    </div>
                                 </b-popover>
 
                                 <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1"
                                     icon="play-circle-fill" v-if="item.videos" :id="`videos-${item.name}`"></b-icon>
                                 <b-popover v-if="item.videos" :target="`videos-${item.name}`" title="Videos" html="true"
                                     triggers="hover" placement="bottomright">
-                                    <a v-for="resource in item.videos" :key="resource.title" :href="resource.url"
-                                        target="_blank">&#8226; {{resource.title}}<br /></a>
+                                    <div v-for="resource in item.videos">&#8226;
+                                        <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a>
+                                        <small class="text-secondary">{{resource.desc}}</small><br />
+                                    </div>
+
                                 </b-popover>
 
                                 <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1"
@@ -123,8 +138,9 @@
                                 </b-icon>
                                 <b-popover v-if="item.resources" :target="`resources-${item.name}`" title="Resources"
                                     html="true" triggers="hover" placement="bottomright">
-                                    <a v-for="resource in item.resources" :key="resource.title" :href="resource.url"
-                                        target="_blank">&#8226; {{resource.title}}<br /></a>
+                                    <div v-for="resource in item.resources">&#8226;
+                                        <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a><br />
+                                    </div>
                                 </b-popover>
 
                             </div>
