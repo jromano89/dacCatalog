@@ -4,53 +4,55 @@
         "logo": "img/cloud-logo.png",
         "docs": [
             {
-                "title": "Script: Agreement Remediation",
+                "title": "Script | Agreement Remediation",
                 "url": "https://docs.google.com/document/u/1/d/1r6xG_Z6zfbqL9IezMKj900jxOJRFTVY5MX8lZl6FO_U/edit?usp=sharing"
             },
             {
-                "title": "Script: Full Agreement Cloud",
+                "title": "Script | Full Agreement Cloud",
                 "url": "https://docs.google.com/document/d/1dvaun88syhNVEufAJPlGVoy_5QfXcFdJrBcuetzec5I/edit?usp=sharing"
             }
         ],
         "videos": [
             {
-                "title": "Demo: Full Agreement Cloud",
+                "title": "Demo | Full Agreement Cloud",
                 "url": "https://docusign.highspot.com/items/5ed84d0fa4dfa013066ffe0e?lfrm=shp.0"
             }
         ],
-        "tag": {
-            "Prepare": "CLM Prepare · Remediation",
+        "tags": {
+            "Prepare": "CLM Prepare",
             "Sign": "eSignature",
             "Act": "CLM Workflow",
             "Manage": "Insight"
-        }
+        },
+        "search": "Remediation"
     },
     {
         "name": "DocuSign Admin Tools",
         "logo": "img/admin-logo.png",
         "videos": [
             {
-                "title": "Demo: Organization Management",
+                "title": "Demo | Organization Management",
                 "url": "https://docusign.highspot.com/items/5eb44dc081171724b2a4a1a1"
             },
             {
-                "title": "Demo: Single Sign-On ",
+                "title": "Demo | Single Sign-On ",
                 "url": "https://support.docusign.com/en/videos/Single-Sign-On-DocuSign-Solution-Engineering"
             }
         ],
         "resources": [
             {
-                "title": "ACE Smart Page",
+                "title": "ACE | Admin Tools",
                 "url": "https://docusign.highspot.com/items/5e45be81b7b73912de97d355?lfrm=srp.16"
             },
             {
-                "title": "Salesforce Chatter",
+                "title": "Chatter | Admin Tools",
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000bqfOCAQ/view"
             }
         ],
-        "tag": {
-            "Manage": "Access Management · Org Admin · SSO"
-        }
+        "tags": {
+            "Manage": "Access Management · SSO"
+        },
+        "search": "Org Admin, Administration"
     },
     {
         "name": "DocuSign Analyzer",
@@ -63,11 +65,11 @@
         ],
         "docs": [
             {
-                "title": "Script: Analyzer (Salesforce)",
+                "title": "Script | Analyzer (Salesforce)",
                 "url": "https://docs.google.com/document/d/1vKyiq9dxBIemNkMSuLknenM8asaEO29wvhadMjr-G8U/edit?usp=sharing"
             },
             {
-                "title": "Script: Analyzer (Standalone)",
+                "title": "Script | Analyzer (Standalone)",
                 "url": "https://docs.google.com/document/d/15m2iE_SlBmSPcij7LScKqF_piiLMk1Of8JYJSRZSDsY/edit?usp=sharing"
             },
             {
@@ -77,15 +79,15 @@
         ],
         "videos": [
             {
-                "title": "Demo: Analyzer in CLM ",
+                "title": "Demo | Analyzer in CLM ",
                 "url": "https://docusign.highspot.com/items/5ef27d43a2e3a97e5fa03d71?lfrm=shp.0"
             },
             {
-                "title": "Demo: CLM+",
+                "title": "Demo | CLM+",
                 "url": "https://docusign.highspot.com/items/5fa46b28628ba25035d528a6"
             },
             {
-                "title": "Demo: Word Add-In",
+                "title": "Demo | Word Add-In",
                 "url": "https://docusign.highspot.com/items/5f4eac2566bbaa0a163a29ee?lfrm=shp.0"
             },
             {
@@ -95,15 +97,15 @@
         ],
         "resources": [
             {
-                "title": "ACE Smart Page",
+                "title": "ACE | Analyzer",
                 "url": "https://docusign.highspot.com/items/5f4d6822a2e3a97d28f921c2?lfrm=srp.2"
             },
             {
-                "title": "Salesforce Chatter",
+                "title": "Chatter | Analyzer & Insight",
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000cBj7SAE/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Act": "CLM+",
             "Manage": "Analyzer · Insight"
         }
@@ -117,11 +119,11 @@
                 "url": "https://dsdemos.esigndemos.com/ClickBuilder"
             },
             {
-                "title": "SMS Opt-in",
-                "url": "https://dsdemos.esigndemos.com/docusignclick/opt-in-sms.html"
+                "title": "MyClickwrap Sample App",
+                "url": "https://myclickwrap.sampleapps.docusign.com/myclickwrap"
             },
             {
-                "title": "Tally Sign: Click",
+                "title": "Tally Sign | Click",
                 "url": "https://sign.tallydemo.com/Home/Click"
             }
         ],
@@ -133,7 +135,7 @@
         ],
         "videos": [
             {
-                "title": "Demo: Terms of Use",
+                "title": "Demo | Terms of Use",
                 "url": "https://docusign.highspot.com/items/5f34822c628ba278719bbf9d"
             },
             {
@@ -143,17 +145,18 @@
         ],
         "resources": [
             {
-                "title": "ACE Smart Page",
+                "title": "ACE | Click",
                 "url": "https://docusign.highspot.com/items/5e2b78bd78e87d273b5cabff"
             },
             {
-                "title": "Salesforce Chatter",
+                "title": "Chatter | Click",
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000LpFUSA0/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Sign": "DocuSign Click"
-        }
+        },
+        "search": "Clickwrap"
     },
     {
         "name": "DocuSign CLM",
@@ -162,6 +165,10 @@
             {
                 "title": "CLM Clickthrough",
                 "url": "https://docusign.invisionapp.com/share/B9W7H1VY8QR"
+            },
+            {
+                "title": "Demo Packages",
+                "url": "https://drive.google.com/drive/folders/1CVKBkylaf7QVI-AB0L29QxXxHpgQc64Q?usp=sharing"
             }
         ],
         "docs": [
@@ -170,17 +177,21 @@
                 "url": "https://docs.google.com/document/d/1nl-TpOftuVVwhZ75WeIAaHG_qepEBkkclW_EapNXl94"
             },
             {
+                "title": "CLM Release Guide",
+                "url": "https://docs.google.com/document/d/1aSwrWI82Q2FT9o7m4aZmR7FXcRNA6S5HabZcEm2HOyo/edit?usp=sharing"
+            },
+            {
                 "title": "TallyCLM Quick Start",
                 "url": "https://docs.google.com/document/d/1zQ-kASEeyFmDn9AuodWbMK5tPEFdTQunr6M2bjzlu58/edit?usp=sharing"
             }
         ],
         "videos": [
             {
-                "title": "Demo: MSA (Salesforce)",
+                "title": "Demo | MSA (Salesforce)",
                 "url": "https://docusign.wistia.com/medias/85gnr7fzyg"
             },
             {
-                "title": "Demo: Procurement (Standalone)",
+                "title": "Demo | Procurement (Standalone)",
                 "url": "https://docusign.highspot.com/items/5ed17b35b7b73918f705040a"
             },
             {
@@ -194,19 +205,15 @@
         ],
         "resources": [
             {
-                "title": "ACE Smart Page",
+                "title": "ACE | DocuSign CLM",
                 "url": "https://docusign.highspot.com/items/5e1de93bc2479159480fb4a1"
             },
             {
-                "title": "Prebuilt Packages",
-                "url": "https://drive.google.com/drive/folders/1CVKBkylaf7QVI-AB0L29QxXxHpgQc64Q?usp=sharing"
-            },
-            {
-                "title": "Salesforce Chatter",
+                "title": "Chatter | DocuSign CLM",
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000LQNBSA4/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Prepare": "CLM Prepare",
             "Sign": "eSignature",
             "Act": "CLM Workflow",
@@ -227,33 +234,37 @@
                 "url": "https://dsdemos.esigndemos.com/GennWatt/embedded.html"
             },
             {
+                "title": "SE Postman Collection",
+                "url": "https://docs.google.com/document/d/12NN2H6NaLvJ1Qn2imH65-RGiRogllXlKp-OC4FJZ5yI/edit?usp=sharing"
+            },
+            {
                 "title": "Tally Sign Demos",
                 "url": "https://sign.tallydemo.com"
             }
         ],
         "videos": [
             {
-                "title": "Demo: API & Connect",
+                "title": "Demo | API & Connect",
                 "url": "https://docusign.highspot.com/items/5eb3191266bbaa6beae60f86"
             },
             {
-                "title": "Demo: Data Verification",
+                "title": "Demo | Data Verification",
                 "url": "https://docusign.highspot.com/items/60403bdd34d6be4f2791d943?lfrm=srp.0"
             },
             {
-                "title": "Demo: Full Web App",
+                "title": "Demo | Full Web App",
                 "url": "https://docusign.wistia.com/medias/cdhmd03ggp"
             },
             {
-                "title": "Demo: PowerForms",
+                "title": "Demo | PowerForms",
                 "url": "https://support.docusign.com/en/videos/Powerforms-DocuSign-Solution-Engineering"
             },
             {
-                "title": "Demo: Responsive Signing",
+                "title": "Demo | Responsive Signing",
                 "url": "https://docusign.wistia.com/medias/3v24h6q1fl"
             },
             {
-                "title": "Demo: Signing Insights",
+                "title": "Demo | Signing Insights",
                 "url": "https://docusign.highspot.com/items/601de718b7b7391da73377f8?lfrm=srp.0"
             },
             {
@@ -267,19 +278,19 @@
         ],
         "resources": [
             {
-                "title": "ACE Smart Page",
+                "title": "ACE | eSignature",
                 "url": "https://docusign.highspot.com/items/5e2b389834d6be71478bbc42"
             },
             {
-                "title": "Salesforce Chatter: eSign",
+                "title": "Chatter | eSignature",
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W0000008eTZSAY/view"
             },
             {
-                "title": "Salesforce Chatter: Smart Sections",
+                "title": "Chatter | Smart Sections",
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000LNavSAG/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Prepare": "Data Verification · PowerForms",
             "Sign": "eSignature · Responsive · SMS Delivery"
         },
@@ -318,7 +329,7 @@
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F9400000004QmFCAU/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Sign": "eSignature",
             "Integrate": "Salesforce"
         }
@@ -338,13 +349,13 @@
                 "url": "https://drive.google.com/file/d/1MfduovSQOJ9Xc2MmqoV-RvUZLzIX4uBO/view?usp=sharing"
             },
             {
-                "title": "Script: Quote Gen for CPQ+",
+                "title": "Script | Quote Gen for CPQ+",
                 "url": "https://docs.google.com/document/d/19vY1kyBm2yLkskTIjM7EF2cidtu2JFXak2LekIN5r_Q/edit?usp=sharing"
             }
         ],
         "videos": [
             {
-                "title": "Demo: Quote Document Generation",
+                "title": "Demo | Quote Document Generation",
                 "url": "https://docusign.highspot.com/items/5ebde1c966bbaa3f3540f46d"
             },
             {
@@ -362,7 +373,7 @@
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000LpFPSA0/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Prepare": "DocuSign Gen",
             "Sign": "eSignature",
             "Integrate": "Salesforce CPQ+"
@@ -377,11 +388,11 @@
                 "url": "https://docusign.invisionapp.com/share/D9U0ZM743KH"
             },
             {
-                "title": "Tally Sign: IDV",
+                "title": "Tally Sign | IDV",
                 "url": "https://sign.tallydemo.com/Home/Identify"
             },
             {
-                "title": "Tally Sign: Phone Auth",
+                "title": "Tally Sign | Phone Auth",
                 "url": "https://sign.tallydemo.com/Home/Authentication"
             }
         ],
@@ -397,7 +408,7 @@
         ],
         "videos": [
             {
-                "title": "Demo: New Account Opening",
+                "title": "Demo | New Account Opening",
                 "url": "https://docusign.highspot.com/items/5ebefc593f65f63f5e46c944"
             },
             {
@@ -415,7 +426,7 @@
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000LpFZSA0/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Sign": "ID Verification · Phone Authentication"
         },
         "search": "Identity"
@@ -445,7 +456,7 @@
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000cBj7SAE/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Manage": "Insight"
         }
     },
@@ -466,7 +477,7 @@
         ],
         "videos": [
             {
-                "title": "Demo: DocuSign Monitor",
+                "title": "Demo | DocuSign Monitor",
                 "url": "https://docusign.highspot.com/items/5f80e13566bbaa20e682109c"
             }
         ],
@@ -480,7 +491,7 @@
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W0000008n9xSAA/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Manage": "DocuSign Monitor",
             "Integrate": "Splunk"
         }
@@ -517,7 +528,7 @@
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W0000008f3cSAA/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Prepare": "DocuSign Negotiate",
             "Sign": "eSignature",
             "Integrate": "Salesforce"
@@ -540,7 +551,7 @@
         ],
         "videos": [
             {
-                "title": "Demo: DocuSign Notary",
+                "title": "Demo | DocuSign Notary",
                 "url": "https://docusign.highspot.com/items/60403bdd34d6be4f2791d927?lfrm=irel.0"
             }
         ],
@@ -550,7 +561,7 @@
                 "url": "https://docusign.highspot.com/items/5faecbeb659e933d8aca1c67?lfrm=srp.3"
             }
         ],
-        "tag": {
+        "tags": {
             "Sign": "eSignature · Notary"
         },
         "search": "Remote Online Notarization (RON)"
@@ -560,7 +571,7 @@
         "logo": "img/payments-logo.png",
         "demos": [
             {
-                "title": "Tally Sign: Payments",
+                "title": "Tally Sign | Payments",
                 "url": "https://sign.tallydemo.com/Home/Payments"
             }
         ],
@@ -586,7 +597,7 @@
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XjbUCAS/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Sign": "eSignature",
             "Act": "Payments"
         }
@@ -602,15 +613,15 @@
         ],
         "videos": [
             {
-                "title": "Demo: DocuSign Retrieve (Short)",
+                "title": "Demo | Retrieve (Short)",
                 "url": "https://docusign.highspot.com/items/5eb3191266bbaa6beae60f7e"
             },
             {
-                "title": "Demo: DocuSign Retrieve (Long)",
+                "title": "Demo | Retrieve (Long)",
                 "url": "https://docusign.wistia.com/medias/j0rx8zjnr0"
             }
         ],
-        "tag": {
+        "tags": {
             "Manage": "DocuSign Retrieve"
         }
     },
@@ -629,7 +640,7 @@
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F9400000004RaUCAU/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Sign": "CoSign · eSignature · Hybrid Cloud Appliances"
         }
     },
@@ -648,7 +659,7 @@
         ],
         "videos": [
             {
-                "title": "Demo: Guided Forms (Long)",
+                "title": "Demo | Guided Forms (Long)",
                 "url": "https://docusign.wistia.com/medias/74wlxtn2mb"
             }
         ],
@@ -662,7 +673,7 @@
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XbAQCA0/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Prepare": "Guided Forms",
             "Sign": "eSignature"
         }
@@ -684,7 +695,7 @@
         ],
         "videos": [
             {
-                "title": "Demo: Rooms for Mortgage",
+                "title": "Demo | Rooms for Mortgage",
                 "url": "https://docusign.highspot.com/items/5e2242c38117175623ef378b"
             }
         ],
@@ -698,7 +709,7 @@
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000Xm6FCAS/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Sign": "eSignature",
             "Industry": "Rooms for Mortgage"
         },
@@ -715,7 +726,7 @@
         ],
         "videos": [
             {
-                "title": "Demo: Rooms for Real Estate",
+                "title": "Demo | Rooms for Real Estate",
                 "url": "https://docusign.highspot.com/items/5ede7f95f7794d353c1e9bb8"
             }
         ],
@@ -729,7 +740,7 @@
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XjPJCA0/view"
             }
         ],
-        "tag": {
+        "tags": {
             "Sign": "eSignature",
             "Industry": "Rooms for Real Estate"
         },
@@ -748,7 +759,7 @@
             }
         ],
         "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000CwcFCAS/view",
-        "tag": {
+        "tags": {
             "Sign": "eSignature",
             "Manage": "Asset Vaulting",
             "Integrate": "eNote · eOriginal"
@@ -767,7 +778,7 @@
             }
         ],
         "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000CmUfCAK/view",
-        "tag": {
+        "tags": {
             "Sign": "eSignature · Identify · SBS"
         }
     },
@@ -778,7 +789,7 @@
         "invision": "https://docusign.invisionapp.com/share/CBOBC5Y8Q63",
         "ppt": "https://docusign.lightning.force.com/lightning/r/ContentDocument/0691W00000728YkQAI/view",
         "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000c1obSAA/view",
-        "tag": {
+        "tags": {
             "Sign": "eSignature",
             "Integrate": "Applied Epic"
         }
@@ -789,7 +800,7 @@
         "logo": "img/box-logo.png",
         "resource": "https://drive.google.com/file/d/1MFzfpwzhdGwEfalYxXSD9YuOn8E1h_56/view?usp=sharing",
         "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000c1JxCAI/view",
-        "tag": {
+        "tags": {
             "Sign": "eSignature",
             "Integrate": "Box"
         }
@@ -806,48 +817,13 @@
             }
         ],
         "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000LQIuSAO/view",
-        "tag": {
+        "tags": {
             "Sign": "eSignature",
             "Integrate": "Ceridian Dayforce"
         }
     },
     {
-        "name": "DocuSign for Oracle",
-        "logo": "img/oracle-logo.png",
-        "demos": [
-            {
-                "title": "Salesforce Clickthrough",
-                "url": "https://docusign.invisionapp.com/share/AKWY8WINH8W#/screens"
-            },
-            {
-                "title": "Salesforce Demo Kit",
-                "url": "https://www.demokit.io/docusign"
-            }
-        ],
-        "videos": [
-            {
-                "title": "Agreement Cloud for Salesforce",
-                "url": "https://vimeo.com/374193763/71e0bc03aa"
-            },
-            {
-                "title": "DocuSign eSignature for Salesforce",
-                "url": "https://vimeo.com/370159968/c7dce6701b"
-            }
-        ],
-        "resources": [
-            {
-                "title": "Salesforce Chatter",
-                "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XlG4CAK/view"
-            }
-        ],
-        "tag": {
-            "Sign": "eSignature",
-            "Integrate": "Oracle HCM Cloud · NetSuite · PeopleSoft"
-        }
-    },
-    {
-        "name": "Google G Suite",
-        "desc": "DocuSign extension for Google Chrome, Drive, Gmail and Docs",
+        "name": "DocuSign + Google",
         "logo": "img/google-logo.png",
         "resource": "https://drive.google.com/file/d/1A63Tu2HvYVtWXgte5sKgSS_S2oTYRqg7/view?usp=sharing",
         "videos": [
@@ -857,9 +833,141 @@
             }
         ],
         "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XkpmCAC/view",
-        "tag": {
+        "tags": {
             "Sign": "eSignature",
             "Integrate": "Google"
+        }
+    },
+    {
+        "name": "DocuSign + Microsoft",
+        "logo": "img/microsoft-logo.png",
+        "demos": [
+            {
+                "title": "HCM Onboarding Clickthrough",
+                "url": "https://drive.google.com/file/d/1lD8ZvEMMJwblcK9PsE8bLwFcYPyJk1Wg/view?usp=sharing"
+            },
+            {
+                "title": "NetSuite CRM Clickthrough",
+                "url": "https://drive.google.com/file/d/1Y1l31e0ozZvVjYeq13sfevnzFVxLNor2/view?usp=sharing"
+            },
+            {
+                "title": "PeopleSoft Clickthrough",
+                "url": "https://dsdemos.esigndemos.com/PeoplesoftPrototype/"
+            }
+        ],
+        "docs": [
+            {
+                "title": "NetSuite Shared Environment",
+                "url": "https://drive.google.com/file/d/1ullmPI2vacSekO1DalMkcaCxbkaXLKDy/view"
+            }
+        ],
+        "videos": [
+            {
+                "title": "HCM Onboarding Demo",
+                "url": "https://drive.google.com/file/d/182m0caglFrmPEPkB2alcHh5z9qBbIyw6/view?usp=sharing"
+            },
+            {
+                "title": "PeopleSoft Demo (Long)",
+                "url": "https://drive.google.com/file/d/1XFIHKJgtu2QdUTbynGEU8tQqidyHtXEA/view?usp=sharing"
+            }
+        ],
+        "resources": [
+            {
+                "title": "Partnering to WIN: Oracle",
+                "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XlG4CAK/view"
+            }
+        ],
+        "tags": {
+            "Sign": "eSignature",
+            "Integrate": "Dynamics · Flow · Outlook · SharePoint"
+        },
+        "search": "Microsoft Dynamics, Microsoft Flow, Microsoft Outlook, PowerAutomate, Microsoft SharePoint Online, MS"
+    },
+    {
+        "name": "DocuSign + Oracle",
+        "logo": "img/oracle-logo.png",
+        "demos": [
+            {
+                "title": "HCM Onboarding Clickthrough",
+                "url": "https://drive.google.com/file/d/1lD8ZvEMMJwblcK9PsE8bLwFcYPyJk1Wg/view?usp=sharing"
+            },
+            {
+                "title": "NetSuite CRM Clickthrough",
+                "url": "https://drive.google.com/file/d/1Y1l31e0ozZvVjYeq13sfevnzFVxLNor2/view?usp=sharing"
+            },
+            {
+                "title": "PeopleSoft Clickthrough",
+                "url": "https://dsdemos.esigndemos.com/PeoplesoftPrototype/"
+            }
+        ],
+        "docs": [
+            {
+                "title": "NetSuite Shared Environment",
+                "url": "https://drive.google.com/file/d/1ullmPI2vacSekO1DalMkcaCxbkaXLKDy/view"
+            }
+        ],
+        "videos": [
+            {
+                "title": "HCM Onboarding Demo",
+                "url": "https://drive.google.com/file/d/182m0caglFrmPEPkB2alcHh5z9qBbIyw6/view?usp=sharing"
+            },
+            {
+                "title": "PeopleSoft Demo (Long)",
+                "url": "https://drive.google.com/file/d/1XFIHKJgtu2QdUTbynGEU8tQqidyHtXEA/view?usp=sharing"
+            }
+        ],
+        "resources": [
+            {
+                "title": "Partnering to WIN: Oracle",
+                "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XlG4CAK/view"
+            }
+        ],
+        "tags": {
+            "Sign": "eSignature",
+            "Integrate": "HCM Cloud · NetSuite · PeopleSoft"
+        },
+        "search": "Oracle HCM Cloud, Oracle NetSuite, Oracle PeopleSoft"
+    },
+    {
+        "name": "DocuSign + SAP",
+        "desc": "DocuSign integration with document tagging and remote signing",
+        "logo": "img/sap-logo.png",
+        "link": "https://s1.ariba.com/Buyer/Main/ad/loginPage/SSOActions?&awsso_ap=ACM&awsso_hpk=true&passwordadapter=PasswordAdapter1&realm=Demo2",
+        "resource": "https://docs.google.com/document/d/1zFkKN9ivkA1ylYb7DpS0HA8RHGge4u9CTlgGVQ9w9CI/edit?usp=sharing",
+        "invision": "https://dsdemos.esigndemos.com/AribaPrototype/",
+        "videos": [
+            {
+                "title": "End to End Demo",
+                "url": "https://docusign.wistia.com/medias/a7oj762ph1"
+            }
+        ],
+        "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000Co4eCAC/view",
+        "tags": {
+            "Sign": "eSignature",
+            "Integrate": "SAP Ariba"
+        }
+    },
+    {
+        "name": "DocuSign + Workday",
+        "desc": "DocuSign integration for offer letter, onboarding, mass distribute, and title change workflows",
+        "logo": "img/workday-logo.png",
+        "link": "https://impl.workday.com/wday/authgwy/docusign_dpt2/login.html",
+        "resource": "https://drive.google.com/file/d/189I6wDOM07iqxHtUQhNnTwBxruF8My-A/view?usp=sharing",
+        "invision": "https://dsdemos.esigndemos.com/workdayTitleChange",
+        "videos": [
+            {
+                "title": "Employee Onboarding Demo",
+                "url": "https://www.docusign.com/product-videos/streamline-onboarding-with-docusign-and-your-hcm"
+            },
+            {
+                "title": "Product Video",
+                "url": "https://www.youtube.com/watch?v=TQ05u0CqmM4"
+            }
+        ],
+        "ace": "https://docusign.highspot.com/items/5f0f4f13a2e3a924507fac96",
+        "tags": {
+            "Sign": "eSignature",
+            "Integrate": "Workday"
         }
     },
     {
@@ -875,46 +983,9 @@
             }
         ],
         "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000bzXOCAY/view",
-        "tag": {
+        "tags": {
             "Sign": "eSignature",
             "Integrate": "Hyland OnBase"
-        }
-    },
-    {
-        "name": "Microsoft Dynamics",
-        "desc": "Remote signing from Microsoft Dynamics CRM with DocuSign integration",
-        "logo": "img/dynamics-logo.png",
-        "link": "https://emeasc.crm.dynamics.com/main.aspx?appid=ac3b1e1b-04ab-e911-a969-000d3a13c05d",
-        "resource": "https://docs.google.com/document/d/15hBiMvGhx6Ocwz303CYAgjGHdamFWL4PdJOc6Lf6LYw/edit?usp=sharing",
-        "invision": "https://dsdemos.esigndemos.com/DynamicsPrototype",
-        "videos": [
-            {
-                "title": "Product Demonstration",
-                "url": "https://www.youtube.com/watch?v=6SAGTwXHn8U"
-            }
-        ],
-        "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F9400000004LJ9CAM/view",
-        "tag": {
-            "Sign": "eSignature",
-            "Integrate": "Microsoft Dynamics"
-        }
-    },
-    {
-        "name": "Microsoft Sharepoint",
-        "desc": "Embedded signing within Office 365 SharePoint and Outlook cloud apps",
-        "logo": "img/sharepoint-logo.png",
-        "resource": "https://drive.google.com/file/d/1xi-uGy9s6wkWkMrS5y9P2ZG_sPzbuAvz/view?usp=sharing",
-        "invision": "https://dsdemos.esigndemos.com/SharepointPrototype/01.html",
-        "videos": [
-            {
-                "title": "DocuSign for SharePoint Online",
-                "url": "https://youtu.be/t9BT9rxh3MA"
-            }
-        ],
-        "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F9400000004LJ9CAM/view",
-        "tag": {
-            "Sign": "eSignature",
-            "Integrate": "Outlook · Sharepoint"
         }
     },
     {
@@ -928,7 +999,7 @@
             }
         ],
         "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000cDjLSAU/view",
-        "tag": {
+        "tags": {
             "Sign": "eSignature",
             "Integrate": "OpenText"
         }
@@ -944,7 +1015,7 @@
             }
         ],
         "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000buC6CAI/view",
-        "tag": {
+        "tags": {
             "Sign": "eSignature",
             "Integrate": "Pegasystems"
         }
@@ -961,60 +1032,10 @@
             }
         ],
         "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000bxk1CAA/view",
-        "tag": {
+        "tags": {
             "Sign": "eSignature",
             "Integrate": "Procore",
             "Industry": "Construction"
-        }
-    },
-    {
-        "name": "SAP Ariba",
-        "desc": "DocuSign integration with document tagging and remote signing",
-        "logo": "img/ariba-logo.png",
-        "link": "https://s1.ariba.com/Buyer/Main/ad/loginPage/SSOActions?&awsso_ap=ACM&awsso_hpk=true&passwordadapter=PasswordAdapter1&realm=Demo2",
-        "resource": "https://docs.google.com/document/d/1zFkKN9ivkA1ylYb7DpS0HA8RHGge4u9CTlgGVQ9w9CI/edit?usp=sharing",
-        "invision": "https://dsdemos.esigndemos.com/AribaPrototype/",
-        "videos": [
-            {
-                "title": "End to End Demo",
-                "url": "https://docusign.wistia.com/medias/a7oj762ph1"
-            }
-        ],
-        "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000Co4eCAC/view",
-        "tag": {
-            "Sign": "eSignature",
-            "Integrate": "SAP Ariba"
-        }
-    },
-    {
-        "name": "SAP Hybris",
-        "desc": "Send a sales quote from Hybris Cloud to customer for eSignature",
-        "logo": "img/hybris-logo.png",
-        "resource": "https://drive.google.com/file/d/1PVlcj-SWhc3fiO5maWlG9J0c7FxUgf4i/view?usp=sharing",
-        "ppt": "https://drive.google.com/file/d/1p-PV80iTo9JPVoIaD5zJYuwsy-szHljN/view?usp=sharing",
-        "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000Co4eCAC/view",
-        "tag": {
-            "Sign": "eSignature",
-            "Integrate": "SAP Hybris"
-        }
-    },
-    {
-        "name": "SAP SuccessFactors",
-        "desc": "Recruiting and onboarding scenarios with remote signing",
-        "logo": "img/successfactors-logo.png",
-        "resource": "https://drive.google.com/file/d/1HquGUsSuwpHJIOUToG8hfxcnNmIZk7Rz/view?usp=sharing",
-        "invision": "https://dsdemos.esigndemos.com/Successfactorsprototype/index.html",
-        "ppt": "https://tinyurl.com/y2f4pskr",
-        "videos": [
-            {
-                "title": "Recruiting Management Demo",
-                "url": "https://docusign.wistia.com/medias/morqih4pf8"
-            }
-        ],
-        "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000Co4eCAC/view",
-        "tag": {
-            "Sign": "eSignature",
-            "Integrate": "SAP SuccessFactors"
         }
     },
     {
@@ -1034,294 +1055,14 @@
             }
         ],
         "sf": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000bzTRCAY/view",
-        "tag": {
+        "tags": {
             "Sign": "eSignature",
             "Integrate": "ServiceNow"
         }
     },
     {
-        "name": "Workday",
-        "desc": "DocuSign integration for offer letter, onboarding, mass distribute, and title change workflows",
-        "logo": "img/workday-logo.png",
-        "link": "https://impl.workday.com/wday/authgwy/docusign_dpt2/login.html",
-        "resource": "https://drive.google.com/file/d/189I6wDOM07iqxHtUQhNnTwBxruF8My-A/view?usp=sharing",
-        "invision": "https://dsdemos.esigndemos.com/workdayTitleChange",
-        "videos": [
-            {
-                "title": "Employee Onboarding Demo",
-                "url": "https://www.docusign.com/product-videos/streamline-onboarding-with-docusign-and-your-hcm"
-            },
-            {
-                "title": "Product Video",
-                "url": "https://www.youtube.com/watch?v=TQ05u0CqmM4"
-            }
-        ],
-        "ace": "https://docusign.highspot.com/items/5f0f4f13a2e3a924507fac96",
-        "tag": {
-            "Sign": "eSignature",
-            "Integrate": "Workday"
-        }
-    },
-    {
-        "name": "Custom API Demos",
-        "desc": "Tools to assist SEs in quickly building custom API demos",
-        "logo": "img/api-logo.png",
-        "links": [
-            {
-                "title": "Advanced Forms and Fields",
-                "url": "https://dsdemos.esigndemos.com/AdvancedFormsFields2017/demos"
-            },
-            {
-                "title": "Authentication Examples",
-                "url": "https://dsdemos.esigndemos.com/authentication/ServiceIntegration"
-            },
-            {
-                "title": "JSON to SDK Tool",
-                "url": "https://jsontosdk.dshackathon.com"
-            }
-        ],
-        "docs": [
-            {
-                "title": "JotForm Instructions",
-                "url": "https://innov8ive.app/hmd/index.aspx"
-            },
-            {
-                "title": "SE Postman Collection",
-                "url": "https://drive.google.com/drive/u/1/folders/1830FxJab_QHZe9mLKrFBppIOxvhF72Th"
-            }
-        ],
-        "videos": [
-            {
-                "title": "JotForm Demo Setup",
-                "url": "https://drive.google.com/file/d/1XxPJAyi9r6luE0JjDWC-l0IFee70jWJY/view?usp=sharing"
-            }
-        ],
-        "tag": {
-            "Prepare": "JotForm",
-            "Sign": "eSignature",
-            "Integrate": "API · JSON · Postman · SDK"
-        }
-    },
-    {
-        "name": "Allura Demo Portal",
-        "logo": "img/insurance-logo.png",
-        "link": "https://dsdemos.esigndemos.com/dsportals/insurance/index.html",
-        "resource": "https://dsdemos.esigndemos.com/dsportals/help/Allura.pdf",
-        "videos": [
-            {
-                "title": "Auto Warranty Claim Demo",
-                "url": "https://docusign.wistia.com/medias/xoyp7ab74w"
-            }
-        ],
-        "ace": "https://docusign.highspot.com/items/5e2f3c893f65f66905a44b73?lfrm=srp.15",
-        "tag": {
-            "Prepare": "Guided Forms · PowerForms",
-            "Sign": "eSignature",
-            "Integrate": "API · Connect · Salesforce",
-            "Industry": "Insurance"
-        }
-    },
-    {
-        "name": "Ciencia Demo Portal",
-        "logo": "img/lifesciences-logo.png",
-        "demos": [
-            {
-                "title": "Ciencia Demo Portal",
-                "url": "https://dsdemos.esigndemos.com/dsportals/science2"
-            },
-            {
-                "title": "Ciencia Help File",
-                "url": "https://dsdemos.esigndemos.com/dsportals/help/Ciencia.pdf"
-            }
-        ],
-        "videos": [
-            {
-                "title": "Demo: Sign a CFR Part 11 Document",
-                "url": "https://support.docusign.com/en/videos/Sign-a-CFR-Part-11"
-            }
-        ],
-        "resources": [
-            {
-                "title": "Chatter: CFR Part 11 + Validator",
-                "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W0000008f3cSAA/view"
-            }
-        ],
-        "tag": {
-            "Prepare": "PowerForms",
-            "Sign": "eSignature",
-            "Integrate": "API · Connect",
-            "Industry": "FDA Part 11 Module · Life Sciences"
-        },
-        "search": "21 CFR Part 11, Validator for Life Sciences"
-    },
-    {
-        "name": "Public Sector Demo Portal",
-        "logo": "img/pubsec-logo.png",
-        "link": "https://dsdemos.esigndemos.com/dsportals/publicsector2",
-        "resource": "https://dsdemos.esigndemos.com/dsportals/help/PubSec_Help.pdf",
-        "ace": "https://docusign.highspot.com/items/5e2f4a94c2479155e1356f78?lfrm=srp.18",
-        "tag": {
-            "Prepare": "Guided Forms · PowerForms",
-            "Sign": "eSignature · PIV",
-            "Act": "Payments",
-            "Integrate": "API · Connect",
-            "Industry": "Public Sector"
-        }
-    },
-    {
-        "name": "Saluda Demo Portal",
-        "logo": "img/healthcare-logo.png",
-        "link": "https://dsdemos.esigndemos.com/dsportals/health2",
-        "resource": "https://dsdemos.esigndemos.com/dsportals/help/Saluda.pdf",
-        "ace": "https://docusign.highspot.com/items/5e2f3cc1c79c5231d0cea2a5?lfrm=srp.9",
-        "tag": {
-            "Prepare": "Guided Forms · PowerForms",
-            "Sign": "eSignature",
-            "Integrate": "API · Connect",
-            "Industry": "Healthcare"
-        }
-    },
-    {
-        "name": "TGK Demo Portal",
-        "logo": "img/finance-logo.png",
-        "link": "https://dsdemos.esigndemos.com/dsportals/finance2",
-        "resource": "https://dsdemos.esigndemos.com/dsportals/help/TGK_Help.pdf",
-        "invision": "https://docusign.invisionapp.com/share/M3QTQ52ZF8P",
-        "videos": [
-            {
-                "title": "Tally Banking Solution Story",
-                "url": "https://docusign.highspot.com/items/5eb3191266bbaa6beae60f86"
-            },
-            {
-                "title": "Wire Transfer Demo",
-                "url": "https://docusign.wistia.com/medias/lv2j6m1uj7"
-            }
-        ],
-        "resources": [
-            {
-                "title": "Financial Services Smart Page",
-                "url": "https://docusign.highspot.com/items/5e2f3b8d628ba204cb14a29a"
-            }
-        ],
-        "tag": {
-            "Prepare": "Data Verification · Guided Forms",
-            "Sign": "ARR · Click · Identify · eWitness · Responsive",
-            "Act": "Payments",
-            "Integrate": "API · Connect",
-            "Industry": "Finance"
-        },
-        "search": "Fins, Financial Services"
-    },
-    {
-        "name": "DocuSign Portal Builder",
-        "logo": "img/portalbuilder-logo.png",
-        "link": "https://dsdemos.esigndemos.com/portalbuilder",
-        "tag": {
-            "Industry": "Finance · Health · Public Sector"
-        }
-    },
-    {
-        "name": "LoanCo Sample App",
-        "logo": "img/loanco-logo.png",
-        "demos": [
-            {
-                "title": "LoanCo Sample App",
-                "url": "https://loanco.sampleapps.docusign.com"
-            }
-        ],
-        "resources": [
-            {
-                "title": "Financial Services Smart Page",
-                "url": "https://docusign.highspot.com/items/5e2f3b8d628ba204cb14a29a"
-            }
-        ],
-        "git": "https://github.com/docusign/sample-app-loanco-nodejs",
-        "tag": {
-            "Sign": "eSignature",
-            "Integrate": "API",
-            "Industry": "Finance"
-        },
-        "search": "Fins, Financial Services"
-    },
-    {
-        "name": "MyClickwrap Sample App",
-        "logo": "img/myclick-logo.png",
-        "demos": [
-            {
-                "title": "MyClickwrap Sample App",
-                "url": "https://myclickwrap.sampleapps.docusign.com"
-            }
-        ],
-        "link": "https://myclickwrap.sampleapps.docusign.com",
-        "git": "https://github.com/docusign/sample-app-myclickwrap-csharp",
-        "tag": {
-            "Sign": "Click",
-            "Integrate": "API"
-        }
-    },
-    {
-        "name": "MyHR Sample App",
-        "logo": "img/myhr-logo.png",
-        "demos": [
-            {
-                "title": "MyHR Sample App",
-                "url": "https://myhr.sampleapps.docusign.com"
-            }
-        ],
-        "resources": [
-            {
-                "title": "HR Smart Page",
-                "url": "https://docusign.highspot.com/items/5e2f4b04c79c523177cef745"
-            }
-        ],
-        "git": "https://github.com/docusign/sample-app-myhr-csharp",
-        "tag": {
-            "Sign": "Click · eSignature · Identify",
-            "Integrate": "API",
-            "Industry": "HR"
-        }
-    },
-    {
-        "name": "MyRealEstate Sample App",
-        "logo": "img/myrealestate-logo.png",
-        "demos": [
-            {
-                "title": "MyRealEstate Sample App",
-                "url": "https://myrealestate.sampleapps.docusign.com"
-            }
-        ],
-        "git": "https://github.com/docusign/sample-app-myrealestate-nodejs",
-        "tag": {
-            "Integrate": "Rooms API",
-            "Industry": "Real Estate"
-        }
-    },
-    {
-        "name": "MySure Sample App",
-        "logo": "img/mysure-logo.png",
-        "demos": [
-            {
-                "title": "MySure Sample App",
-                "url": "https://mysure.sampleapps.docusign.com"
-            }
-        ],
-        "resources": [
-            {
-                "title": "Insurance Smart Page",
-                "url": "https://docusign.highspot.com/items/5e2f3c893f65f66905a44b73"
-            }
-        ],
-        "git": "https://github.com/docusign/sample-app-mysure-python",
-        "tag": {
-            "Sign": "Click · eSignature",
-            "Act": "Payments",
-            "Integrate": "API",
-            "Industry": "Insurance"
-        }
-    },
-    {
-        "name": "MyUni Sample App",
-        "logo": "img/myuni-logo.png",
+        "name": "DAC for Educuation",
+        "logo": "img/edu-logo.png",
         "demos": [
             {
                 "title": "MyUni Sample App",
@@ -1330,16 +1071,239 @@
         ],
         "resources": [
             {
-                "title": "EDU Smart Page",
+                "title": "ACE | Education",
                 "url": "https://docusign.highspot.com/items/5e2f4ad5c7143360c1097dcc"
             }
         ],
-        "git": "https://github.com/docusign/sample-app-myuni-python",
-        "tag": {
+        "tags": {
             "Sign": "Click · eSignature",
             "Act": "Payments",
-            "Integrate": "API",
             "Industry": "Education"
-        }
+        },
+        "search": "API, Higher Education, MyUni Sample App"
+    },
+    {
+        "name": "DAC for Financial Services",
+        "logo": "img/finance-logo.png",
+        "demos": [
+            {
+                "title": "LoanCo Sample App",
+                "url": "https://loanco.sampleapps.docusign.com"
+            },
+            {
+                "title": "TGK Demo Portal",
+                "url": "https://dsdemos.esigndemos.com/dsportals/finance2"
+            }
+        ],
+        "docs": [
+            {
+                "title": "TGK Demo Guide",
+                "url": "https://dsdemos.esigndemos.com/dsportals/help/TGK_Help.pdf"
+            }
+        ],
+        "videos": [
+            {
+                "title": "Demo | API & Connect",
+                "url": "https://docusign.highspot.com/items/5eb3191266bbaa6beae60f86"
+            },
+            {
+                "title": "Demo | Wire Transfer",
+                "url": "https://docusign.wistia.com/medias/lv2j6m1uj7"
+            }
+        ],
+        "resources": [
+            {
+                "title": "ACE | Financial Services",
+                "url": "https://docusign.highspot.com/items/5e2f3b8d628ba204cb14a29a"
+            }
+        ],
+        "tags": {
+            "Prepare": "Guided Forms",
+            "Sign": "Click · eSignature · Identify",
+            "Act": "Payments",
+            "Integrate": "Connect",
+            "Industry": "Finance"
+        },
+        "search": "TGK demo portal, LoanCo sample app, api, Fins, ARR, Advanced Recipient Routing, Data Verification, eWitneess, Responsive"
+    },
+    {
+        "name": "DAC for Healthcare",
+        "logo": "img/healthcare-logo.png",
+        "demos": [
+            {
+                "title": "Saluda Demo Portal",
+                "url": "https://dsdemos.esigndemos.com/dsportals/health2"
+            }
+        ],
+        "docs": [
+            {
+                "title": "Saluda Demo Guide",
+                "url": "https://dsdemos.esigndemos.com/dsportals/help/Saluda.pdf"
+            }
+        ],
+        "resources": [
+            {
+                "title": "ACE | Healtchare & Life Sciences",
+                "url": "https://docusign.highspot.com/items/5e2f3cc1c79c5231d0cea2a5"
+            }
+        ],
+        "tags": {
+            "Prepare": "Guided Forms · PowerForms",
+            "Sign": "eSignature",
+            "Integrate": "Connect",
+            "Industry": "Healthcare"
+        },
+        "search": "API, Saluda Demo Portal"
+    },
+    {
+        "name": "DAC for Human Resources",
+        "logo": "img/hr-logo.png",
+        "demos": [
+            {
+                "title": "MyHR Sample App",
+                "url": "https://myhr.sampleapps.docusign.com"
+            }
+        ],
+        "resources": [
+            {
+                "title": "ACE | Human Resources",
+                "url": "https://docusign.highspot.com/items/5e2f4b04c79c523177cef745"
+            }
+        ],
+        "tags": {
+            "Sign": "Click · eSignature · Identify",
+            "Industry": "HR"
+        },
+        "search": "API, myHR Sample App"
+    },
+    {
+        "name": "DAC for Insurance",
+        "logo": "img/insurance-logo.png",
+        "demos": [
+            {
+                "title": "Allura Demo Portal",
+                "url": "https://dsdemos.esigndemos.com/dsportals/insurance/index.html"
+            },
+            {
+                "title": "MySure Sample App",
+                "url": "https://mysure.sampleapps.docusign.com"
+            }
+        ],
+        "docs": [
+            {
+                "title": "Allura Demo Guide",
+                "url": "https://dsdemos.esigndemos.com/dsportals/help/Allura.pdf"
+            }
+        ],
+        "videos": [
+            {
+                "title": "Demo | Auto Warranty Claim",
+                "url": "https://docusign.wistia.com/medias/xoyp7ab74w"
+            }
+        ],
+        "resources": [
+            {
+                "title": "ACE | Insurance",
+                "url": "https://docusign.highspot.com/items/5e2f3c893f65f66905a44b73"
+            }
+        ],
+        "tags": {
+            "Prepare": "Guided Forms · PowerForms",
+            "Sign": "Click · eSignature",
+            "Act": "Payments",
+            "Integrate": "Connect",
+            "Industry": "Insurance"
+        },
+        "search": "API, Allura Demo Portal"
+    },
+    {
+        "name": "DAC for Life Sciences",
+        "logo": "img/lifesciences-logo.png",
+        "demos": [
+            {
+                "title": "Ciencia Demo Portal",
+                "url": "https://dsdemos.esigndemos.com/dsportals/science2"
+            }
+        ],
+        "docs": [
+            {
+                "title": "Ciencia Demo Guide",
+                "url": "https://dsdemos.esigndemos.com/dsportals/help/Ciencia.pdf"
+            }
+        ],
+        "videos": [
+            {
+                "title": "Demo | Sign a CFR Part 11 Document",
+                "url": "https://support.docusign.com/en/videos/Sign-a-CFR-Part-11"
+            }
+        ],
+        "resources": [
+            {
+                "title": "ACE | Healthcare & Life Sciences",
+                "url": "hhttps://docusign.highspot.com/items/5e2f3cc1c79c5231d0cea2a5"
+            },
+            {
+                "title": "Chatter | CFR Part 11 + Validator",
+                "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W0000008f3cSAA/view"
+            }
+        ],
+        "tags": {
+            "Prepare": "PowerForms",
+            "Sign": "eSignature",
+            "Integrate": "Connect",
+            "Industry": "FDA Part 11 Module · Life Sciences"
+        },
+        "search": "21 CFR Part 11, API, Validator for Life Sciences, Ciencia Demo Portal"
+    },
+    {
+        "name": "DAC for Public Sector",
+        "logo": "img/pubsec-logo.png",
+        "demos": [
+            {
+                "title": "PubSec Demo Portal",
+                "url": "https://dsdemos.esigndemos.com/dsportals/publicsector2"
+            }
+        ],
+        "docs": [
+            {
+                "title": "PubSec Demo Guide",
+                "url": "https://dsdemos.esigndemos.com/dsportals/help/PubSec_Help.pdf"
+            }
+        ],
+        "resources": [
+            {
+                "title": "ACE | Public Sector",
+                "url": "https://docusign.highspot.com/items/5e2f4a94c2479155e1356f78"
+            }
+        ],
+        "tags": {
+            "Prepare": "Guided Forms · PowerForms",
+            "Sign": "eSignature",
+            "Act": "Payments",
+            "Integrate": "Connect",
+            "Industry": "Public Sector"
+        },
+        "search": "API, PIV, Demo Portal"
+    },
+    {
+        "name": "DAC for Real Estate",
+        "logo": "img/realestate-logo.png",
+        "demos": [
+            {
+                "title": "MyRealEstate Sample App",
+                "url": "https://myrealestate.sampleapps.docusign.com"
+            }
+        ],
+        "resources": [
+            {
+                "title": "ACE | Real Estate",
+                "url": "https://docusign.highspot.com/items/5e2f3d8edf369d14e32e5c53"
+            }
+        ],
+        "tags": {
+            "Integrate": "Rooms API",
+            "Industry": "Real Estate"
+        },
+        "search": "myRealEstate Sample App"
     }
 ]

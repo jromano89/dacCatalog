@@ -5,7 +5,7 @@
     <title>SE Catalog</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" type="image/png" href="img/icon-dac.png" />
+    <link rel="shortcut icon" type="image/png" href="img/dac-icon.png" />
 
     <!-- CSS Imports -->
     <link rel="stylesheet"
@@ -40,7 +40,7 @@
             <div class="navbar-brand d-flex flex-row" href="#">
                 <img class="ds-logo" src="img/docusign-logo.png" height="26px" />
                 <div class="ds-logo-text">Solution Engineering Catalog</div>
-                <a class="mx-2 h6 text-light"
+                <a class="mx-2 h6 text-light" target="_blank"
                     href="https://docs.google.com/document/d/1ymz904xL17hG_Qh8J5qLTtUckXVEr-xbl2Ufi-9jLns/edit?usp=sharing">
                     <b-icon icon="question-circle"></b-icon>
                 </a>
@@ -65,7 +65,7 @@
                                 target="_blank">LATAM</a></small>
                     </div>
                 </small>
-                <img class="float-right" src="img/icon-dac.png" height="26px" />
+                <img class="float-right" src="img/dac-icon.png" height="26px" />
             </div>
         </nav>
 
@@ -76,9 +76,8 @@
                     <span class="input-group-text bg-transparent border-0 px-0">
                         <b-icon variant="white" icon="search"></b-icon>
                     </span>
-
                     <input type="text" class="form-control bg-transparent border-0 shadow-none text-white"
-                        placeholder="Search by product, industry, or vertical" v-model="search"
+                        placeholder="Search by product, partner, or industry" v-model="search"
                         v-on:keyup="searchCatalog()" />
                 </div>
             </div>
@@ -96,8 +95,8 @@
 
                                 <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1"
                                     icon="link-45deg" v-if="item.demos" :id="`demos-${item.name}`"></b-icon>
-                                <b-popover v-if="item.demos" :target="`demos-${item.name}`" title="Demos" html="true"
-                                    triggers="hover" placement="bottomright">
+                                <b-popover v-if="item.demos" :target="`demos-${item.name}`" title="Demos & Tools"
+                                    html="true" triggers="hover" placement="bottomright">
                                     <a v-for="resource in item.demos" :key="resource.title" :href="resource.url"
                                         target="_blank">&#8226; {{resource.title}}<br /></a>
                                 </b-popover>
@@ -128,24 +127,15 @@
                                         target="_blank">&#8226; {{resource.title}}<br /></a>
                                 </b-popover>
 
-                                <a :href="item.git" v-if="item.git != null" target="_blank">
-                                    <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1"
-                                        icon="github">
-                                    </b-icon>
-                                </a>
-
                             </div>
                         </div>
                         <div class="mb-0">
-                            <span v-for="(value, key) in item.tag" :key="key" :class="`badge ${key}`">{{ value
+                            <span v-for="(value, key) in item.tags" :key="key" :class="`badge ${key}`">{{ value
                                 }}</span>
                         </div>
                     </div>
                 </div>
             </template>
-
-
-
         </div>
 
         <!-- footer -->
@@ -158,8 +148,8 @@
                 </small>
             </div>
         </div>
-    </div>
 
+    </div>
 </body>
 
 </html>
