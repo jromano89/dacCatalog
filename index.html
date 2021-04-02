@@ -88,8 +88,9 @@
                             <h5 class="card-title text-dark my-2"><span v-html="item.name"></span></h5>
                             <div class="mx-2">
 
-                                <b-icon variant="secondary" class="h2 border border-secondary rounded p-1 mx-1"
-                                    icon="link-45deg" v-if="item.demos" :id="`demos-${item.name}`"></b-icon>
+                                <b-icon variant="secondary" focusable="true"
+                                    class="h2 border border-secondary rounded p-1 mx-1" icon="link-45deg"
+                                    v-if="item.demos" :id="`demos-${item.name}`"></b-icon>
                                 <b-popover v-if="item.demos" :target="`demos-${item.name}`" title="Demos & Tools"
                                     html="true" triggers="hover" placement="bottomright">
                                     <div v-for="resource in item.demos">&#8226;
