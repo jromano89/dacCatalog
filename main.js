@@ -45,7 +45,7 @@ const app = new Vue({
         }
     },
     mounted() {
-        fetch('./catalog.json')
+        fetch('./catalog.json?v2')
             .then(res => res.json())
             .then(data => {
                 this.catalogData = data;

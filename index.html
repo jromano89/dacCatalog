@@ -15,9 +15,10 @@
 
     <!-- JS Imports -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-vue/2.21.2/bootstrap-vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-vue/2.21.2/bootstrap-vue-icons.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
+
     <script src="main.js" type="module"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -36,38 +37,32 @@
     <div id="vue-app">
 
         <!-- navbar -->
-        <nav class="navbar navbar-dark bg-darkblue pt-1 pb-0">
-            <div class="navbar-brand d-flex flex-row" href="#">
-                <img class="ds-logo" src="img/docusign-logo.png" height="26px" />
-                <div class="ds-logo-text">Solution Engineering Catalog</div>
-                <a class="mx-2 h6 text-light" target="_blank"
-                    href="https://docs.google.com/document/d/1ymz904xL17hG_Qh8J5qLTtUckXVEr-xbl2Ufi-9jLns/edit?usp=sharing">
-                    <b-icon icon="question-circle"></b-icon>
-                </a>
-            </div>
-            <div class="float-right d-none d-md-block">
-                <small>
-                    <a class="text-light ml-3" href="https://dsdemos.esigndemos.com/ReleaseNotes"
-                        target="_blank">Release Notes</a>
-                </small>
-                <small>
-                    <a class="text-light mx-3" href="https://docusign.highspot.com/spots/5e73bab4a2e3a92ffb62d647"
-                        target="_blank">SE Central</a>
-                </small>
-                <small class="dropdown">
-                    <a class="text-light mx-3 dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">North America</a>
-                    <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdown">
-                        <small><a class="dropdown-item" href="https://paperpreventers.co.uk/DAC"
-                                target="_blank">EMEA</a></small>
-                        <small><a class="dropdown-item"
-                                href="https://sites.google.com/docusign.com/selatam/se-latam-portal?pli=1&authuser=1"
-                                target="_blank">LATAM</a></small>
-                    </div>
-                </small>
-                <img class="float-right" src="img/dac-icon.png" height="26px" />
-            </div>
-        </nav>
+        <b-navbar type="dark" class="text-light bg-darkblue pt-1 pb-0">
+            <img class="ds-logo" src="img/docusign-logo.png" height="26px" />
+            <div class="ds-logo-text">Solution Engineering Catalog</div>
+            <a class="mx-2 h6 text-light" target="_blank"
+                href="https://docs.google.com/document/d/1ymz904xL17hG_Qh8J5qLTtUckXVEr-xbl2Ufi-9jLns/edit?usp=sharing">
+                <b-icon icon="question-circle"></b-icon>
+            </a>
+            <b-navbar-nav small class="ml-auto d-none d-md-flex">
+                <b-navbar-nav menu-class="text-light">
+                    <b-nav-item href="https://dsdemos.esigndemos.com/ReleaseNotes" target="_blank"
+                        link-classes="text-light">
+                        Release Notes
+                    </b-nav-item>
+                    <b-nav-item href="https://docusign.highspot.com/spots/5e73bab4a2e3a92ffb62d647" target="_blank"
+                        link-classes="text-light">SE Central</b-nav-item>
+                </b-navbar-nav>
+                <b-nav-item-dropdown class="ml-3" text="North America" right toggle-class="text-light">
+                    <b-dropdown-item class="small" href="https://paperpreventers.co.uk/DAC" target="_blank">EMEA
+                    </b-dropdown-item>
+                    <b-dropdown-item class="small"
+                        href="https://sites.google.com/docusign.com/selatam/se-latam-portal?pli=1&authuser=1"
+                        target="_blank">LATAM</b-dropdown-item>
+                </b-nav-item-dropdown>
+                <img class="ml-1" src="img/dac-icon.png" height="26px" />
+            </b-navbar-nav>
+        </b-navbar>
 
         <!-- searchbar -->
         <div class="px-3 pt-3 pb-4 bg-black">
@@ -98,7 +93,8 @@
                                 <b-popover v-if="item.demos" :target="`demos-${item.name}`" title="Demos & Tools"
                                     html="true" triggers="hover" placement="bottomright">
                                     <div v-for="resource in item.demos">&#8226;
-                                        <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a><br />
+                                        <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a>
+                                        <small class="text-secondary">{{resource.desc}}</small><br />
                                     </div>
                                 </b-popover>
 
@@ -137,8 +133,9 @@
                             </div>
                         </div>
                         <div class="mb-0">
-                            <span v-for="(value, key) in item.tags" :key="key" :class="`badge ${key}`">{{ value
-                                }}</span>
+                            <span v-for="(value, key) in item.tags" :key="key" :class="`badge ${key}`">
+                                {{ value }}
+                            </span>
                         </div>
                     </div>
                 </div>

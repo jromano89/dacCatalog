@@ -14,10 +14,6 @@ html {
   font-size: 1rem;
 }
 
-.dropdown-menu {
-  min-width: 7.85rem;
-}
-
 .searchbar {
   border-bottom: 2px solid;
   color: #0369ff;
