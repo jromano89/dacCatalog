@@ -4,23 +4,24 @@ const app = new Vue({
         return {
             catalogData: [],
             filteredData: [],
-            search: '',
+            search: "",
             labels: [
-                { value: 'Prepare' },
-                { value: 'Sign' },
-                { value: 'Act' },
-                { value: 'Manage' },
-                { value: 'Integrate' },
-                { value: 'Industry' },
+                { value: "Prepare" },
+                { value: "Sign" },
+                { value: "Act" },
+                { value: "Manage" },
+                { value: "Integrate" },
+                { value: "Industry" },
             ],
         };
     },
     methods: {
         searchCatalog() {
-            if (this.search !== '') {
-                this.setQueryStringParameter('search', this.search);
+            if (this.search !== "") {
+                this.setQueryStringParameter("search", this.search);
                 this.filteredData = this.catalogData.filter((obj) => {
-                    let searchString = Object.values(obj.tags).toString() + obj.name + obj.search;
+                    let searchString =
+                        Object.values(obj.tags).toString() + obj.name + obj.search;
                     searchString = searchString.toLowerCase();
                     return searchString.indexOf(this.search.toLowerCase()) >= 0;
                 });
@@ -32,25 +33,29 @@ const app = new Vue({
         setQueryStringParameter(name, value) {
             var params = new URLSearchParams(window.location.search);
             params.set(name, value);
-            window.history.replaceState({}, "", decodeURIComponent(`${window.location.pathname}?${params}`));
+            window.history.replaceState(
+                {},
+                "",
+                decodeURIComponent(`${window.location.pathname}?${params}`)
+            );
         },
         initSearch() {
             var urlParams = new URLSearchParams(window.location.search);
-            var searchParam = urlParams.get('search');
+            var searchParam = urlParams.get("search");
             if (searchParam) {
                 this.search = searchParam;
             } else {
-                this.search = '';
+                this.search = "";
             }
-        }
+        },
     },
     mounted() {
-        fetch('./catalog.json?v2')
-            .then(res => res.json())
-            .then(data => {
+        fetch("./catalog.json?v2")
+            .then((res) => res.json())
+            .then((data) => {
                 this.catalogData = data;
                 this.initSearch();
                 this.searchCatalog();
             });
-    }
+    },
 });
