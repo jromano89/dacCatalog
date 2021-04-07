@@ -20,10 +20,11 @@ const app = new Vue({
             if (this.search !== "") {
                 this.setQueryStringParameter("search", this.search);
                 this.filteredData = this.catalogData.filter((obj) => {
+                    let searchValue = this.search.replace(/\s+/g, '').toLowerCase();
                     let searchString =
                         Object.values(obj.tags).toString() + obj.name + obj.search;
-                    searchString = searchString.toLowerCase();
-                    return searchString.indexOf(this.search.toLowerCase()) >= 0;
+                    searchString = searchString.replace(/\s+/g, '').toLowerCase();
+                    return searchString.indexOf(searchValue) >= 0;
                 });
             } else {
                 this.filteredData = this.catalogData;
