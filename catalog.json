@@ -683,12 +683,18 @@
         "logo": "img/guidedforms-logo.png",
         "demos": [
             {
-                "title": "Prebuilt GF Demos",
+                "title": "Guided Forms Demos",
                 "url": "https://www.dsguidedforms.com"
             },
             {
-                "title": "Shared GF Environment",
-                "url": "https://docusign-presales.na20-sb.smartcommunications.cloud/produce"
+                "title": "Guided Forms Sandbox",
+                "url": "https://docusign-presales.na20-sb.smartcommunications.cloud/produce",
+                "desc": "new"
+            },
+            {
+                "title": "Guided Forms Sandbox",
+                "url": "https://dsdemos.esigndemos.com/infiniti/Produce",
+                "desc": "legacy"
             }
         ],
         "videos": [
