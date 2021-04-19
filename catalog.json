@@ -88,17 +88,17 @@
                 "desc": "6m"
             },
             {
+                "title": "Demo | Analyzer Word Add-In",
+                "url": "https://docusign.highspot.com/items/5f4eac2566bbaa0a163a29ee?lfrm=shp.0",
+                "desc": "7m"
+            },
+            {
                 "title": "Demo | CLM+",
                 "url": "https://docusign.highspot.com/items/5fa46b28628ba25035d528a6",
                 "desc": "4m"
             },
             {
-                "title": "Demo | Word Add-In",
-                "url": "https://docusign.highspot.com/items/5f4eac2566bbaa0a163a29ee?lfrm=shp.0",
-                "desc": "7m"
-            },
-            {
-                "title": "Marketing Video",
+                "title": "Marketing | Analyzer",
                 "url": "https://docusign.highspot.com/items/5f748799659e936d665e659a",
                 "desc": "2m"
             }
@@ -148,7 +148,7 @@
                 "desc": "5m"
             },
             {
-                "title": "Marketing Video",
+                "title": "Marketing | Click",
                 "url": "https://docusign.wistia.com/medias/k0yzapd15a",
                 "desc": "2m"
             }
@@ -208,7 +208,7 @@
                 "desc": "16m"
             },
             {
-                "title": "Marketing Video",
+                "title": "Marketing | CLM",
                 "url": "https://docusign.highspot.com/items/5e289f9a8117176207daad0a",
                 "desc": "2m"
             },
@@ -291,7 +291,7 @@
                 "desc": "2m"
             },
             {
-                "title": "Marketing Video",
+                "title": "Marketing | eSignature",
                 "url": "https://www.docusign.com/videos/how-it-works",
                 "desc": "1m"
             }
@@ -331,7 +331,7 @@
         ],
         "videos": [
             {
-                "title": "Marketing Video",
+                "title": "Marketing | Salesforce",
                 "url": "https://vimeo.com/370159968/c7dce6701b",
                 "desc": "2m"
             }
@@ -378,7 +378,7 @@
                 "desc": "4m"
             },
             {
-                "title": "Marketing Video",
+                "title": "Marketing | DocuSign Gen",
                 "url": "https://www.docusign.com/product-videos/docusign-gen-for-salesforce-product-demo",
                 "desc": "2m"
             }
@@ -434,7 +434,7 @@
                 "desc": "4m"
             },
             {
-                "title": "Marketing Video",
+                "title": "Marketing | Identify",
                 "url": "https://docusign.highspot.com/items/5e2b83d5c247914462d8f25d",
                 "desc": "2m"
             }
@@ -465,7 +465,7 @@
         ],
         "videos": [
             {
-                "title": "Marketing Video",
+                "title": "Marketing | Insight",
                 "url": "https://www.youtube.com/watch?v=k74-uJT6y5s",
                 "desc": "2m"
             }
@@ -502,9 +502,14 @@
         ],
         "videos": [
             {
-                "title": "Demo | DocuSign Monitor",
+                "title": "Demo | Monitor",
                 "url": "https://docusign.highspot.com/items/5f80e13566bbaa20e682109c",
                 "desc": "3m"
+            },
+            {
+                "title": "Marketing | Monitor",
+                "url": "https://docusign.wistia.com/medias/xlm10147kg",
+                "desc": "2m"
             }
         ],
         "resources": [
@@ -539,7 +544,7 @@
         ],
         "videos": [
             {
-                "title": "Marketing Video",
+                "title": "Marketing | Negotiate",
                 "url": "https://vimeo.com/374193842/57ee6d0779",
                 "desc": "2m"
             }
@@ -862,13 +867,13 @@
                 "desc": "2m"
             },
             {
-                "title": "Google Workspace Setup",
-                "url": "https://docusign.highspot.com/items/601dc431659e934d243c1f0e",
+                "title": "Marketing | Google Workspace",
+                "url": "https://fast.wistia.net/embed/iframe/qrk00ptd3f?autoPlay=false&videoFoam=true",
                 "desc": "2m"
             },
             {
-                "title": "Marketing Video",
-                "url": "https://fast.wistia.net/embed/iframe/qrk00ptd3f?autoPlay=false&videoFoam=true",
+                "title": "Setup | Google Workspace",
+                "url": "https://docusign.highspot.com/items/601dc431659e934d243c1f0e",
                 "desc": "2m"
             }
         ],
@@ -1101,17 +1106,17 @@
         ],
         "videos": [
             {
-                "title": "Demo | Employee Onboarding",
+                "title": "Demo | Workday Onboarding",
                 "url": "https://www.docusign.com/product-videos/streamline-onboarding-with-docusign-and-your-hcm",
                 "desc": "2m"
             },
             {
-                "title": "Demo | Integration Overview",
+                "title": "Demo | Workday Overview",
                 "url": "https://docusign.highspot.com/items/5f0ce5eb66bbaa6de3baa850",
                 "desc": "14m"
             },
             {
-                "title": "Marketing Video",
+                "title": "Marketing | Workday",
                 "url": "https://docusign.highspot.com/items/5f0ce69fa4dfa00e7c2cfe80",
                 "desc": "3m"
             }
