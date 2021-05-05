@@ -914,6 +914,10 @@
                 "url": "https://docs.google.com/document/d/15hBiMvGhx6Ocwz303CYAgjGHdamFWL4PdJOc6Lf6LYw/edit?usp=sharing"
             },
             {
+                "title": "Power Automate Guide",
+                "url": "https://drive.google.com/file/d/1Ixoe007zSdgKdxe07wjyWRU0x138xnSp/view?usp=sharing"
+            },
+            {
                 "title": "SharePoint Demo Guide",
                 "url": "https://drive.google.com/file/d/1xi-uGy9s6wkWkMrS5y9P2ZG_sPzbuAvz/view?usp=sharing"
             }
@@ -945,7 +949,7 @@
             "Sign": "eSignature",
             "Integrate": "Dynamics · Outlook · SharePoint · Teams"
         },
-        "search": "Microsoft Dynamics, Microsoft Flow, Microsoft Outlook, PowerAutomate, Microsoft SharePoint Online, Microsoft Teams, MS, SPO"
+        "search": "Microsoft Dynamics, Microsoft Flow, Microsoft Outlook, Power Automate, Microsoft SharePoint Online, Microsoft Teams, MS, SPO"
     },
     {
         "name": "DocuSign + Oracle",
