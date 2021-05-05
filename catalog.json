@@ -323,10 +323,12 @@
             {
                 "title": "Salesforce Clickthrough",
                 "url": "https://docusign.invisionapp.com/share/AKWY8WINH8W#/screens"
-            },
+            }
+        ],
+        "docs": [
             {
-                "title": "Salesforce Demo Kit",
-                "url": "https://www.demokit.io/docusign"
+                "title": "Salesforce Demo Guide",
+                "url": "https://docs.google.com/document/d/1Ds2vD7cFlHcAgsHflJDnG02stdC1Lz7PVLs6M7aU2jo/edit?usp=sharing"
             }
         ],
         "videos": [
@@ -1049,7 +1051,7 @@
             },
             {
                 "title": "Hybris Demo Guide",
-                "url": "https://drive.google.com/file/d/1PVlcj-SWhc3fiO5maWlG9J0c7FxUgf4i/view"
+                "url": "https://docs.google.com/document/d/1DjADTZOsT1yAiex3L9pbt3Uh2bcLAk9nHhBtqDywt44/edit?usp=sharing"
             },
             {
                 "title": "SuccessFactors Demo Guide",
