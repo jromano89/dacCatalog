@@ -179,6 +179,10 @@
             {
                 "title": "Demo Packages",
                 "url": "https://drive.google.com/drive/folders/1CVKBkylaf7QVI-AB0L29QxXxHpgQc64Q?usp=sharing"
+            },
+            {
+                "title": "Install Clause Library",
+                "url": "https://drive.google.com/drive/folders/1PyBCyNFTdMHGbJQ7Y0IiF35us48ZRadu"
             }
         ],
         "docs": [
@@ -194,6 +198,10 @@
             {
                 "title": "TallyCLM Quick Start",
                 "url": "https://docs.google.com/document/d/1zQ-kASEeyFmDn9AuodWbMK5tPEFdTQunr6M2bjzlu58/edit?usp=sharing"
+            },
+            {
+                "title": "Guide to Parties and Integrations",
+                "url": "https://docs.google.com/document/d/1JWXSU3d5Ohheq-nVzYulfzIePrU33Ne00aN_xfPW5-I"
             }
         ],
         "videos": [
@@ -226,6 +234,10 @@
             {
                 "title": "Chatter | DocuSign CLM",
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000LQNBSA4/view"
+            },
+            {
+                "title": "Google Drive | CLM",
+                "url": "https://drive.google.com/drive/folders/1Q-j7MadOP8UpriSIo5q_QSITMBxD7CKF"
             }
         ],
         "tags": {
@@ -1144,12 +1156,18 @@
         "search": "HCM"
     },
     {
-        "name": "DAC for Educuation",
+        "name": "DAC for Education",
         "logo": "img/edu-logo.png",
         "demos": [
             {
                 "title": "MyUni Sample App",
                 "url": "https://myuni.sampleapps.docusign.com"
+            }
+        ],
+        "docs": [
+            {
+                "title": "U College CLM – Quick Start Guide",
+                "url": "https://docs.google.com/document/d/1_t2bCs1ov9DZfGqd1mnE5Np31EbGmSE9z_jyLsA6xnw"
             }
         ],
         "videos": [
@@ -1166,11 +1184,13 @@
             }
         ],
         "tags": {
+            "Prepare": "CLM Prepare",
             "Sign": "Click · eSignature",
             "Act": "CLM · Payments",
+            "Manage": "CLM Repository",
             "Industry": "Education"
         },
-        "search": "API, Higher Education, MyUni Sample App, U College"
+        "search": "API, Higher Education, MyUni Sample App, U College, NEDU"
     },
     {
         "name": "DAC for Financial Services",
