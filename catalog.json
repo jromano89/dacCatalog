@@ -1137,6 +1137,35 @@
         },
         "search": "HCM"
     },
+	{
+        "name": "DocuSign + Box",
+        "logo": "img/Box Logo.png",
+        "docs": [
+            {
+                "title": "Box Demo Guide",
+                "url": "https://docs.google.com/document/d/1G0zTZtmRLX8uzDdsJgP2F_5pj-Zz1l40d35cYj6xfdM/edit?usp=sharing"
+            }
+        ],
+        "resources": [
+            {
+                "title": "ACE | Box Partner Brief",
+                "url": "https://docusign.highspot.com/items/5f8e0868f7794d25002f98e4?lfrm=srp.16#1"
+            },
+            {
+                "title": "Partnering to WIN: Box",
+                "url": "https://docusign.lightning.force.com/lightning/page/chatter/record/0F940000000c1JxCAI"
+            },
+            {
+                "title": "SalesForce Partner Object: Box",
+                "url": "https://docusign.lightning.force.com/lightning/r/Partner_Solution__c/aNR1W000000009zWAA/view"
+            }
+        ],
+        "tags": {
+            "Sign": "eSignature",
+            "Integrate": "Box"
+        },
+        "search": "Archive, Store, Storage"
+    },
     {
         "name": "DAC for Educuation",
         "logo": "img/edu-logo.png",
