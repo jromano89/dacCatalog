@@ -179,29 +179,28 @@
             {
                 "title": "Demo Packages",
                 "url": "https://drive.google.com/drive/folders/1CVKBkylaf7QVI-AB0L29QxXxHpgQc64Q?usp=sharing"
-            },
-            {
-                "title": "Install Clause Library",
-                "url": "https://drive.google.com/drive/folders/1PyBCyNFTdMHGbJQ7Y0IiF35us48ZRadu"
             }
         ],
         "docs": [
             {
                 "title": "<b>CLM Demo Guide</b>",
-                "url": "https://docs.google.com/document/d/1nl-TpOftuVVwhZ75WeIAaHG_qepEBkkclW_EapNXl94",
-                "desc": "Highlighted"
+                "url": "https://docs.google.com/document/d/1nl-TpOftuVVwhZ75WeIAaHG_qepEBkkclW_EapNXl94"
             },
             {
                 "title": "CLM Release Guide",
                 "url": "https://docs.google.com/document/d/1aSwrWI82Q2FT9o7m4aZmR7FXcRNA6S5HabZcEm2HOyo/edit?usp=sharing"
             },
             {
-                "title": "TallyCLM Quick Start",
-                "url": "https://docs.google.com/document/d/1zQ-kASEeyFmDn9AuodWbMK5tPEFdTQunr6M2bjzlu58/edit?usp=sharing"
-            },
-            {
                 "title": "Guide to Parties and Integrations",
                 "url": "https://docs.google.com/document/d/1JWXSU3d5Ohheq-nVzYulfzIePrU33Ne00aN_xfPW5-I"
+            },
+            {
+                "title": "Install Clause Library",
+                "url": "https://drive.google.com/drive/folders/1PyBCyNFTdMHGbJQ7Y0IiF35us48ZRadu"
+            },
+            {
+                "title": "TallyCLM Quick Start",
+                "url": "https://docs.google.com/document/d/1zQ-kASEeyFmDn9AuodWbMK5tPEFdTQunr6M2bjzlu58/edit?usp=sharing"
             }
         ],
         "videos": [
@@ -236,7 +235,7 @@
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000LQNBSA4/view"
             },
             {
-                "title": "Google Drive | CLM",
+                "title": "G-Drive | DocuSign CLM",
                 "url": "https://drive.google.com/drive/folders/1Q-j7MadOP8UpriSIo5q_QSITMBxD7CKF"
             }
         ],
@@ -837,6 +836,32 @@
         "search": "AES, QES, Advanced, Qualified, eIDAS, digital signatures"
     },
     {
+        "name": "DocuSign + Box",
+        "logo": "img/box-logo.png",
+        "docs": [
+            {
+                "title": "Box Demo Guide",
+                "url": "https://docs.google.com/document/d/1G0zTZtmRLX8uzDdsJgP2F_5pj-Zz1l40d35cYj6xfdM/edit?usp=sharing"
+            }
+        ],
+        "resources": [
+            {
+                "title": "ACE | Box Partner Brief",
+                "url": "https://docusign.highspot.com/items/5f8e0868f7794d25002f98e4?lfrm=srp.16#1"
+            },
+            {
+                "title": "Partnering to WIN: Box",
+                "url": "https://docusign.lightning.force.com/lightning/page/chatter/record/0F940000000c1JxCAI"
+            }
+        ],
+        "tags": {
+            "Sign": "eSignature",
+            "Act": "Agreement Actions",
+            "Integrate": "Box"
+        },
+        "search": "Archive, Store, Storage"
+    },
+    {
         "name": "DocuSign + eOriginal",
         "logo": "img/eoriginal-logo.png",
         "demos": [
@@ -1154,35 +1179,6 @@
             "Integrate": "Workday"
         },
         "search": "HCM"
-    },
-	{
-        "name": "DocuSign + Box",
-        "logo": "img/Box Logo.png",
-        "docs": [
-            {
-                "title": "Box Demo Guide",
-                "url": "https://docs.google.com/document/d/1G0zTZtmRLX8uzDdsJgP2F_5pj-Zz1l40d35cYj6xfdM/edit?usp=sharing"
-            }
-        ],
-        "resources": [
-            {
-                "title": "ACE | Box Partner Brief",
-                "url": "https://docusign.highspot.com/items/5f8e0868f7794d25002f98e4?lfrm=srp.16#1"
-            },
-            {
-                "title": "Partnering to WIN: Box",
-                "url": "https://docusign.lightning.force.com/lightning/page/chatter/record/0F940000000c1JxCAI"
-            },
-            {
-                "title": "SalesForce Partner Object: Box",
-                "url": "https://docusign.lightning.force.com/lightning/r/Partner_Solution__c/aNR1W000000009zWAA/view"
-            }
-        ],
-        "tags": {
-            "Sign": "eSignature",
-            "Integrate": "Box"
-        },
-        "search": "Archive, Store, Storage"
     },
     {
         "name": "DAC for Education",
