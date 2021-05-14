@@ -179,6 +179,10 @@
             {
                 "title": "Demo Packages",
                 "url": "https://drive.google.com/drive/folders/1CVKBkylaf7QVI-AB0L29QxXxHpgQc64Q?usp=sharing"
+            },
+            {
+                "title": "Install Clause Library",
+                "url": "https://drive.google.com/drive/folders/1PyBCyNFTdMHGbJQ7Y0IiF35us48ZRadu"
             }
         ],
         "docs": [
@@ -194,6 +198,10 @@
             {
                 "title": "TallyCLM Quick Start",
                 "url": "https://docs.google.com/document/d/1zQ-kASEeyFmDn9AuodWbMK5tPEFdTQunr6M2bjzlu58/edit?usp=sharing"
+            },
+            {
+                "title": "Guide to Parties and Integrations",
+                "url": "https://docs.google.com/document/d/1JWXSU3d5Ohheq-nVzYulfzIePrU33Ne00aN_xfPW5-I"
             }
         ],
         "videos": [
@@ -226,6 +234,10 @@
             {
                 "title": "Chatter | DocuSign CLM",
                 "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000LQNBSA4/view"
+            },
+            {
+                "title": "Google Drive | CLM",
+                "url": "https://drive.google.com/drive/folders/1Q-j7MadOP8UpriSIo5q_QSITMBxD7CKF"
             }
         ],
         "tags": {
@@ -323,10 +335,12 @@
             {
                 "title": "Salesforce Clickthrough",
                 "url": "https://docusign.invisionapp.com/share/AKWY8WINH8W#/screens"
-            },
+            }
+        ],
+        "docs": [
             {
-                "title": "Salesforce Demo Kit",
-                "url": "https://www.demokit.io/docusign"
+                "title": "Salesforce Demo Guide",
+                "url": "https://docs.google.com/document/d/1Ds2vD7cFlHcAgsHflJDnG02stdC1Lz7PVLs6M7aU2jo/edit?usp=sharing"
             }
         ],
         "videos": [
@@ -912,6 +926,10 @@
                 "url": "https://docs.google.com/document/d/15hBiMvGhx6Ocwz303CYAgjGHdamFWL4PdJOc6Lf6LYw/edit?usp=sharing"
             },
             {
+                "title": "Power Automate Guide",
+                "url": "https://drive.google.com/file/d/1Ixoe007zSdgKdxe07wjyWRU0x138xnSp/view?usp=sharing"
+            },
+            {
                 "title": "SharePoint Demo Guide",
                 "url": "https://drive.google.com/file/d/1xi-uGy9s6wkWkMrS5y9P2ZG_sPzbuAvz/view?usp=sharing"
             }
@@ -943,7 +961,7 @@
             "Sign": "eSignature",
             "Integrate": "Dynamics · Outlook · SharePoint · Teams"
         },
-        "search": "Microsoft Dynamics, Microsoft Flow, Microsoft Outlook, PowerAutomate, Microsoft SharePoint Online, Microsoft Teams, MS, SPO"
+        "search": "Microsoft Dynamics, Microsoft Flow, Microsoft Outlook, Power Automate, Microsoft SharePoint Online, Microsoft Teams, MS, SPO"
     },
     {
         "name": "DocuSign + Oracle",
@@ -1049,7 +1067,7 @@
             },
             {
                 "title": "Hybris Demo Guide",
-                "url": "https://drive.google.com/file/d/1PVlcj-SWhc3fiO5maWlG9J0c7FxUgf4i/view"
+                "url": "https://docs.google.com/document/d/1DjADTZOsT1yAiex3L9pbt3Uh2bcLAk9nHhBtqDywt44/edit?usp=sharing"
             },
             {
                 "title": "SuccessFactors Demo Guide",
@@ -1167,12 +1185,18 @@
         "search": "Archive, Store, Storage"
     },
     {
-        "name": "DAC for Educuation",
+        "name": "DAC for Education",
         "logo": "img/edu-logo.png",
         "demos": [
             {
                 "title": "MyUni Sample App",
                 "url": "https://myuni.sampleapps.docusign.com"
+            }
+        ],
+        "docs": [
+            {
+                "title": "U College CLM – Quick Start Guide",
+                "url": "https://docs.google.com/document/d/1_t2bCs1ov9DZfGqd1mnE5Np31EbGmSE9z_jyLsA6xnw"
             }
         ],
         "videos": [
@@ -1189,11 +1213,13 @@
             }
         ],
         "tags": {
+            "Prepare": "CLM Prepare",
             "Sign": "Click · eSignature",
             "Act": "CLM · Payments",
+            "Manage": "CLM Repository",
             "Industry": "Education"
         },
-        "search": "API, Higher Education, MyUni Sample App, U College"
+        "search": "API, Higher Education, MyUni Sample App, U College, NEDU"
     },
     {
         "name": "DAC for Financial Services",
