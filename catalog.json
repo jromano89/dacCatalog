@@ -1430,12 +1430,12 @@
         ],
         "tags": {
             "Prepare": "Guided Forms · PowerForms",
-            "Sign": "eSignature",
+            "Sign": "eSignature · Identify",
             "Act": "CLM · Payments",
             "Integrate": "Connect",
             "Industry": "Public Sector"
         },
-        "search": "API, PIV, PubSec Demo Portal"
+        "search": "API, IDV, Id.me, PIV, PubSec Demo Portal"
     },
     {
         "name": "DAC for Real Estate",
