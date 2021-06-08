@@ -1274,6 +1274,10 @@
         "logo": "img/healthcare-logo.png",
         "demos": [
             {
+                "title": "EMR Demo Portal",
+                "url": "https://dsdemos.esigndemos.com/emr"
+            },
+            {
                 "title": "Saluda Demo Portal",
                 "url": "https://dsdemos.esigndemos.com/dsportals/health2"
             }
@@ -1293,10 +1297,10 @@
         "tags": {
             "Prepare": "Guided Forms · PowerForms",
             "Sign": "eSignature",
-            "Integrate": "Connect",
+            "Integrate": "Connect · Kno2",
             "Industry": "Healthcare"
         },
-        "search": "API, Saluda Demo Portal"
+        "search": "API, Saluda Demo Portal, EMR, EHR"
     },
     {
         "name": "DAC for Human Resources",
