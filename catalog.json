@@ -1227,14 +1227,14 @@
             },
             {
                 "title": "<b>TGK Demo Portal</b>",
-                "url": "https://dsdemos.esigndemos.com/dsportals/finance2",
+                "url": "https://portals.tallydemo.com/tgk",
                 "desc": "Highlighted"
             }
         ],
         "docs": [
             {
                 "title": "TGK Demo Guide",
-                "url": "https://dsdemos.esigndemos.com/dsportals/help/TGK_Help.pdf"
+                "url": "https://portals.tallydemo.com/help/TGK_Help.pdf"
             }
         ],
         "videos": [
@@ -1279,13 +1279,13 @@
             },
             {
                 "title": "Saluda Demo Portal",
-                "url": "https://dsdemos.esigndemos.com/dsportals/health2"
+                "url": "https://portals.tallydemo.com/saluda"
             }
         ],
         "docs": [
             {
                 "title": "Saluda Demo Guide",
-                "url": "https://dsdemos.esigndemos.com/dsportals/help/Saluda.pdf"
+                "url": "https://portals.tallydemo.com/help/Saluda.pdf"
             }
         ],
         "resources": [
@@ -1329,7 +1329,7 @@
         "demos": [
             {
                 "title": "Allura Demo Portal",
-                "url": "https://dsdemos.esigndemos.com/dsportals/insurance/index.html"
+                "url": "https://portals.tallydemo.com/allura"
             },
             {
                 "title": "MySure Sample App",
@@ -1339,7 +1339,7 @@
         "docs": [
             {
                 "title": "Allura Demo Guide",
-                "url": "https://dsdemos.esigndemos.com/dsportals/help/Allura.pdf"
+                "url": "https://portals.tallydemo.com/help/Allura.pdf"
             }
         ],
         "videos": [
@@ -1370,13 +1370,13 @@
         "demos": [
             {
                 "title": "Ciencia Demo Portal",
-                "url": "https://dsdemos.esigndemos.com/dsportals/science2"
+                "url": "https://portals.tallydemo.com/ciencia"
             }
         ],
         "docs": [
             {
                 "title": "Ciencia Demo Guide",
-                "url": "https://dsdemos.esigndemos.com/dsportals/help/Ciencia.pdf"
+                "url": "https://portals.tallydemo.com/help/Ciencia.pdf"
             }
         ],
         "videos": [
@@ -1410,13 +1410,13 @@
         "demos": [
             {
                 "title": "PubSec Demo Portal",
-                "url": "https://dsdemos.esigndemos.com/dsportals/publicsector2"
+                "url": "https://portals.tallydemo.com/pubsec"
             }
         ],
         "docs": [
             {
                 "title": "PubSec Demo Guide",
-                "url": "https://dsdemos.esigndemos.com/dsportals/help/PubSec_Help.pdf"
+                "url": "https://portals.tallydemo.com/help/PubSec_Help.pdf"
             }
         ],
         "videos": [
