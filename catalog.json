@@ -861,6 +861,28 @@
         },
         "search": "Archive, Store, Storage"
     },
+	{
+        "name": "DocuSign + Greenhouse",
+        "logo": "img/Greenhouse-logo.png",
+        "docs": [
+            {
+                "title": "Greenhouse Demo Guide",
+                "url": "https://docs.google.com/document/d/1IgHen1AM26DCsyf1AEoiNnNuvUAlMfloEl-hIO4EJm4/edit?usp=sharing"
+            }
+        ],
+        "resources": [
+            {
+                "title": "Partnering to WIN: Greenhouse",
+                "url": "https://docusign.lightning.force.com/lightning/page/chatter/record/0F940000000c18QCAQ"
+            }
+        ],
+        "tags": {
+            "Sign": "eSignature",
+            "Act": "Agreement Actions",
+            "Integrate": "Box"
+        },
+        "search": "Archive, Store, Storage"
+    },
     {
         "name": "DocuSign + eOriginal",
         "logo": "img/eoriginal-logo.png",
