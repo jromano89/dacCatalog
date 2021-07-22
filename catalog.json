@@ -376,10 +376,6 @@
         ],
         "docs": [
             {
-                "title": "Gen Shared Environment",
-                "url": "https://drive.google.com/file/d/1MfduovSQOJ9Xc2MmqoV-RvUZLzIX4uBO/view?usp=sharing"
-            },
-            {
                 "title": "Script | Quote Gen for CPQ",
                 "url": "https://docs.google.com/document/d/19vY1kyBm2yLkskTIjM7EF2cidtu2JFXak2LekIN5r_Q/edit?usp=sharing"
             }
@@ -590,8 +586,8 @@
         ],
         "docs": [
             {
-                "title": "Notary Limited Availability FAQ",
-                "url": "https://docusign.highspot.com/items/60340d473f65f6271698469d"
+                "title": "Notary Demo Guide",
+                "url": "https://docs.google.com/document/d/1sTwogo5kiijiFr43-BYm4gPJ3wSVz3ryYdJeSW5igt8/edit?usp=sharing"
             }
         ],
         "videos": [
@@ -861,16 +857,16 @@
         },
         "search": "Archive, Store, Storage"
     },
-	{
+    {
         "name": "DocuSign + Greenhouse",
-        "logo": "img/Greenhouse-logo.png",
+        "logo": "img/greenhouse-logo.png",
         "docs": [
             {
                 "title": "Greenhouse Demo Guide",
                 "url": "https://docs.google.com/document/d/1IgHen1AM26DCsyf1AEoiNnNuvUAlMfloEl-hIO4EJm4/edit?usp=sharing"
             }
         ],
-		"videos": [
+        "videos": [
             {
                 "title": "Greenhouse Demo",
                 "url": "https://drive.google.com/file/d/1StVQdCZOLVyruo6xnb4uYJmaeR7rusSu/view?usp=sharing",
@@ -1514,9 +1510,9 @@
             }
         ],
         "tags": {
-			"Prepare": "PowerForms",
+            "Prepare": "PowerForms",
             "Sign": "eSignature",
-			"Act": "Agreement Actions"
+            "Act": "Agreement Actions"
         },
         "search": "COVID, Vaccine"
     }
