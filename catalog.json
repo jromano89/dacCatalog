@@ -884,9 +884,8 @@
             }
         ],
         "tags": {
-            "Sign": "eSignature",
-            "Act": "Agreement Actions",
-            "Integrate": "Box"
+            "Sign": "eSignature"
+            "Integrate": "Greenhouse"
         },
         "search": "Archive, Store, Storage"
     },
