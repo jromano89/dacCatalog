@@ -85,10 +85,6 @@ const app = new Vue({
             if (this.search !== "") {
 				fetch("https://templates.tallydemo.com/services/addCatalogSearch.php",
 				{
-					headers: {
-					  'Accept': 'application/json',
-					  'Content-Type': 'application/json'
-					},
 					method: "POST",
 					body: JSON.stringify({s: this.search})
 				});
