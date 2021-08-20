@@ -13,7 +13,6 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-vue/2.21.2/bootstrap-vue.min.css" />
     <link rel="stylesheet" href="custom.css?v3" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
 
     <!-- JS Imports -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js"></script>
@@ -93,13 +92,6 @@
                 </div>
             </div>
         </div>
-		
-		<div class="container text-center" v-if='showWeeklyTip()'>
-			<br>
-			<b-alert show style="text-align:left;padding-bottom: 0px;font-size:smaller" dismissible @dismissed="saveDismissed()">
-				<i class="far fa-lightbulb"></i> <b>Weekly tip.</b> <span v-html="weeklyTip.tip"></span>
-			</b-alert>
-		</div>
 
         <!-- iterate data into item-cards -->
         <div class="card-deck justify-content-center px-3 py-2 mx-0">
