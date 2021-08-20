@@ -83,7 +83,7 @@ const app = new Vue({
         },
 		saveSearchForStats(){
             if (this.search !== "") {
-				fetch("./services/addCatalogSearch.php",
+				fetch("https://templates.tallydemo.com/services/addCatalogSearch.php",
 				{
 					headers: {
 					  'Accept': 'application/json',
