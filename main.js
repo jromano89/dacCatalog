@@ -3,8 +3,11 @@ const app = new Vue({
     data() {
         return {
             catalogData: [],
+            weeklyTip: null,
+			weeklyTipDismissedId: null,
             filteredData: [],
             search: "",
+			timerSearch: null,
             labels: [
                 { value: "Prepare" },
                 { value: "Sign" },
@@ -16,8 +19,37 @@ const app = new Vue({
         };
     },
     methods: {
+		saveDismissed(){
+			localStorage.setItem ("catalogTipDismissedId", this.weeklyTip.id);
+			this.makeToast ("You won't see that particular tip anymore", "success");
+		},
+		loadDismissed(){
+			this.weeklyTipDismissedId = localStorage.getItem ("catalogTipDismissedId");
+		},
+		showWeeklyTip(){
+			return (this.weeklyTipDismissedId == null && this.weeklyTip != null && this.weeklyTip != undefined && this.weeklyTip.tip != null && this.weeklyTip.tip != "" && this.weeklyTipDismissedId != this.weeklyTip.id) 
+			|| (this.weeklyTip != null && this.weeklyTipDismissedId != null && this.weeklyTipDismissedId != this.weeklyTip.id);
+		},
+		makeToast(txt, variantType, append = true) {
+			this.toastCount++
+			this.$bvToast.toast(txt, {
+			  title: 'SE Catalog',
+			  variant: variantType,
+			  autoHideDelay: 2500,
+			  appendToast: append,
+			  solid: true
+			})
+		},
         searchCatalog() {
             if (this.search !== "") {
+				if (this.timerSearch == null){
+					this.timerSearch = setTimeout(() => this.saveSearchForStats (), 750);
+				}
+				else{
+					clearTimeout(this.timerSearch);
+					this.timerSearch = setTimeout(() => this.saveSearchForStats (), 750);
+				}
+
                 this.setQueryStringParameter("search", this.search);
                 this.filteredData = this.catalogData.filter((obj) => {
                     let searchValue = this.search.replace(/\s+/g, '').toLowerCase();
@@ -49,6 +81,19 @@ const app = new Vue({
                 this.search = "";
             }
         },
+		saveSearchForStats(){
+            if (this.search !== "") {
+				fetch("./services/addCatalogSearch.php",
+				{
+					headers: {
+					  'Accept': 'application/json',
+					  'Content-Type': 'application/json'
+					},
+					method: "POST",
+					body: JSON.stringify({s: this.search})
+				});
+			}
+		},
     },
     mounted() {
         fetch("./catalog.json?v2")
@@ -58,5 +103,11 @@ const app = new Vue({
                 this.initSearch();
                 this.searchCatalog();
             });
+        fetch("./tip.json")
+            .then((res) => res.json())
+            .then((data) => {
+                this.weeklyTip = data;
+            });
+		this.loadDismissed();
     },
 });
