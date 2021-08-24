@@ -582,6 +582,10 @@
             {
                 "title": "Notary Clickthrough",
                 "url": "https://docusign.invisionapp.com/share/KG1028XINF67#/screens?browse"
+            },
+            {
+                "title": "Notary Vision Presentation",
+                "url": "https://docusign.highspot.com/items/60efae5c8117173b6701185b#1"
             }
         ],
         "docs": [
@@ -592,13 +596,30 @@
             {
                 "title": "Cheat Sheet<small> | Opp Processes & Resources</small>",
                 "url": "https://docs.google.com/document/d/1PJfYJ-QTnItkN7T45uMkcTThZy1D46MuPvLXKxNZzjU/edit"
+            },
+            {
+                "title": "SE Scoring Matrix",
+                "url": "https://docs.google.com/spreadsheets/d/1PwUROOc2HqwZn-pPaeHjs5GomFD7vjzDOCjMblQklTY/edit#gid=740955901"
+            },
+            {
+                "title": "Notary GA + LA<small> | FAQ</small>",
+                "url": "https://docusign.highspot.com/items/60ee070534d6be452e688b4e#1"
+            },
+            {
+                "title": "Notary GA + LA<small> | Qualification and Availability</small>",
+                "url": "https://docusign.highspot.com/items/60ee070534d6be452e688b54?lfrm=shp.0#1"
             }
         ],
         "videos": [
             {
-                "title": "Demo | DocuSign Notary",
+                "title": "FINS Demo | DocuSign Notary",
                 "url": "https://docusign.highspot.com/items/60403bdd34d6be4f2791d927?lfrm=irel.0",
                 "desc": "4m"
+            },
+            {
+                "title": "INS Demo | DocuSign Notary",
+                "url": "https://drive.google.com/file/d/1RAfVVkg60GsYGPPVooPxtlvW7KxCxqX9/view",
+                "desc": "5m"
             }
         ],
         "resources": [
