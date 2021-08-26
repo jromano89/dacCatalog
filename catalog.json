@@ -1000,12 +1000,12 @@
                 "url": "https://www.youtube.com/watch?v=6SAGTwXHn8U",
                 "desc": "4m"
             },
-			{
+            {
                 "title": "Demo | Dynamics Merge Fields",
                 "url": "https://www.youtube.com/watch?v=oghl9oT9Eks",
                 "desc": "5m"
             },
-			{
+            {
                 "title": "Demo | Merge Data Back to Dynamics",
                 "url": "https://www.youtube.com/watch?v=RsYaTvKFo9c",
                 "desc": "4m"
@@ -1443,11 +1443,11 @@
         "resources": [
             {
                 "title": "ACE | Healthcare & Life Sciences",
-                "url": "hhttps://docusign.highspot.com/items/5e2f3cc1c79c5231d0cea2a5"
+                "url": "https://docusign.highspot.com/items/5e2f3cc1c79c5231d0cea2a5"
             },
             {
                 "title": "Chatter | CFR Part 11 + Validator",
-                "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W0000008f3cSAA/view"
+                "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000cDYmSAM/view"
             }
         ],
         "tags": {
