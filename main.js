@@ -3,6 +3,7 @@ const app = new Vue({
     data() {
         return {
             catalogData: [],
+			commonSearchesData: [],
             weeklyTip: null,
 			weeklyTipDismissedId: null,
             filteredData: [],
@@ -90,6 +91,16 @@ const app = new Vue({
 				});
 			}
 		},
+		loadMostCommonSearches(){
+			fetch("https://templates.tallydemo.com/services/getCommonSearches.php")
+				.then((res) => res.json())
+				.then((data) => {
+					this.commonSearchesData = data;
+				});
+		},
+		placeholderForSearch(){
+			return "Search by product, partner, or industry. Most common searches: " + this.commonSearchesData[0].search_text + ", " + this.commonSearchesData[1].search_text + ", " + this.commonSearchesData[2].search_text + " and " + this.commonSearchesData[3].search_text;
+		}
     },
     mounted() {
         fetch("./catalog.json?v2")
@@ -105,5 +116,6 @@ const app = new Vue({
                 this.weeklyTip = data;
             });
 		this.loadDismissed();
+		this.loadMostCommonSearches();
     },
 });
