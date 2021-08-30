@@ -99,7 +99,12 @@ const app = new Vue({
 				});
 		},
 		placeholderForSearch(){
-			return "Search by product, partner, or industry. Most common searches: " + this.commonSearchesData[0].search_text + ", " + this.commonSearchesData[1].search_text + ", " + this.commonSearchesData[2].search_text + " and " + this.commonSearchesData[3].search_text;
+			if (this.commonSearchesData.length > 0){
+				return "Search by product, partner, or industry. Most common searches: " + this.commonSearchesData[0].search_text + ", " + this.commonSearchesData[1].search_text + ", " + this.commonSearchesData[2].search_text + " and " + this.commonSearchesData[3].search_text;
+			}
+			else{
+				return "Search by product, partner, or industry.";
+			}
 		}
     },
     mounted() {
