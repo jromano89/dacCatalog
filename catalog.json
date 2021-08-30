@@ -493,7 +493,7 @@
         "demos": [
             {
                 "title": "Splunk Integration",
-                "url": "https://splunk-monitor.tallydemo.com/en-US/app/docusign_app"
+                "url": "https://splunk-monitor.tallydemo.com/en-US/app/docusign_monitor_app"
             }
         ],
         "docs": [
