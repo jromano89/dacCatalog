@@ -693,7 +693,7 @@
         }
     },
     {
-        "name": "DocuSign Signature Appliance",
+        "name": "DocuSign Appliances",
         "logo": "img/dsa-logo.png",
         "videos": [
             {
@@ -702,7 +702,7 @@
                 "desc": "2m"
             },
             {
-                "title": "Enablement session with Vasu",
+                "title": "Enablement session with Vasu - Security and display appliances",
                 "url": "https://drive.google.com/file/d/1m1MvZp-V__gPWZwbICxLUvJZS2DLWpmC/view",
                 "desc": "29m"
             }
@@ -716,7 +716,7 @@
         "tags": {
             "Sign": "eSignature · Hybrid Cloud Appliances"
         },
-        "search": "DSA, CoSign"
+        "search": "DSA, CoSign, Appliance"
     },
     {
         "name": "Guided Forms <small>powered by SmartIQ</small>",
