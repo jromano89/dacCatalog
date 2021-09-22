@@ -28,6 +28,35 @@
         "search": "Remediation"
     },
     {
+        "name": "Post COVID19: Back to Better",
+        "logo": "img/lifesciences-logo.png",
+        "demos": [
+            {
+                "title": "Back to Better Demo",
+                "url": "https://covid19.tallydemo.com/"
+            }
+        ],
+        "docs": [
+            {
+                "title": "Back to Better Demo Script",
+                "url": "https://docs.google.com/document/d/1NLpIGhUIKmGz555Pme6M_xaAGGttmJWTwGhBsusvoz4/edit?usp=sharing"
+            }
+        ],
+        "videos": [
+            {
+                "title": "Demo | Back to Better",
+                "url": "https://drive.google.com/drive/folders/1jVlC4dusSARACWhFjE0REgN1ZwtzgnAO?usp=sharing",
+                "desc": "7m"
+            }
+        ],
+        "tags": {
+            "Prepare": "PowerForms",
+            "Sign": "eSignature",
+            "Act": "Agreement Actions"
+        },
+        "search": "COVID, Vaccine"
+    },
+    {
         "name": "DocuSign Admin Tools",
         "logo": "img/admin-logo.png",
         "videos": [
@@ -1549,34 +1578,5 @@
             "Industry": "Real Estate"
         },
         "search": "myRealEstate Sample App"
-    },
-    {
-        "name": "Post COVID19: Back to Better",
-        "logo": "img/Back2Better-logo.png",
-        "demos": [
-            {
-                "title": "Back to Better Demo",
-                "url": "https://covid19.tallydemo.com/"
-            }
-        ],
-        "docs": [
-            {
-                "title": "Back to Better Demo Script",
-                "url": "https://docs.google.com/document/d/1NLpIGhUIKmGz555Pme6M_xaAGGttmJWTwGhBsusvoz4/edit?usp=sharing"
-            }
-        ],
-        "videos": [
-            {
-                "title": "Demo | Back to Better",
-                "url": "https://drive.google.com/drive/folders/1jVlC4dusSARACWhFjE0REgN1ZwtzgnAO?usp=sharing",
-                "desc": "7m"
-            }
-        ],
-        "tags": {
-            "Prepare": "PowerForms",
-            "Sign": "eSignature",
-            "Act": "Agreement Actions"
-        },
-        "search": "COVID, Vaccine"
     }
 ]
