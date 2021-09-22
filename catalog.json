@@ -1563,5 +1563,20 @@
             "Act": "Agreement Actions"
         },
         "search": "COVID, Vaccine"
+    },
+	{
+        "name": "DocuSign + Unqork",
+        "logo": "img/unqork-logo.png",
+        "videos": [
+            {
+                "title": "Demo | Unqork + Esignature",
+                "url": "https://drive.google.com/file/d/1vixyHskpd-SmBq-cHBwRzBY7MjuZoDOO/view?usp=sharing",
+                "desc": "19m"
+            }
+        ],
+        "tags": {
+            "Sign": "eSignature",
+            "Integrate": "Workday"
+        }
     }
 ]
