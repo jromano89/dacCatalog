@@ -495,7 +495,7 @@
         "docs": [
             {
                 "title": "Insight Demo Guide",
-                "url": "https://drive.google.com/file/d/1dxEr5Y3X2ye-jmvQBEUUyno8Ee_NVjVn/view?usp=sharing"
+                "url": "https://docs.google.com/document/d/1-B2JWB0d0rq0OJ_7ue8trU28yuXhG-CYqv4RerZElqo/edit?usp=sharing"
             }
         ],
         "videos": [
@@ -506,6 +506,10 @@
             }
         ],
         "resources": [
+			{
+                "title": "Demo Resources | Google Drive",
+                "url": "https://drive.google.com/drive/u/1/folders/1I8t6qEdGmyLaN01Exz-HitaF_v2eMmE7"
+            },
             {
                 "title": "ACE | Analyzer",
                 "url": "https://docusign.highspot.com/items/5f4d6822a2e3a97d28f921c2?lfrm=srp.2"
