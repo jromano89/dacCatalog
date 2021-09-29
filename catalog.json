@@ -836,38 +836,6 @@
         "search": "Digital Closing, Real Estate, R4M"
     },
     {
-        "name": "Rooms for Real Estate",
-        "logo": "img/rooms-logo.png",
-        "docs": [
-            {
-                "title": "Shared Rooms Environment",
-                "url": "https://drive.google.com/file/d/1dXMrDZHvj197h6FVlZHs-cgvaB6YD51j/view?usp=sharing"
-            }
-        ],
-        "videos": [
-            {
-                "title": "Demo | Rooms for Real Estate",
-                "url": "https://docusign.highspot.com/items/5ede7f95f7794d353c1e9bb8",
-                "desc": "7m"
-            }
-        ],
-        "resources": [
-            {
-                "title": "ACE | Rooms for Real Estate",
-                "url": "https://docusign.highspot.com/items/5e4c8bd3a2e3a944d816c686?lfrm=srp.2"
-            },
-            {
-                "title": "Chatter | Rooms for Real Estate",
-                "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F940000000XjPJCA0/view"
-            }
-        ],
-        "tags": {
-            "Sign": "eSignature",
-            "Industry": "Rooms for Real Estate"
-        },
-        "search": "Digital Closing, Real Estate"
-    },
-    {
         "name": "Standards-Based Signatures",
         "logo": "img/sbs-logo.png",
         "docs": [
