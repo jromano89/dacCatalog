@@ -1270,6 +1270,40 @@
         "search": "HCM"
     },
     {
+        "name": "DocuSign + SmartRecruiters",
+        "logo": "img/smartrecruiters.png",
+        "demos": [
+            {
+                "title": "SmartRecruiters demo environment",
+                "url": "https://www.smartrecruiters.com/account/sign-in"
+            }
+        ],
+        "docs": [
+            {
+                "title": "SmartRecruiters Demo Guide",
+                "url": "https://docs.google.com/document/d/10zfYJaJ_O54VfogRHhdv3qs4y6PcaM9a-EPhtU9QYK8/edit?usp=sharing"
+            }
+        ],
+        "videos": [
+            {
+                "title": "Demo | SmartRecruiters offer letter",
+                "url": "https://drive.google.com/file/d/11TddVqflnv9ycb5OEk1LV4BrR_NnLDjE/view?usp=sharing",
+                "desc": "5m"
+            }
+	],
+        "resources": [
+            {
+                "title": "Partnering to WIN: SmartRecruiters",
+                "url": "https://docusign.lightning.force.com/lightning/r/CollaborationGroup/0F91W000000c4OWSAY/view"
+            }
+        ],
+        "tags": {
+            "Sign": "eSignature",
+            "Integrate": "SmartRecruiters"
+        },
+        "search": "SmartRecruiters,HR"
+    },
+    {
         "name": "DAC for Education",
         "logo": "img/edu-logo.png",
         "demos": [
