@@ -115,7 +115,7 @@ const app = new Vue({
                 this.initSearch();
                 this.searchCatalog();
             });
-        fetch("./tip.json?v2")
+        fetch("./tip.json?v4")
             .then((res) => res.json())
             .then((data) => {
                 this.weeklyTip = data;
