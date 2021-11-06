@@ -207,6 +207,10 @@
         "logo": "img/clm-logo.png",
         "demos": [
             {
+                "title": "<b>CLM Demo Builder</b>",
+                "url": "https://sandbox.tallydemo.com/"
+            },
+            {
                 "title": "CLM Clickthrough",
                 "url": "https://docusign.invisionapp.com/share/B9W7H1VY8QR"
             },
