@@ -17,6 +17,13 @@ const app = new Vue({
                 { value: "Integrate" },
                 { value: "Industry" },
             ],
+            sorts: [
+                {value: "CLM / Gen / Negotiate"},
+                {value: "eSign"},
+                {value: "Admin"},
+                {value: "Partners"},
+                {value: "Verticals"},
+            ]
         };
     },
     methods: {

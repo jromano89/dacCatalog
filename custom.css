@@ -95,3 +95,14 @@ body {
   border-color: #ff7d00;
   background-color: rgba(255, 125, 0, 0.1);
 }
+
+.jumbotron {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 10px 1rem 0px 1rem;
+}
+
+.jumbotronheader {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}

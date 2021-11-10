@@ -2,6 +2,7 @@
     {
         "name": "Agreement Cloud Stories",
         "logo": "img/cloud-logo.png",
+        "sort": "CLM / Gen / Negotiate",
         "docs": [
             {
                 "title": "Script | Agreement Remediation",
@@ -30,6 +31,7 @@
     {
         "name": "Post COVID19: Back to Better",
         "logo": "img/healthcare-logo.png",
+        "sort": "eSign",
         "demos": [
             {
                 "title": "Back to Better Demo",
@@ -64,6 +66,7 @@
     {
         "name": "DocuSign Admin Tools",
         "logo": "img/admin-logo.png",
+        "sort": "Admin",
         "videos": [
             {
                 "title": "Demo | Org Management",
@@ -94,6 +97,7 @@
     {
         "name": "DocuSign Analyzer",
         "logo": "img/analyzer-logo.png",
+        "sort": "Admin",
         "demos": [
             {
                 "title": "Analyzer Clickthrough",
@@ -155,6 +159,7 @@
     {
         "name": "DocuSign Click",
         "logo": "img/click-logo.png",
+        "sort": "eSign",
         "demos": [
             {
                 "title": "Click Demo Builder",
@@ -205,6 +210,7 @@
     {
         "name": "DocuSign CLM",
         "logo": "img/clm-logo.png",
+        "sort": "CLM / Gen / Negotiate",
         "demos": [
             {
                 "title": "CLM Clickthrough",
@@ -289,6 +295,7 @@
     {
         "name": "DocuSign eSignature",
         "logo": "img/esign-logo.png",
+        "sort": "eSign",
         "demos": [
             {
                 "title": "eSign Architecture Tool",
@@ -372,6 +379,7 @@
     {
         "name": "DocuSign for Salesforce",
         "logo": "img/salesforce-logo.png",
+        "sort": "Partners",
         "demos": [
             {
                 "title": "Salesforce Clickthrough",
@@ -403,6 +411,7 @@
     {
         "name": "DocuSign Gen",
         "logo": "img/gen-logo.png",
+        "sort": "CLM / Gen / Negotiate",
         "demos": [
             {
                 "title": "Gen Clickthrough",
@@ -447,6 +456,7 @@
     {
         "name": "DocuSign Identify",
         "logo": "img/identify-logo.png",
+        "sort": "eSign",
         "demos": [
             {
                 "title": "IDV Clickthrough",
@@ -501,6 +511,7 @@
     {
         "name": "DocuSign Insight",
         "logo": "img/insight-logo.png",
+        "sort": "Admin",
         "docs": [
             {
                 "title": "Insight Demo Guide",
@@ -536,6 +547,7 @@
     {
         "name": "DocuSign Monitor",
         "logo": "img/monitor-logo.png",
+        "sort": "Admin",
         "demos": [
             {
                 "title": "Splunk Integration",
@@ -578,6 +590,7 @@
     {
         "name": "DocuSign Negotiate",
         "logo": "img/negotiate-logo.png",
+        "sort": "CLM / Gen / Negotiate",
         "demos": [
             {
                 "title": "Negotiate Clickthrough",
@@ -610,6 +623,7 @@
     {
         "name": "DocuSign Notary",
         "logo": "img/notary-logo.png",
+        "sort": "eSign",
         "demos": [
             {
                 "title": "Notary Clickthrough",
@@ -678,6 +692,7 @@
     {
         "name": "DocuSign Payments",
         "logo": "img/payments-logo.png",
+        "sort": "eSign",
         "demos": [
             {
                 "title": "Tally Sign: Payments",
@@ -716,6 +731,7 @@
     {
         "name": "DocuSign Retrieve",
         "logo": "img/retrieve-logo.png",
+        "sort": "eSign",
         "docs": [
             {
                 "title": "Quick Start Guide",
@@ -741,6 +757,7 @@
     {
         "name": "DocuSign Appliances",
         "logo": "img/dsa-logo.png",
+        "sort": "eSign",
         "videos": [
             {
                 "title": "DSA for Professional Engineers",
@@ -767,6 +784,7 @@
     {
         "name": "Guided Forms <small>powered by SmartIQ</small>",
         "logo": "img/guidedforms-logo.png",
+        "sort": "eSign",
         "demos": [
             {
                 "title": "Guided Forms Demos",
@@ -809,6 +827,7 @@
     {
         "name": "Rooms for Mortgage",
         "logo": "img/mortgage-logo.png",
+        "sort": "eSign",
         "demos": [
             {
                 "title": "R4M Clickthrough",
@@ -847,6 +866,7 @@
     {
         "name": "Standards-Based Signatures",
         "logo": "img/sbs-logo.png",
+        "sort": "eSign",
         "docs": [
             {
                 "title": "SBS Demo Guide",
@@ -874,6 +894,7 @@
     {
         "name": "DocuSign + Box",
         "logo": "img/box-logo.png",
+        "sort": "Partners",
         "docs": [
             {
                 "title": "Box Demo Guide",
@@ -900,6 +921,7 @@
     {
         "name": "DocuSign + Greenhouse",
         "logo": "img/Greenhouse-logo.png",
+        "sort": "Partners",
         "docs": [
             {
                 "title": "Greenhouse Demo Guide",
@@ -928,6 +950,7 @@
     {
         "name": "DocuSign + eOriginal",
         "logo": "img/eoriginal-logo.png",
+        "sort": "Partners",
         "demos": [
             {
                 "title": "eOriginal Clickthrough",
@@ -963,6 +986,7 @@
     {
         "name": "DocuSign + Google",
         "logo": "img/google-logo.png",
+        "sort": "Partners",
         "videos": [
             {
                 "title": "Demo | Gmail",
@@ -999,6 +1023,7 @@
     {
         "name": "DocuSign + Microsoft",
         "logo": "img/microsoft-logo.png",
+        "sort": "Partners",
         "demos": [
             {
                 "title": "Dynamics Clickthrough",
@@ -1065,6 +1090,7 @@
     {
         "name": "DocuSign + Oracle",
         "logo": "img/oracle-logo.png",
+        "sort": "Partners",
         "demos": [
             {
                 "title": "HCM Onboarding Clickthrough",
@@ -1121,6 +1147,7 @@
     {
         "name": "DocuSign + Procore",
         "logo": "img/procore-logo.png",
+        "sort": "Partners",
         "docs": [
             {
                 "title": "Procore Demo Credentials",
@@ -1149,6 +1176,7 @@
     {
         "name": "DocuSign + SAP",
         "logo": "img/sap-logo.png",
+        "sort": "Partners",
         "demos": [
             {
                 "title": "Ariba Clickthrough",
@@ -1209,6 +1237,7 @@
     {
         "name": "DocuSign + Unqork",
         "logo": "img/unqork-logo.png",
+        "sort": "Partners",
         "videos": [
             {
                 "title": "Demo | Unqork + Esignature",
@@ -1224,6 +1253,7 @@
     {
         "name": "DocuSign + Workday",
         "logo": "img/workday-logo.png",
+        "sort": "Partners",
         "demos": [
             {
                 "title": "Workday Clickthrough",
@@ -1272,6 +1302,7 @@
     {
         "name": "DocuSign + SmartRecruiters",
         "logo": "img/smartrecruiters.png",
+        "sort": "Partners",
         "demos": [
             {
                 "title": "SmartRecruiters demo environment",
@@ -1306,6 +1337,7 @@
     {
         "name": "DAC for Education",
         "logo": "img/edu-logo.png",
+        "sort": "Verticals",
         "demos": [
             {
                 "title": "MyUni Sample App",
@@ -1352,6 +1384,7 @@
     {
         "name": "DAC for Financial Services",
         "logo": "img/finance-logo.png",
+        "sort": "Verticals",
         "demos": [
             {
                 "title": "LoanCo Sample App",
@@ -1404,6 +1437,7 @@
     {
         "name": "DAC for Healthcare",
         "logo": "img/healthcare-logo.png",
+        "sort": "Verticals",
         "demos": [
             {
                 "title": "EMR Demo Portal",
@@ -1437,6 +1471,7 @@
     {
         "name": "DAC for Human Resources",
         "logo": "img/hr-logo.png",
+        "sort": "Verticals",
         "demos": [
             {
                 "title": "MyHR Sample App",
@@ -1458,6 +1493,7 @@
     {
         "name": "DAC for Insurance",
         "logo": "img/insurance-logo.png",
+        "sort": "Verticals",
         "demos": [
             {
                 "title": "Allura Demo Portal",
@@ -1499,6 +1535,7 @@
     {
         "name": "DAC for Life Sciences",
         "logo": "img/lifesciences-logo.png",
+        "sort": "Verticals",
         "demos": [
             {
                 "title": "Ciencia Demo Portal",
@@ -1539,6 +1576,7 @@
     {
         "name": "DAC for Public Sector",
         "logo": "img/pubsec-logo.png",
+        "sort": "Verticals",
         "demos": [
             {
                 "title": "PubSec Demo Portal",
@@ -1580,6 +1618,7 @@
     {
         "name": "DAC for Real Estate",
         "logo": "img/realestate-logo.png",
+        "sort": "Verticals",
         "demos": [
             {
                 "title": "MyRealEstate Sample App",
