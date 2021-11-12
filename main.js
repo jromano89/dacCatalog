@@ -169,7 +169,7 @@ const app = new Vue({
             }
 
             $(document).ready(function() {
-                let jumbotrons = $(".jumbotron");
+                let jumbotrons = $("#catalogJumbotron");
                 for (let jumbotron of jumbotrons) {
                     if (jumbotron.getElementsByClassName('card').length == 0) {
                         jumbotron.style.display = 'none'
