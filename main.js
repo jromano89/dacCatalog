@@ -167,6 +167,18 @@ const app = new Vue({
                 this.filteredData = this.catalogData;
                 window.history.replaceState({}, "", window.location.pathname);
             }
+
+            $(document).ready(function() {
+                let jumbotrons = $(".jumbotron");
+                for (let jumbotron of jumbotrons) {
+                    if (jumbotron.getElementsByClassName('card').length == 0) {
+                        jumbotron.style.display = 'none'
+                    } else {
+                        jumbotron.style.display = 'block'
+                    }
+                }
+            });
+            
         },
         setQueryStringParameter(name, value) {
             var params = new URLSearchParams(window.location.search);
