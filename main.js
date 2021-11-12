@@ -171,7 +171,6 @@ const app = new Vue({
             $(document).ready(function() {
                 let jumbotrons = $(".filterJumbotron");
                 for (let jumbotron of jumbotrons) {
-                    console.log(jumbotron)
                     if (jumbotron.getElementsByClassName('card').length == 0) {
                         jumbotron.style.display = 'none'
                     } else {
