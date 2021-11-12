@@ -1,8 +1,40 @@
 [
     {
+        "name": "CLM Demo Builder",
+		"hot": "true",
+        "logo": "img/clm-logo.png",
+        "sort": "CLM / Gen / Negotiate / Insight",
+        "demos": [
+            {
+                "title": "Demo Builder",
+                "url": "https://builder.clmdemo.com/"
+            }
+        ],
+        "docs": [
+            {
+                "title": "User guide",
+                "url": "https://docs.google.com/presentation/d/1FNxVs1jBHW4Ubi5vNMrxO_Icgb_z4JmOfkl2Cx9xZVg/edit#slide=id.p1"
+            }
+        ],
+        "videos": [
+            {
+                "title": "SE Sharpening session (Passcode: 8QJvFA=k)",
+                "url": "https://docusign.zoom.us/rec/share/qf1auOBVmUQwJXEvfaMdFGtVewqmsOwMZfsVIl8IcHCCFfo-dieyODySf1od66Gx.E_Tv6djMMnbP_Fta",
+                "desc": "~1h"
+            }
+        ],
+        "tags": {
+            "Prepare": "CLM Prepare",
+            "Sign": "eSignature",
+            "Act": "CLM Workflow",
+            "Manage": "Insight"
+        },
+        "search": "CLM,Demo,Builder"
+    },
+    {
         "name": "Agreement Cloud Stories",
         "logo": "img/cloud-logo.png",
-        "sort": "CLM / Gen / Negotiate",
+        "sort": "CLM / Gen / Negotiate / Insight",
         "docs": [
             {
                 "title": "Script | Agreement Remediation",
@@ -29,7 +61,8 @@
         "search": "Remediation"
     },
     {
-        "name": "Post COVID19: Back to Better",
+        "name": "Collect COVID-19 vaccination",
+		"hot": "true",
         "logo": "img/healthcare-logo.png",
         "sort": "eSign",
         "demos": [
@@ -97,7 +130,7 @@
     {
         "name": "DocuSign Analyzer",
         "logo": "img/analyzer-logo.png",
-        "sort": "Admin",
+        "sort": "CLM / Gen / Negotiate / Insight",
         "demos": [
             {
                 "title": "Analyzer Clickthrough",
@@ -210,7 +243,7 @@
     {
         "name": "DocuSign CLM",
         "logo": "img/clm-logo.png",
-        "sort": "CLM / Gen / Negotiate",
+        "sort": "CLM / Gen / Negotiate / Insight",
         "demos": [
             {
                 "title": "CLM Clickthrough",
@@ -411,7 +444,7 @@
     {
         "name": "DocuSign Gen",
         "logo": "img/gen-logo.png",
-        "sort": "CLM / Gen / Negotiate",
+        "sort": "CLM / Gen / Negotiate / Insight",
         "demos": [
             {
                 "title": "Gen Clickthrough",
@@ -511,7 +544,7 @@
     {
         "name": "DocuSign Insight",
         "logo": "img/insight-logo.png",
-        "sort": "Admin",
+        "sort": "CLM / Gen / Negotiate / Insight",
         "docs": [
             {
                 "title": "Insight Demo Guide",
@@ -546,6 +579,7 @@
     },
     {
         "name": "DocuSign Monitor",
+		"hot": "true",
         "logo": "img/monitor-logo.png",
         "sort": "Admin",
         "demos": [
@@ -590,7 +624,7 @@
     {
         "name": "DocuSign Negotiate",
         "logo": "img/negotiate-logo.png",
-        "sort": "CLM / Gen / Negotiate",
+        "sort": "CLM / Gen / Negotiate / Insight",
         "demos": [
             {
                 "title": "Negotiate Clickthrough",
@@ -622,6 +656,7 @@
     },
     {
         "name": "DocuSign Notary",
+		"hot": "true",
         "logo": "img/notary-logo.png",
         "sort": "eSign",
         "demos": [
@@ -784,7 +819,7 @@
     {
         "name": "Guided Forms <small>powered by SmartIQ</small>",
         "logo": "img/guidedforms-logo.png",
-        "sort": "eSign",
+        "sort": "Partners",
         "demos": [
             {
                 "title": "Guided Forms Demos",
@@ -1383,6 +1418,7 @@
     },
     {
         "name": "DAC for Financial Services",
+		"hot": "true",
         "logo": "img/finance-logo.png",
         "sort": "Verticals",
         "demos": [

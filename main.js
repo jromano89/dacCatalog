@@ -1,7 +1,19 @@
+Vue.component('vue-multiselect', window.VueMultiselect.default)
+
 const app = new Vue({
     el: "#vue-app",
+	components: { Multiselect: window.VueMultiselect.default },
     data() {
         return {
+			somethingIsBrokenMessage: null,
+			somethingIsBrokenSelectedArea: null,
+			newRequestMessage: null,
+			newRequestSelectedArea: null,
+			newEmail: null,
+			newEmailDomain: null,	
+			newEmailError: true,
+			newEmailCreated: false,
+			newEmailPassword: null,
             catalogData: [],
 			commonSearchesData: [],
             weeklyTip: null,
@@ -18,15 +30,100 @@ const app = new Vue({
                 { value: "Industry" },
             ],
             sorts: [
-                {value: "CLM / Gen / Negotiate"},
+                {value: "CLM / Gen / Negotiate / Insight"},
                 {value: "eSign"},
                 {value: "Admin"},
                 {value: "Partners"},
                 {value: "Verticals"},
+            ],
+            domains: [
+                {value: "tallydemo.com"},
+                {value: "clmdemo.com"},
+                {value: "esigndemo.com"}
             ]
         };
     },
     methods: {
+		showSomethingIsBrokenModal(){
+			this.somethingIsBrokenMessage = "";
+			this.somethingIsBrokenSelectedArea = null;
+			$('#somethingIsBrokenModal').modal('show');
+		},
+		showNewRequestModal(){
+			this.newRequestMessage = "";
+			this.newRequestSelectedArea = null;
+			$('#newRequestModal').modal('show');
+		},
+		showNewEmailModal(){
+			this.newEmailCreated = false;
+			this.newEmailError = false;
+			this.newEmail = "";
+			this.newEmailDomain = null;
+			$('#newEmailModal').modal('show');
+		},
+		validateSomethingIsBroken(){
+			return this.somethingIsBrokenMessage != null && this.somethingIsBrokenMessage.trim() != "" && this.somethingIsBrokenSelectedArea != null;
+		},
+		validateNewRequest(){
+			return this.newRequestMessage != null && this.newRequestMessage.trim() != "" && this.newRequestSelectedArea != null;
+		},
+		validateNewEmail(){
+			return this.newEmail != null && this.newEmail.trim() != "" && this.newEmailDomain != null;
+		},
+		convertNameToEmail (){
+			return this.newEmail.replace (" ", ".").replace (" ", ".").replace (" ", ".").replace (" ", ".").replace (" ", ".").replace (" ", ".").trim() + "@" + this.newEmailDomain.value;
+		},
+		getEmailLoginPage (){
+			return "https://webmail." + this.newEmailDomain.value;
+		},
+		sendSomethingIsBroken(){
+			fetch("https://templates.tallydemo.com/services/sendSomethingIsBrokenToSlack.php",
+			{
+				headers: {
+				  'Accept': 'application/json',
+				  'Content-Type': 'application/json'
+				},
+				method: "POST",
+				body: JSON.stringify({area: this.somethingIsBrokenSelectedArea.value, message: this.somethingIsBrokenMessage.trim()})
+			});
+			$('#somethingIsBrokenModal').modal('hide');
+		},
+		sendNewRequest(){
+			fetch("https://templates.tallydemo.com/services/sendNewRequestToSlack.php",
+			{
+				headers: {
+				  'Accept': 'application/json',
+				  'Content-Type': 'application/json'
+				},
+				method: "POST",
+				body: JSON.stringify({area: this.newRequestSelectedArea.value, message: this.newRequestMessage.trim()})
+			});
+			$('#newRequestModal').modal('hide');
+		},
+		sendNewEmail(){
+			this.newEmailCreated = false;
+			this.newEmailError = false;
+			fetch("https://templates.tallydemo.com/services/createDemoInbox.php",
+			{
+				headers: {
+				  'Accept': 'application/json',
+				  'Content-Type': 'application/json'
+				},
+				method: "POST",
+				body: JSON.stringify({domain: this.newEmailDomain.value, name: this.newEmail.trim()})
+			})
+			.then((res) => res.text())
+			.then((data) => {
+				if (data == "error"){
+					this.newEmailError = true;
+				}
+				else{
+					this.newEmailCreated = true;
+					this.newEmailPassword = data;
+				}
+			});
+			$('#newRequestModal').modal('hide');
+		},
 		saveDismissed(){
 			localStorage.setItem ("catalogTipDismissedId", this.weeklyTip.id);
 			this.makeToast ("You won't see that particular tip anymore", "success");
