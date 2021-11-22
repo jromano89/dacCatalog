@@ -773,10 +773,6 @@
         "logo": "img/guidedforms-logo.png",
         "demos": [
             {
-                "title": "Guided Forms Demos",
-                "url": "https://www.dsguidedforms.com"
-            },
-            {
                 "title": "Guided Forms Sandbox",
                 "url": "https://docusign-presales.na20-sb.smartcommunications.cloud/produce",
                 "desc": "new"
