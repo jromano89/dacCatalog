@@ -12,6 +12,7 @@ html {
 .ds-logo-text {
   padding-left: 0.9rem;
   font-size: 1rem;
+  padding-right: 0.9rem;
 }
 
 .searchbar {
@@ -95,3 +96,31 @@ body {
   border-color: #ff7d00;
   background-color: rgba(255, 125, 0, 0.1);
 }
+
+.jumbotron {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 10px 1rem 0px 1rem;
+}
+
+.jumbotronheader {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.toolButton{
+	background: #F6F8FA;
+	width:100%;
+	height:6rem;
+	padding:20px;
+}
+.display-4{
+	font-size: 2.0rem!important;
+}
+.vertical-center {
+    min-height: 94%;
+    min-height: 94vh;
+    display: flex;
+    align-items: center;
+}
+[v-cloak] { display: none; }
