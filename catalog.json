@@ -416,7 +416,7 @@
         "demos": [
             {
                 "title": "Salesforce Clickthrough",
-                "url": "https://docusign.invisionapp.com/share/AKWY8WINH8W#/screens"
+                "url": "https://invis.io/UC122CK5KSBR"
             }
         ],
         "docs": [
@@ -821,10 +821,6 @@
         "logo": "img/guidedforms-logo.png",
         "sort": "Partners",
         "demos": [
-            {
-                "title": "Guided Forms Demos",
-                "url": "https://www.dsguidedforms.com"
-            },
             {
                 "title": "Guided Forms Sandbox",
                 "url": "https://docusign-presales.na20-sb.smartcommunications.cloud/produce",
@@ -1396,9 +1392,19 @@
                 "desc": "57m"
             },
             {
+                "title": "Bulk Gift Receipts with Salesforce",
+                "url": "https://drive.google.com/file/d/13tFMMsYb6XPLTVhyspDNBQvwDN4S5FkJ/view?usp=sharing",
+                "desc": "3m"
+            },
+            {
                 "title": "Enablement - Grant Agreement",
                 "url": "https://drive.google.com/file/d/10_8rRHTf8c0BjYYGVMqcWKYkSkq7k8ZG/view?usp=sharing",
                 "desc": "50m"
+            },
+            {
+                "title": "DocuSign Grantmaking SFDC",
+                "url": "https://drive.google.com/file/d/13sxf_x-At3VlS-0muJb0FbgdpwGuJrzX/view?usp=sharing",
+                "desc": "7m"
             }
         ],
         "resources": [
