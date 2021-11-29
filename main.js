@@ -5,6 +5,18 @@ const app = new Vue({
 	components: { Multiselect: window.VueMultiselect.default },
     data() {
         return {
+			appLoaded: false,
+			loggedUserEmail: null,
+			loggedUserId: null,
+			loggedUserName: null,
+			verifyingUser: false,
+			invalidUser: false,
+			linkToOpp: null,
+			gnmrr: null,
+			selectedProduct: null,
+			selectedType: null,
+			requestDescription: null,
+			stockPrice: null,
 			somethingIsBrokenMessage: null,
 			somethingIsBrokenSelectedArea: null,
 			newRequestMessage: null,
@@ -36,6 +48,10 @@ const app = new Vue({
                 {value: "Partners"},
                 {value: "Verticals"},
             ],
+            requestType: [
+                {value: "Product enhancement"},
+                {value: "Bug"}
+            ],
             domains: [
                 {value: "tallydemo.com"},
                 {value: "clmdemo.com"},
@@ -44,10 +60,84 @@ const app = new Vue({
         };
     },
     methods: {
+		///////////////////////////
+		//Google user
+		///////////////////////////
+		userIsLogged (){
+			return this.loggedUserEmail != null;
+		},
+		captureGoogleUser(){
+			this.invalidUser = false;
+			this.verifyingUser = true;
+			this.loggedUserId = document.getElementById ("loggedUserIdHidden").value;
+			this.verifyUser ();
+		},
+		verifyUser(){
+			fetch("https://templates.tallydemo.com/services/verifyUser.php",
+			{
+				method: "POST",
+				body: JSON.stringify({
+					i: this.loggedUserId
+				})
+			})
+			.then((res) => res.text())
+			.then((data) => {
+				if (data == 500 || data == 304){
+					this.invalidUser = true;
+					this.verifyingUser = false;
+					this.appLoaded = true;
+				}
+				else{
+					localStorage.setItem('uc', data);
+					this.loginUser (data);
+				}
+			});
+		},	
+		loginUser(uniqueToken){
+			fetch("https://templates.tallydemo.com/services/loginUser.php",
+			{
+				method: "POST",
+				body: JSON.stringify({
+					u: uniqueToken
+				})
+			})
+			.then((res) => res.json())
+			.then((data) => {
+				if (data == 500 || data == 304){
+					this.invalidUser = true;
+				}
+				else{
+					this.loggedUserEmail = data.user_email;
+					this.loggedUserName = data.user_name;
+				}
+				this.appLoaded = true;
+				this.verifyingUser = false;
+			});
+		},
+		showLogin(){
+			return this.loggedUserEmail == null;
+		},
+		getStockPrice(){
+			fetch("https://builder.clmdemo.com/services/getStockPrice.php")
+				.then((res) => res.json())
+				.then((data) => {
+					if (data.Success){
+						this.stockPrice = data.Result[0]["stock"];
+					}
+				});
+		},
 		showSomethingIsBrokenModal(){
 			this.somethingIsBrokenMessage = "";
 			this.somethingIsBrokenSelectedArea = null;
 			$('#somethingIsBrokenModal').modal('show');
+		},
+		showVoiceOfTheFieldModal(){
+			this.linkToOpp = null;
+			this.gnmrr = null,
+			this.selectedProduct = null;
+			this.selectedType = null;
+			this.requestDescription = null;
+			$('#voiceModal').modal('show');
 		},
 		showNewRequestModal(){
 			this.newRequestMessage = "";
@@ -70,6 +160,10 @@ const app = new Vue({
 		validateNewEmail(){
 			return this.newEmail != null && this.newEmail.trim() != "" && this.newEmailDomain != null;
 		},
+		validateVoiceOfTheField(){
+			return this.linkToOpp != null && this.linkToOpp.trim() != "" && this.gnmrr != null && this.gnmrr.trim() != "" && this.selectedProduct != null 
+				&& this.selectedType != null && this.requestDescription != null && this.requestDescription.trim() != "";
+		},
 		convertNameToEmail (){
 			return this.newEmail.replace (" ", ".").replace (" ", ".").replace (" ", ".").replace (" ", ".").replace (" ", ".").replace (" ", ".").trim() + "@" + this.newEmailDomain.value;
 		},
@@ -84,7 +178,7 @@ const app = new Vue({
 				  'Content-Type': 'application/json'
 				},
 				method: "POST",
-				body: JSON.stringify({area: this.somethingIsBrokenSelectedArea.value, message: this.somethingIsBrokenMessage.trim()})
+				body: JSON.stringify({requestor: this.loggedUserEmail, area: this.somethingIsBrokenSelectedArea.value, message: this.somethingIsBrokenMessage.trim()})
 			});
 			$('#somethingIsBrokenModal').modal('hide');
 		},
@@ -96,7 +190,7 @@ const app = new Vue({
 				  'Content-Type': 'application/json'
 				},
 				method: "POST",
-				body: JSON.stringify({area: this.newRequestSelectedArea.value, message: this.newRequestMessage.trim()})
+				body: JSON.stringify({requestor: this.loggedUserEmail, area: this.newRequestSelectedArea.value, message: this.newRequestMessage.trim()})
 			});
 			$('#newRequestModal').modal('hide');
 		},
@@ -110,7 +204,7 @@ const app = new Vue({
 				  'Content-Type': 'application/json'
 				},
 				method: "POST",
-				body: JSON.stringify({domain: this.newEmailDomain.value, name: this.newEmail.trim()})
+				body: JSON.stringify({requestor: this.loggedUserEmail, domain: this.newEmailDomain.value, name: this.newEmail.trim()})
 			})
 			.then((res) => res.text())
 			.then((data) => {
@@ -122,7 +216,28 @@ const app = new Vue({
 					this.newEmailPassword = data;
 				}
 			});
-			$('#newRequestModal').modal('hide');
+		},
+		sendVoiceOfTheField(){
+			fetch("https://templates.tallydemo.com/services/sendVoiceOfTheField.php",
+			{
+				headers: {
+				  'Accept': 'application/json',
+				  'Content-Type': 'application/json'
+				},
+				method: "POST",
+				body: JSON.stringify({
+					linkToOpp: this.linkToOpp.trim(), 
+					gnmrr: this.gnmrr.trim(),
+					selectedProduct: this.selectedProduct.value,
+					selectedType: this.selectedType.value,
+					requestDescription: this.requestDescription.trim(),
+					requestor: this.loggedUserEmail
+				})
+			})
+			.then((res) => res.text())
+			.then((data) => {
+			});
+			$('#voiceModal').modal('hide');
 		},
 		saveDismissed(){
 			localStorage.setItem ("catalogTipDismissedId", this.weeklyTip.id);
@@ -238,5 +353,14 @@ const app = new Vue({
             });
 		this.loadDismissed();
 		this.loadMostCommonSearches();
+		this.getStockPrice();
+		
+		var token = localStorage.getItem('uc');
+		if (token != null){
+			this.loginUser(token);
+		}
+		else{
+			this.appLoaded = true;
+		}
     },
 });

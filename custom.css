@@ -12,6 +12,7 @@ html {
 .ds-logo-text {
   padding-left: 0.9rem;
   font-size: 1rem;
+  padding-right: 0.9rem;
 }
 
 .searchbar {
@@ -113,3 +114,13 @@ body {
 	height:6rem;
 	padding:20px;
 }
+.display-4{
+	font-size: 2.0rem!important;
+}
+.vertical-center {
+    min-height: 94%;
+    min-height: 94vh;
+    display: flex;
+    align-items: center;
+}
+[v-cloak] { display: none; }

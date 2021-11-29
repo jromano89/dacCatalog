@@ -52,44 +52,107 @@
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-5B7H4GP');
+
+
+		  //Google log in
+		  var googleUser = {};
+		  var startApp = function() {
+			gapi.load('auth2', function(){
+			  auth2 = gapi.auth2.init({
+				client_id: '451259153867-2lhvthe9bp9rmordj0rh0si04981r8o3.apps.googleusercontent.com',
+			  });
+			  attachSignin(document.getElementById('customBtn'));
+			});
+		  };
+
+		  function attachSignin(element) {
+			auth2.attachClickHandler(element, {},
+				function(googleUser) {
+				  var id_token = googleUser.getAuthResponse().id_token;
+				  document.getElementById('loggedUserIdHidden').value = id_token;
+
+				  const e = new Event("change");
+				  const element = document.querySelector('#loggedUserIdHidden')
+				  element.dispatchEvent(e);
+				}, function(error) {
+				  //console.log(JSON.stringify(error, undefined, 2));
+				});
+		  }
     </script>
+	<style type="text/css">
+		#customBtn:hover {
+		  cursor: pointer;
+		}
+	</style>	
+
 </head>
 
 <body>
-    <div id="vue-app">
+    <div id="vue-app" v-cloak>
+		<input type="hidden" id="loggedUserIdHidden" v-model="loggedUserEmail" v-on:change="captureGoogleUser()">
 
         <!-- navbar -->
         <b-navbar type="dark" class="text-light bg-darkblue pt-1 pb-0">
             <img class="ds-logo" src="img/docusign-logo.png" height="26px" />
-            <div class="ds-logo-text">Demo Catalog</div>
-            <a class="mx-2 h6 text-light" target="_blank"
-                href="https://docs.google.com/document/d/1ymz904xL17hG_Qh8J5qLTtUckXVEr-xbl2Ufi-9jLns/edit?usp=sharing">
+            <div class="ds-logo-text ds-logo">Demo Catalog</div>
+			<div class="ds-logo-text" v-if="userIsLogged()">Welcome, {{loggedUserName}}</div>
+            <a class="mx-2 h6 text-light" target="_blank" href="https://docs.google.com/document/d/1ymz904xL17hG_Qh8J5qLTtUckXVEr-xbl2Ufi-9jLns/edit?usp=sharing" v-if="userIsLogged()">
                 <b-icon icon="question-circle"></b-icon>
             </a>
-            <b-navbar-nav small class="ml-auto d-none d-md-flex">
+            <b-navbar-nav small class="ml-auto d-none d-md-flex" v-if="userIsLogged()">
                 <b-navbar-nav menu-class="text-light">
-                    <b-nav-item href="https://datastudio.google.com/reporting/638f71fa-c68d-4a2a-b2cc-f7c23f2d0f6b"
-                        target="_blank" link-classes="text-light">
+                    <b-nav-item link-classes="text-light" v-if="stockPrice != null">
+                        DOCU ${{stockPrice}}
+                    </b-nav-item>
+                    <b-nav-item href="https://datastudio.google.com/reporting/638f71fa-c68d-4a2a-b2cc-f7c23f2d0f6b" target="_blank" link-classes="text-light">
                         Roadmap
                     </b-nav-item>
-                    <!--<b-nav-item href="https://docusign.highspot.com/spots/5e73bab4a2e3a92ffb62d647" target="_blank"
-                        link-classes="text-light">SE Central</b-nav-item>-->
-                    <b-nav-item href="https://webmail.tallydemo.com/" target="_blank" link-classes="text-light">Tally
-                        Webmail</b-nav-item>
+                    <b-nav-item href="https://docusign.highspot.com/spots/5e73bab4a2e3a92ffb62d647" target="_blank" link-classes="text-light">
+						SE Central
+					</b-nav-item>
                 </b-navbar-nav>
-                <b-nav-item-dropdown class="ml-3" text="North America" right toggle-class="text-light">
-                    <b-dropdown-item class="small" href="https://paperpreventers.co.uk/DAC" target="_blank">EMEA
+                <b-nav-item-dropdown class="ml-3" text="Webmail" right toggle-class="text-light">
+                    <b-dropdown-item class="small" href="https://webmail.tallydemo.com" target="_blank">
+						tallydemo.com
                     </b-dropdown-item>
-                    <b-dropdown-item class="small"
-                        href="https://sites.google.com/docusign.com/selatam/se-latam-portal?pli=1&authuser=1"
-                        target="_blank">LATAM</b-dropdown-item>
+                    <b-dropdown-item class="small" href="https://webmail.clmdemo.com" target="_blank">
+						clmdemo.com
+                    </b-dropdown-item>
+                    <b-dropdown-item class="small" href="https://webmail.esigndemo.com" target="_blank">
+						esigndemo.com
+                    </b-dropdown-item>
+                </b-nav-item-dropdown>
+                <b-nav-item-dropdown class="ml-3" text="North America" right toggle-class="text-light">
+                    <b-dropdown-item class="small" href="https://paperpreventers.co.uk/DAC" target="_blank">
+						EMEA
+                    </b-dropdown-item>
+                    <b-dropdown-item class="small" href="https://sites.google.com/docusign.com/selatam/se-latam-portal?pli=1&authuser=1" target="_blank">
+						LATAM
+					</b-dropdown-item>
                 </b-nav-item-dropdown>
                 <img class="ml-1" src="img/dac-icon.png" height="26px" />
             </b-navbar-nav>
         </b-navbar>
 
+		<div class="vertical-center text-center" v-if="showLogin()">
+		  <div class="container">
+			<h3>Log in with your DocuSign Google account to continue.</h3><br>
+			<div id="gSignInWrapper">
+				<span id="customBtn" style="padding:3px;background-color:lightgrey" class="customGPlusSignIn border border-secondary rounded">
+					Log in&nbsp;<img src="img/google-icon.png" height="20px" />
+				</span>
+			</div>			
+			<div v-if="verifyingUser">
+				Verifying user <span class="dac_spinner_big"></span>
+			</div>			
+			<div v-if="invalidUser" class="text-danger">
+				<br><b>Invalid user</b>
+			</div>			
+		  </div>
+		</div>
+
         <!-- searchbar -->
-        <div class="px-3 pt-3 pb-4 bg-black">
+        <div class="px-3 pt-3 pb-4 bg-black" v-if="userIsLogged()">
             <div class="form-row">
                 <div class="col-lg searchbar mx-md-3 input-group">
                     <span class="input-group-text bg-transparent border-0 px-0">
@@ -103,14 +166,14 @@
         </div>
 		
         <!-- Tip Container -->
-		<!--<div class="container text-center" v-if='showWeeklyTip()'>
+		<div class="container text-center" v-if='showWeeklyTip() && userIsLogged()'>
 			<br>
 			<b-alert show style="text-align:left;padding-bottom: 0px;font-size:smaller" dismissible @dismissed="saveDismissed()">
 				<i class="far fa-lightbulb"></i> <b>Weekly tip.</b> <span v-html="weeklyTip.tip"></span>
 			</b-alert>
-		</div>-->
+		</div>
 
-		<div class="jumbotron text-center">
+		<div class="jumbotron text-center" v-if="userIsLogged()">
             <h1 class="text-left display-4">Tools</h1>
 			<hr class="my-4" style="margin-bottom: 0px!important;margin-top: 0px!important;">
 			<div class="row" style="padding: 10px">
@@ -121,7 +184,7 @@
 				  <a class="btn toolButton" v-on:click="showNewRequestModal()"><b>Request new demo</b><br><i class="far fa-plus-square"></i></a>
 				</div>
 				<div class="col">
-				  <a class="btn toolButton"><b>Voice of the field</b><br><i class="fas fa-bullhorn"></i></a>
+				  <a class="btn toolButton" v-on:click="showVoiceOfTheFieldModal()"><b>Voice of the field</b><br><i class="fas fa-bullhorn"></i></a>
 				</div>
 				<div class="col">
 				  <a class="btn toolButton" v-on:click="showNewEmailModal()" id="requestDemoEmail"><b>Request demo email</b><br><i class="far fa-envelope"></i></a>
@@ -130,7 +193,7 @@
 					<span style="text-align: left!important">Available domains:<ul><li>tallydemo.com</li><li>clmdemo.com</li><li>esigndemo.com</li></ul></span>
 				</b-tooltip>
 				<div class="col">
-				  <a class="btn toolButton" href="https://docusign.highspot.com/spots/5e73bab4a2e3a92ffb62d647" target="_blank"><b>SE Central</b><br><i class="fas fa-chalkboard-teacher"></i></a>
+				  <a class="btn toolButton" href="https://docs.google.com/spreadsheets/d/14HAGzRmbeeQ-UyLtd1kSiMr2PmA26Riep1YUCnjtE4w/edit#gid=2042267912" target="_blank"><b>Sharpening sessions</b><br><i class="fas fa-chalkboard-teacher"></i></a>
 				</div>
 				<div class="col">
 				  <a class="btn toolButton" href="https://docusign.slack.com/archives/CJ435DULB" target="_blank"><b>#sales-public-sa</b><br><i class="fab fa-slack"></i></a>
@@ -139,7 +202,7 @@
 		</div>
 
         <!-- Jumbotrons -->
-        <div v-for="sort in sorts" class="jumbotron filterJumbotron">
+        <div v-for="sort in sorts" class="jumbotron filterJumbotron" v-if="userIsLogged()">
             <!-- Container Title -->
             <h1 class="text-left display-4" v-html=sort.value></h1>
 			<hr class="my-4" style="margin-bottom: 0px!important;margin-top: 0px!important;">
@@ -227,6 +290,8 @@
               </div>
               <div class="modal-body">			  
 				  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label"><b>Requestor:</b></label>
+                    <b-form-input type="text" class="form-control" v-model="loggedUserEmail" readonly></b-form-input>
 					<label for="recipient-name" class="col-form-label"><b>Area:</b></label>
 					<template>
 					  <div>
@@ -257,7 +322,10 @@
                 </button>
               </div>
               <div class="modal-body">			  
+				<span>Help us understand the demos you would like to see in the catalog</span>
 				  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label"><b>Requestor:</b></label>
+                    <b-form-input type="text" class="form-control" v-model="loggedUserEmail" readonly></b-form-input>
 					<label for="recipient-name" class="col-form-label"><b>Area:</b></label>
 					<template>
 					  <div>
@@ -303,6 +371,8 @@
 					</b-alert>
 				</div>
 				  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label"><b>Requestor:</b></label>
+                    <b-form-input type="text" class="form-control" v-model="loggedUserEmail" readonly></b-form-input>
 					<label for="recipient-name" class="col-form-label"><b>Domain:</b></label>
 					<template>
 					  <div>
@@ -320,6 +390,52 @@
             </div>
           </div>
         </div>
+
+        <div class="modal fade" id="voiceModal" tabindex="-1" role="dialog" aria-labelledby="voiceModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                    Voice of the field
+					<a class="mx-2 h6" target="_blank" href="https://docs.google.com/presentation/d/1F3i4epXONsj8-zb6fOBP4zu-jvGLGgCeWxmFPZY5m2I/edit?usp=sharing">
+						<b-icon icon="question-circle"></b-icon>
+					</a>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">			  
+				<div class="form-group">
+                    <label for="recipient-name" class="col-form-label"><b>Requestor:</b></label>
+                    <b-form-input type="text" class="form-control" v-model="loggedUserEmail" readonly></b-form-input>
+					<label for="recipient-name" class="col-form-label"><b>Link to opportunity:</b></label>
+					<input rows="8" style="width: 100%" v-model="linkToOpp"/>
+					<label for="recipient-name" class="col-form-label"><b>GNMRR:</b></label>
+					<input rows="8" style="width: 100%" v-model="gnmrr"/>
+					<label for="recipient-name" class="col-form-label"><b>Product:</b></label>
+					<template>
+					  <div>
+						<multiselect v-model="selectedProduct" tag-placeholder="Select product" label="value" track-by="value" :options="sorts"></multiselect>
+					  </div>
+					</template>
+					<label for="recipient-name" class="col-form-label"><b>Type:</b></label>
+					<template>
+					  <div>
+						<multiselect v-model="selectedType" tag-placeholder="Select domain" label="value" track-by="value" :options="requestType"></multiselect>
+					  </div>
+					</template>
+					<label for="recipient-name" class="col-form-label"><b>Description:</b></label>
+					<textarea rows="7" style="width: 100%" v-model="requestDescription"></textarea>
+				</div>
+			  </div>
+              <div class="modal-footer">
+                <button :disabled="!validateVoiceOfTheField()" type="button" class="btn btn-primary" v-on:click="sendVoiceOfTheField()">Send</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>		
 		
         <!-- footer -->
         <div class="footer">
@@ -334,5 +450,9 @@
 
     </div>
 </body>
+
+<script>
+	startApp();
+</script>
 
 </html>
