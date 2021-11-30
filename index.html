@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>SE Catalog</title>
+    <title>DocuSign Demo Catalog</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="noindex">
@@ -16,12 +16,20 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
 
     <!-- JS Imports -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+	<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-5B7H4GP"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-vue/2.21.2/bootstrap-vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-vue/2.21.2/bootstrap-vue-icons.min.js"></script>
-
-    <script src="main.js?v=4" type="module"></script>
+	<script src="https://unpkg.com/vue-multiselect@2.1.0"></script>
+	<!--<script src="https://unpkg.com/vue-cookies@1.5.12/vue-cookies.js"></script>-->
+	<link rel="stylesheet" href="https://unpkg.com/vue-multiselect@2.1.0/dist/vue-multiselect.min.css">
+    <script src="main.js?v13" type="module"></script>
+	<script src="https://apis.google.com/js/api:client.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140351915-1"></script>
@@ -44,44 +52,107 @@
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-5B7H4GP');
+
+
+		  //Google log in
+		  var googleUser = {};
+		  var startApp = function() {
+			gapi.load('auth2', function(){
+			  auth2 = gapi.auth2.init({
+				client_id: '451259153867-2lhvthe9bp9rmordj0rh0si04981r8o3.apps.googleusercontent.com',
+			  });
+			  attachSignin(document.getElementById('customBtn'));
+			});
+		  };
+
+		  function attachSignin(element) {
+			auth2.attachClickHandler(element, {},
+				function(googleUser) {
+				  var id_token = googleUser.getAuthResponse().id_token;
+				  document.getElementById('loggedUserIdHidden').value = id_token;
+
+				  const e = new Event("change");
+				  const element = document.querySelector('#loggedUserIdHidden')
+				  element.dispatchEvent(e);
+				}, function(error) {
+				  //console.log(JSON.stringify(error, undefined, 2));
+				});
+		  }
     </script>
+	<style type="text/css">
+		#customBtn:hover {
+		  cursor: pointer;
+		}
+	</style>	
+
 </head>
 
 <body>
-    <div id="vue-app">
+    <div id="vue-app" v-cloak>
+		<input type="hidden" id="loggedUserIdHidden" v-model="loggedUserEmail" v-on:change="captureGoogleUser()">
 
         <!-- navbar -->
         <b-navbar type="dark" class="text-light bg-darkblue pt-1 pb-0">
             <img class="ds-logo" src="img/docusign-logo.png" height="26px" />
-            <div class="ds-logo-text">Solution Engineering Catalog</div>
-            <a class="mx-2 h6 text-light" target="_blank"
-                href="https://docs.google.com/document/d/1ymz904xL17hG_Qh8J5qLTtUckXVEr-xbl2Ufi-9jLns/edit?usp=sharing">
+            <div class="ds-logo-text ds-logo">Demo Catalog</div>
+			<div class="ds-logo-text" v-if="userIsLogged()">Welcome, {{loggedUserName}}</div>
+            <a class="mx-2 h6 text-light" target="_blank" href="https://docs.google.com/document/d/1ymz904xL17hG_Qh8J5qLTtUckXVEr-xbl2Ufi-9jLns/edit?usp=sharing" v-if="userIsLogged()">
                 <b-icon icon="question-circle"></b-icon>
             </a>
-            <b-navbar-nav small class="ml-auto d-none d-md-flex">
+            <b-navbar-nav small class="ml-auto d-none d-md-flex" v-if="userIsLogged()">
                 <b-navbar-nav menu-class="text-light">
-                    <b-nav-item href="https://datastudio.google.com/reporting/638f71fa-c68d-4a2a-b2cc-f7c23f2d0f6b"
-                        target="_blank" link-classes="text-light">
+                    <b-nav-item link-classes="text-light" v-if="stockPrice != null">
+                        DOCU ${{stockPrice}}
+                    </b-nav-item>
+                    <b-nav-item href="https://datastudio.google.com/reporting/638f71fa-c68d-4a2a-b2cc-f7c23f2d0f6b" target="_blank" link-classes="text-light">
                         Roadmap
                     </b-nav-item>
-                    <b-nav-item href="https://docusign.highspot.com/spots/5e73bab4a2e3a92ffb62d647" target="_blank"
-                        link-classes="text-light">SE Central</b-nav-item>
-                    <b-nav-item href="https://webmail.tallydemo.com/" target="_blank" link-classes="text-light">Tally
-                        Webmail</b-nav-item>
+                    <b-nav-item href="https://docusign.highspot.com/spots/5e73bab4a2e3a92ffb62d647" target="_blank" link-classes="text-light">
+						SE Central
+					</b-nav-item>
                 </b-navbar-nav>
-                <b-nav-item-dropdown class="ml-3" text="North America" right toggle-class="text-light">
-                    <b-dropdown-item class="small" href="https://paperpreventers.co.uk/DAC" target="_blank">EMEA
+                <b-nav-item-dropdown class="ml-3" text="Webmail" right toggle-class="text-light">
+                    <b-dropdown-item class="small" href="https://webmail.tallydemo.com" target="_blank">
+						tallydemo.com
                     </b-dropdown-item>
-                    <b-dropdown-item class="small"
-                        href="https://sites.google.com/docusign.com/selatam/se-latam-portal?pli=1&authuser=1"
-                        target="_blank">LATAM</b-dropdown-item>
+                    <b-dropdown-item class="small" href="https://webmail.clmdemo.com" target="_blank">
+						clmdemo.com
+                    </b-dropdown-item>
+                    <b-dropdown-item class="small" href="https://webmail.esigndemo.com" target="_blank">
+						esigndemo.com
+                    </b-dropdown-item>
+                </b-nav-item-dropdown>
+                <b-nav-item-dropdown class="ml-3" text="North America" right toggle-class="text-light">
+                    <b-dropdown-item class="small" href="https://paperpreventers.co.uk/DAC" target="_blank">
+						EMEA
+                    </b-dropdown-item>
+                    <b-dropdown-item class="small" href="https://sites.google.com/docusign.com/selatam/se-latam-portal?pli=1&authuser=1" target="_blank">
+						LATAM
+					</b-dropdown-item>
                 </b-nav-item-dropdown>
                 <img class="ml-1" src="img/dac-icon.png" height="26px" />
             </b-navbar-nav>
         </b-navbar>
 
+		<div class="vertical-center text-center" v-if="showLogin()">
+		  <div class="container">
+			<h3>Log in with your DocuSign Google account to continue.</h3><br>
+			<div id="gSignInWrapper">
+				<span id="customBtn" style="padding:3px;background-color:lightgrey" class="customGPlusSignIn border border-secondary rounded">
+					Log in&nbsp;<img src="img/google-icon.png" height="20px" />
+				</span>
+			</div>			
+			<div v-if="verifyingUser">
+				Verifying user <span class="dac_spinner_big"></span>
+			</div>			
+			<div v-if="invalidUser" class="text-danger">
+				<br><b>Invalid user</b>
+			</div>			
+		  </div>
+		</div>
+
         <!-- searchbar -->
-        <div class="px-3 pt-3 pb-4 bg-black">
+        <div class="px-3 pt-3 pb-4 bg-black" v-if="userIsLogged()">
             <div class="form-row">
                 <div class="col-lg searchbar mx-md-3 input-group">
                     <span class="input-group-text bg-transparent border-0 px-0">
@@ -94,80 +165,278 @@
             </div>
         </div>
 		
-		<div class="container text-center" v-if='showWeeklyTip()'>
+        <!-- Tip Container -->
+		<div class="container text-center" v-if='showWeeklyTip() && userIsLogged()'>
 			<br>
 			<b-alert show style="text-align:left;padding-bottom: 0px;font-size:smaller" dismissible @dismissed="saveDismissed()">
 				<i class="far fa-lightbulb"></i> <b>Weekly tip.</b> <span v-html="weeklyTip.tip"></span>
 			</b-alert>
 		</div>
 
-        <!-- iterate data into item-cards -->
-        <div class="card-deck justify-content-center px-3 py-2 mx-0">
-            <template v-for="(item, index) in filteredData" :key="index" :item="item">
-                <div class="card border-0 p-2 mx-auto m-sm-2">
-                    <div class="text-center">
-                        <img :src="item.logo" height="50px" />
-                        <div class="card-body p-0">
-                            <h5 class="card-title text-dark my-2"><span v-html="item.name"></span></h5>
-                            <div class="mx-2">
+		<div class="jumbotron text-center" v-if="userIsLogged()">
+            <h1 class="text-left display-4">Tools</h1>
+			<hr class="my-4" style="margin-bottom: 0px!important;margin-top: 0px!important;">
+			<div class="row" style="padding: 10px">
+				<div class="col">
+				  <a class="btn toolButton" v-on:click="showSomethingIsBrokenModal()"><b>Something is broken</b><br><i class="fas fa-unlink"></i></a>
+				</div>
+				<div class="col">
+				  <a class="btn toolButton" v-on:click="showNewRequestModal()"><b>Request new demo</b><br><i class="far fa-plus-square"></i></a>
+				</div>
+				<div class="col">
+				  <a class="btn toolButton" v-on:click="showVoiceOfTheFieldModal()"><b>Voice of the field</b><br><i class="fas fa-bullhorn"></i></a>
+				</div>
+				<div class="col">
+				  <a class="btn toolButton" v-on:click="showNewEmailModal()" id="requestDemoEmail"><b>Request demo email</b><br><i class="far fa-envelope"></i></a>
+				</div>
+				<b-tooltip target="requestDemoEmail" triggers="hover">
+					<span style="text-align: left!important">Available domains:<ul><li>tallydemo.com</li><li>clmdemo.com</li><li>esigndemo.com</li></ul></span>
+				</b-tooltip>
+				<div class="col">
+				  <a class="btn toolButton" href="https://docs.google.com/spreadsheets/d/14HAGzRmbeeQ-UyLtd1kSiMr2PmA26Riep1YUCnjtE4w/edit#gid=2042267912" target="_blank"><b>Sharpening sessions</b><br><i class="fas fa-chalkboard-teacher"></i></a>
+				</div>
+				<div class="col">
+				  <a class="btn toolButton" href="https://docusign.slack.com/archives/CJ435DULB" target="_blank"><b>#sales-public-sa</b><br><i class="fab fa-slack"></i></a>
+				</div>
+			</div>
+		</div>
 
-                                <b-icon variant="secondary" tabindex="0"
-                                    class="h2 border border-secondary rounded p-1 mx-1" icon="link-45deg"
-                                    v-if="item.demos" :id="`demos-${item.name}`"></b-icon>
-                                <b-popover v-if="item.demos" :target="`demos-${item.name}`" title="Demos & Tools"
-                                    html="true" triggers="hover" placement="bottomright">
-                                    <div v-for="resource in item.demos">&#8226;
-                                        <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a>
-                                        <small class="text-secondary">{{resource.desc}}</small><br />
-                                    </div>
-                                </b-popover>
-
-                                <b-icon variant="secondary" tabindex="0"
-                                    class="h2 border border-secondary rounded p-1 mx-1" icon="file-earmark-text-fill"
-                                    v-if="item.docs" :id="`docs-${item.name}`">
-                                </b-icon>
-                                <b-popover v-if="item.docs" :target="`docs-${item.name}`" title="Documentation"
-                                    html="true" triggers="hover" placement="bottomright">
-                                    <div v-for="resource in item.docs">&#8226;
-                                        <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a>
-                                        <small class="text-secondary">{{resource.desc}}</small><br />
-                                    </div>
-                                </b-popover>
-
-                                <b-icon variant="secondary" tabindex="0"
-                                    class="h2 border border-secondary rounded p-1 mx-1" icon="play-circle-fill"
-                                    v-if="item.videos" :id="`videos-${item.name}`"></b-icon>
-                                <b-popover v-if="item.videos" :target="`videos-${item.name}`" title="Videos" html="true"
-                                    triggers="hover" placement="bottomright">
-                                    <div v-for="resource in item.videos">&#8226;
-                                        <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a>
-                                        <small class="text-secondary">{{resource.desc}}</small><br />
-                                    </div>
-                                </b-popover>
-
-                                <b-icon variant="secondary" tabindex="0"
-                                    class="h2 border border-secondary rounded p-1 mx-1" icon="info-circle-fill"
-                                    v-if="item.resources" :id="`resources-${item.name}`">
-                                </b-icon>
-                                <b-popover v-if="item.resources" :target="`resources-${item.name}`" title="Resources"
-                                    html="true" triggers="hover" placement="bottomright">
-                                    <div v-for="resource in item.resources">&#8226;
-                                        <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a><br />
-                                    </div>
-                                </b-popover>
-
+        <!-- Jumbotrons -->
+        <div v-for="sort in sorts" class="jumbotron filterJumbotron" v-if="userIsLogged()">
+            <!-- Container Title -->
+            <h1 class="text-left display-4" v-html=sort.value></h1>
+			<hr class="my-4" style="margin-bottom: 0px!important;margin-top: 0px!important;">
+            <!-- iterate data into item-cards -->
+            <div class="card-deck justify-content-left px-3 py-2 mx-0">
+                <template v-for="(item, index) in filteredData" :key="index" :item="item">
+                    <div class="card border-0 p-2 mx-auto m-sm-2" v-if="item.sort==sort.value">
+						<i class="fab fa-hotjar" style="color:orange;position:absolute" v-if="item.hot"></i>
+                        <div class="text-center">
+                            <img :src="item.logo" height="50px" />
+                            <div class="card-body p-0">
+                                <h5 class="card-title text-dark my-2"><span v-html="item.name"></span></h5>
+                                <div class="mx-2">
+    
+                                    <b-icon variant="secondary" tabindex="0"
+                                        class="h2 border border-secondary rounded p-1 mx-1" icon="link-45deg"
+                                        v-if="item.demos" :id="`demos-${item.name}`"></b-icon>
+                                    <b-popover v-if="item.demos" :target="`demos-${item.name}`" title="Demos & Tools"
+                                        html="true" triggers="hover" placement="bottomright">
+                                        <div v-for="resource in item.demos">&#8226;
+                                            <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a>
+                                            <small class="text-secondary">{{resource.desc}}</small><br />
+                                        </div>
+                                    </b-popover>
+    
+                                    <b-icon variant="secondary" tabindex="0"
+                                        class="h2 border border-secondary rounded p-1 mx-1" icon="file-earmark-text-fill"
+                                        v-if="item.docs" :id="`docs-${item.name}`">
+                                    </b-icon>
+                                    <b-popover v-if="item.docs" :target="`docs-${item.name}`" title="Documentation"
+                                        html="true" triggers="hover" placement="bottomright">
+                                        <div v-for="resource in item.docs">&#8226;
+                                            <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a>
+                                            <small class="text-secondary">{{resource.desc}}</small><br />
+                                        </div>
+                                    </b-popover>
+    
+                                    <b-icon variant="secondary" tabindex="0"
+                                        class="h2 border border-secondary rounded p-1 mx-1" icon="play-circle-fill"
+                                        v-if="item.videos" :id="`videos-${item.name}`"></b-icon>
+                                    <b-popover v-if="item.videos" :target="`videos-${item.name}`" title="Videos" html="true"
+                                        triggers="hover" placement="bottomright">
+                                        <div v-for="resource in item.videos">&#8226;
+                                            <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a>
+                                            <small class="text-secondary">{{resource.desc}}</small><br />
+                                        </div>
+                                    </b-popover>
+    
+                                    <b-icon variant="secondary" tabindex="0"
+                                        class="h2 border border-secondary rounded p-1 mx-1" icon="info-circle-fill"
+                                        v-if="item.resources" :id="`resources-${item.name}`">
+                                    </b-icon>
+                                    <b-popover v-if="item.resources" :target="`resources-${item.name}`" title="Resources"
+                                        html="true" triggers="hover" placement="bottomright">
+                                        <div v-for="resource in item.resources">&#8226;
+                                            <a :href="resource.url" target="_blank" v-html="` ${resource.title}`"></a><br />
+                                        </div>
+                                    </b-popover>
+    
+                                </div>
+                            </div>
+                            <div class="mb-0">
+                                <span v-for="(value, key) in item.tags" :key="key" :class="`badge ${key}`">
+                                    {{ value }}
+                                </span>
                             </div>
                         </div>
-                        <div class="mb-0">
-                            <span v-for="(value, key) in item.tags" :key="key" :class="`badge ${key}`">
-                                {{ value }}
-                            </span>
-                        </div>
                     </div>
-                </div>
-            </template>
+                </template>
+            </div>
+        </div>
+		
+		<br>
+
+        <div class="modal fade" id="somethingIsBrokenModal" tabindex="-1" role="dialog" aria-labelledby="somethingIsBrokenModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                    Something is broken
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">			  
+				  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label"><b>Requestor:</b></label>
+                    <b-form-input type="text" class="form-control" v-model="loggedUserEmail" readonly></b-form-input>
+					<label for="recipient-name" class="col-form-label"><b>Area:</b></label>
+					<template>
+					  <div>
+						<multiselect v-model="somethingIsBrokenSelectedArea" tag-placeholder="Select area" label="value" track-by="value" :options="sorts"></multiselect>
+					  </div>
+					</template>
+				  </div>
+				  <label for="recipient-name" class="col-form-label"><b>What's broken:</b></label>
+				  <textarea rows="8" style="width: 100%" v-model="somethingIsBrokenMessage"></textarea>
+			  </div>
+              <div class="modal-footer">
+                <button :disabled="!validateSomethingIsBroken()" type="button" class="btn btn-primary" v-on:click="sendSomethingIsBroken()">Send</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
 
+        <div class="modal fade" id="newRequestModal" tabindex="-1" role="dialog" aria-labelledby="newRequestModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                    Request new demo
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">			  
+				<span>Help us understand the demos you would like to see in the catalog</span>
+				  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label"><b>Requestor:</b></label>
+                    <b-form-input type="text" class="form-control" v-model="loggedUserEmail" readonly></b-form-input>
+					<label for="recipient-name" class="col-form-label"><b>Area:</b></label>
+					<template>
+					  <div>
+						<multiselect v-model="newRequestSelectedArea" tag-placeholder="Select area" label="value" track-by="value" :options="sorts"></multiselect>
+					  </div>
+					</template>
+				  </div>
+				  <label for="recipient-name" class="col-form-label"><b>Description:</b></label>
+				  <textarea rows="8" style="width: 100%" v-model="newRequestMessage"></textarea>
+			  </div>
+              <div class="modal-footer">
+                <button :disabled="!validateNewRequest()" type="button" class="btn btn-primary" v-on:click="sendNewRequest()">Send</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="newEmailModal" tabindex="-1" role="dialog" aria-labelledby="newEmailModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                    Request demo email
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">			  
+				<div class="container text-center" v-if='newEmailError'>
+					<br>
+					<b-alert variant="danger" show dismissible>
+						An error has ocurred
+					</b-alert>
+				</div>
+				<div class="container text-center" v-if='newEmailCreated'>
+					<br>
+					<b-alert variant="success" show dismissible>
+						Your new demo email {{convertNameToEmail()}} has been created<br>
+						Password: {{newEmailPassword}}<br>
+						URL: <a :href="getEmailLoginPage()" target="_blank">{{getEmailLoginPage()}}</a>
+					</b-alert>
+				</div>
+				  <div class="form-group">
+                    <label for="recipient-name" class="col-form-label"><b>Requestor:</b></label>
+                    <b-form-input type="text" class="form-control" v-model="loggedUserEmail" readonly></b-form-input>
+					<label for="recipient-name" class="col-form-label"><b>Domain:</b></label>
+					<template>
+					  <div>
+						<multiselect v-model="newEmailDomain" tag-placeholder="Select domain" label="value" track-by="value" :options="domains"></multiselect>
+					  </div>
+					</template>
+				  </div>
+				  <label for="recipient-name" class="col-form-label"><b>Name: </b><small>(If multiple words are used, such as John Doe, the final email address will John.Doe@<i>domain</i>)</small></label>
+				  <input rows="8" style="width: 100%" v-model="newEmail"/>
+			  </div>
+              <div class="modal-footer">
+                <button :disabled="!validateNewEmail()" type="button" class="btn btn-primary" v-on:click="sendNewEmail()">Send</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="voiceModal" tabindex="-1" role="dialog" aria-labelledby="voiceModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                    Voice of the field
+					<a class="mx-2 h6" target="_blank" href="https://docs.google.com/presentation/d/1F3i4epXONsj8-zb6fOBP4zu-jvGLGgCeWxmFPZY5m2I/edit?usp=sharing">
+						<b-icon icon="question-circle"></b-icon>
+					</a>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">			  
+				<div class="form-group">
+                    <label for="recipient-name" class="col-form-label"><b>Requestor:</b></label>
+                    <b-form-input type="text" class="form-control" v-model="loggedUserEmail" readonly></b-form-input>
+					<label for="recipient-name" class="col-form-label"><b>Link to opportunity:</b></label>
+					<input rows="8" style="width: 100%" v-model="linkToOpp"/>
+					<label for="recipient-name" class="col-form-label"><b>GNMRR:</b></label>
+					<input rows="8" style="width: 100%" v-model="gnmrr"/>
+					<label for="recipient-name" class="col-form-label"><b>Product:</b></label>
+					<template>
+					  <div>
+						<multiselect v-model="selectedProduct" tag-placeholder="Select product" label="value" track-by="value" :options="sorts"></multiselect>
+					  </div>
+					</template>
+					<label for="recipient-name" class="col-form-label"><b>Type:</b></label>
+					<template>
+					  <div>
+						<multiselect v-model="selectedType" tag-placeholder="Select domain" label="value" track-by="value" :options="requestType"></multiselect>
+					  </div>
+					</template>
+					<label for="recipient-name" class="col-form-label"><b>Description:</b></label>
+					<textarea rows="7" style="width: 100%" v-model="requestDescription"></textarea>
+				</div>
+			  </div>
+              <div class="modal-footer">
+                <button :disabled="!validateVoiceOfTheField()" type="button" class="btn btn-primary" v-on:click="sendVoiceOfTheField()">Send</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>		
+		
         <!-- footer -->
         <div class="footer">
             <div class="text-center mt-1">
@@ -181,5 +450,9 @@
 
     </div>
 </body>
+
+<script>
+	startApp();
+</script>
 
 </html>

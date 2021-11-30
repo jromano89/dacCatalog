@@ -1,7 +1,31 @@
+Vue.component('vue-multiselect', window.VueMultiselect.default)
+
 const app = new Vue({
     el: "#vue-app",
+	components: { Multiselect: window.VueMultiselect.default },
     data() {
         return {
+			appLoaded: false,
+			loggedUserEmail: null,
+			loggedUserId: null,
+			loggedUserName: null,
+			verifyingUser: false,
+			invalidUser: false,
+			linkToOpp: null,
+			gnmrr: null,
+			selectedProduct: null,
+			selectedType: null,
+			requestDescription: null,
+			stockPrice: null,
+			somethingIsBrokenMessage: null,
+			somethingIsBrokenSelectedArea: null,
+			newRequestMessage: null,
+			newRequestSelectedArea: null,
+			newEmail: null,
+			newEmailDomain: null,	
+			newEmailError: true,
+			newEmailCreated: false,
+			newEmailPassword: null,
             catalogData: [],
 			commonSearchesData: [],
             weeklyTip: null,
@@ -17,9 +41,204 @@ const app = new Vue({
                 { value: "Integrate" },
                 { value: "Industry" },
             ],
+            sorts: [
+                {value: "CLM / Gen / Negotiate / Insight"},
+                {value: "eSign"},
+                {value: "Admin"},
+                {value: "Partners"},
+                {value: "Verticals"},
+            ],
+            requestType: [
+                {value: "Product enhancement"},
+                {value: "Bug"}
+            ],
+            domains: [
+                {value: "tallydemo.com"},
+                {value: "clmdemo.com"},
+                {value: "esigndemo.com"}
+            ]
         };
     },
     methods: {
+		///////////////////////////
+		//Google user
+		///////////////////////////
+		userIsLogged (){
+			return this.loggedUserEmail != null;
+		},
+		captureGoogleUser(){
+			this.invalidUser = false;
+			this.verifyingUser = true;
+			this.loggedUserId = document.getElementById ("loggedUserIdHidden").value;
+			this.verifyUser ();
+		},
+		verifyUser(){
+			fetch("https://templates.tallydemo.com/services/verifyUser.php",
+			{
+				method: "POST",
+				body: JSON.stringify({
+					i: this.loggedUserId
+				})
+			})
+			.then((res) => res.text())
+			.then((data) => {
+				if (data == 500 || data == 304){
+					this.invalidUser = true;
+					this.verifyingUser = false;
+					this.appLoaded = true;
+				}
+				else{
+					localStorage.setItem('uc', data);
+					this.loginUser (data);
+				}
+			});
+		},	
+		loginUser(uniqueToken){
+			fetch("https://templates.tallydemo.com/services/loginUser.php",
+			{
+				method: "POST",
+				body: JSON.stringify({
+					u: uniqueToken
+				})
+			})
+			.then((res) => res.json())
+			.then((data) => {
+				if (data == 500 || data == 304){
+					this.invalidUser = true;
+				}
+				else{
+					this.loggedUserEmail = data.user_email;
+					this.loggedUserName = data.user_name;
+				}
+				this.appLoaded = true;
+				this.verifyingUser = false;
+			});
+		},
+		showLogin(){
+			return this.loggedUserEmail == null;
+		},
+		getStockPrice(){
+			fetch("https://builder.clmdemo.com/services/getStockPrice.php")
+				.then((res) => res.json())
+				.then((data) => {
+					if (data.Success){
+						this.stockPrice = data.Result[0]["stock"];
+					}
+				});
+		},
+		showSomethingIsBrokenModal(){
+			this.somethingIsBrokenMessage = "";
+			this.somethingIsBrokenSelectedArea = null;
+			$('#somethingIsBrokenModal').modal('show');
+		},
+		showVoiceOfTheFieldModal(){
+			this.linkToOpp = null;
+			this.gnmrr = null,
+			this.selectedProduct = null;
+			this.selectedType = null;
+			this.requestDescription = null;
+			$('#voiceModal').modal('show');
+		},
+		showNewRequestModal(){
+			this.newRequestMessage = "";
+			this.newRequestSelectedArea = null;
+			$('#newRequestModal').modal('show');
+		},
+		showNewEmailModal(){
+			this.newEmailCreated = false;
+			this.newEmailError = false;
+			this.newEmail = "";
+			this.newEmailDomain = null;
+			$('#newEmailModal').modal('show');
+		},
+		validateSomethingIsBroken(){
+			return this.somethingIsBrokenMessage != null && this.somethingIsBrokenMessage.trim() != "" && this.somethingIsBrokenSelectedArea != null;
+		},
+		validateNewRequest(){
+			return this.newRequestMessage != null && this.newRequestMessage.trim() != "" && this.newRequestSelectedArea != null;
+		},
+		validateNewEmail(){
+			return this.newEmail != null && this.newEmail.trim() != "" && this.newEmailDomain != null;
+		},
+		validateVoiceOfTheField(){
+			return this.linkToOpp != null && this.linkToOpp.trim() != "" && this.gnmrr != null && this.gnmrr.trim() != "" && this.selectedProduct != null 
+				&& this.selectedType != null && this.requestDescription != null && this.requestDescription.trim() != "";
+		},
+		convertNameToEmail (){
+			return this.newEmail.replace (" ", ".").replace (" ", ".").replace (" ", ".").replace (" ", ".").replace (" ", ".").replace (" ", ".").trim() + "@" + this.newEmailDomain.value;
+		},
+		getEmailLoginPage (){
+			return "https://webmail." + this.newEmailDomain.value;
+		},
+		sendSomethingIsBroken(){
+			fetch("https://templates.tallydemo.com/services/sendSomethingIsBrokenToSlack.php",
+			{
+				headers: {
+				  'Accept': 'application/json',
+				  'Content-Type': 'application/json'
+				},
+				method: "POST",
+				body: JSON.stringify({requestor: this.loggedUserEmail, area: this.somethingIsBrokenSelectedArea.value, message: this.somethingIsBrokenMessage.trim()})
+			});
+			$('#somethingIsBrokenModal').modal('hide');
+		},
+		sendNewRequest(){
+			fetch("https://templates.tallydemo.com/services/sendNewRequestToSlack.php",
+			{
+				headers: {
+				  'Accept': 'application/json',
+				  'Content-Type': 'application/json'
+				},
+				method: "POST",
+				body: JSON.stringify({requestor: this.loggedUserEmail, area: this.newRequestSelectedArea.value, message: this.newRequestMessage.trim()})
+			});
+			$('#newRequestModal').modal('hide');
+		},
+		sendNewEmail(){
+			this.newEmailCreated = false;
+			this.newEmailError = false;
+			fetch("https://templates.tallydemo.com/services/createDemoInbox.php",
+			{
+				headers: {
+				  'Accept': 'application/json',
+				  'Content-Type': 'application/json'
+				},
+				method: "POST",
+				body: JSON.stringify({requestor: this.loggedUserEmail, domain: this.newEmailDomain.value, name: this.newEmail.trim()})
+			})
+			.then((res) => res.text())
+			.then((data) => {
+				if (data == "error"){
+					this.newEmailError = true;
+				}
+				else{
+					this.newEmailCreated = true;
+					this.newEmailPassword = data;
+				}
+			});
+		},
+		sendVoiceOfTheField(){
+			fetch("https://templates.tallydemo.com/services/sendVoiceOfTheField.php",
+			{
+				headers: {
+				  'Accept': 'application/json',
+				  'Content-Type': 'application/json'
+				},
+				method: "POST",
+				body: JSON.stringify({
+					linkToOpp: this.linkToOpp.trim(), 
+					gnmrr: this.gnmrr.trim(),
+					selectedProduct: this.selectedProduct.value,
+					selectedType: this.selectedType.value,
+					requestDescription: this.requestDescription.trim(),
+					requestor: this.loggedUserEmail
+				})
+			})
+			.then((res) => res.text())
+			.then((data) => {
+			});
+			$('#voiceModal').modal('hide');
+		},
 		saveDismissed(){
 			localStorage.setItem ("catalogTipDismissedId", this.weeklyTip.id);
 			this.makeToast ("You won't see that particular tip anymore", "success");
@@ -63,6 +282,18 @@ const app = new Vue({
                 this.filteredData = this.catalogData;
                 window.history.replaceState({}, "", window.location.pathname);
             }
+
+            $(document).ready(function() {
+                let jumbotrons = $(".filterJumbotron");
+                for (let jumbotron of jumbotrons) {
+                    if (jumbotron.getElementsByClassName('card').length == 0) {
+                        jumbotron.style.display = 'none'
+                    } else {
+                        jumbotron.style.display = 'block'
+                    }
+                }
+            });
+            
         },
         setQueryStringParameter(name, value) {
             var params = new URLSearchParams(window.location.search);
@@ -122,5 +353,14 @@ const app = new Vue({
             });
 		this.loadDismissed();
 		this.loadMostCommonSearches();
+		this.getStockPrice();
+		
+		var token = localStorage.getItem('uc');
+		if (token != null){
+			this.loginUser(token);
+		}
+		else{
+			this.appLoaded = true;
+		}
     },
 });
