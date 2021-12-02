@@ -247,7 +247,7 @@
         "demos": [
             {
                 "title": "CLM Clickthrough",
-                "url": "https://docusign.invisionapp.com/share/B9W7H1VY8QR"
+                "url": "https://clickthru.clmdemo.com/clm-with-sfdc-integration-demo"
             },
             {
                 "title": "Demo Packages",
@@ -416,7 +416,7 @@
         "demos": [
             {
                 "title": "Salesforce Clickthrough",
-                "url": "https://invis.io/UC122CK5KSBR"
+                "url": "https://clickthru.esigndemo.com/esignature-for-salesforce"
             }
         ],
         "docs": [
@@ -493,7 +493,7 @@
         "demos": [
             {
                 "title": "IDV Clickthrough",
-                "url": "https://docusign.invisionapp.com/share/D9U0ZM743KH"
+                "url": "https://clickthru.esigndemo.com/docusign-identify"
             },
             {
                 "title": "Tally Sign: IDV",
@@ -662,7 +662,7 @@
         "demos": [
             {
                 "title": "Notary Clickthrough",
-                "url": "https://docusign.invisionapp.com/share/KG1028XINF67#/screens?browse"
+                "url": "https://clickthru.esigndemo.com/docusign-notary-limited-availability"
             },
             {
                 "title": "Notary Vision Presentation",
@@ -871,7 +871,7 @@
         "demos": [
             {
                 "title": "R4M Clickthrough",
-                "url": "https://docusign.invisionapp.com/share/Z5TTBXNYSJ7"
+                "url": "https://clickthru.esigndemo.com/rooms-for-mortgage-closing-lender-owned"
             }
         ],
         "docs": [
