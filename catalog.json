@@ -1,5 +1,33 @@
 [
     {
+        "name": "eSignature Demo Builder",
+		"hot": "true",
+        "logo": "img/esign-logo.png",
+        "sort": "eSign",
+        "demos": [
+            {
+                "title": "eSign Demo Builder",
+                "url": "https://builder.esigndemo.com/"
+            }
+        ],
+        "docs": [
+            {
+                "title": "Slides Presentation",
+                "url": "https://docs.google.com/presentation/d/1ZLpZkfzw0WSx55ptBbDuUbZV7upsVlGM0AOhLbxQZ_w/edit?usp=sharing"
+            }
+        ],
+        "videos": [
+            {
+                "title": "Demo Builder First Look",
+                "url": "https://drive.google.com/file/d/1hrNyN4t-PvsjW1mnRit9pO1ojOB1w0rX/view",
+                "desc": "2m"
+            }
+        ],
+        "tags": {
+            "Sign": "eSignature"
+        },
+        "search": "CLM,Demo,Builder"
+    },{
         "name": "CLM Demo Builder",
 		"hot": "true",
         "logo": "img/clm-logo.png",
