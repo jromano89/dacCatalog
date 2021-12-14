@@ -1719,5 +1719,20 @@
             "Industry": "Real Estate"
         },
         "search": "myRealEstate Sample App"
+    },
+    {
+        "name": "DocuSign + Applied Epic",
+        "logo": "img/applied-epic-logo.png",
+        "sort": "Partners",
+        "demos": [
+            {
+                "title": "Applied Epic Clickthrough",
+                "url": "https://clickthru.esigndemo.com/applied-epicds-v2/#!/screens"
+            }
+        ],
+        "tags": {
+            "Sign": "eSignature",
+            "Integrate": "Applied Epic"
+        }
     }
 ]
