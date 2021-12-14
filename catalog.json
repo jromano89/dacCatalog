@@ -1730,6 +1730,13 @@
                 "url": "https://clickthru.esigndemo.com/applied-epicds-v2/#!/screens"
             }
         ],
+        "videos": [
+            {
+                "title": "DocuSign Integration <small>(External)</small>",
+                "url": "https://www1.appliedsystems.com/en-ca/resources/demos/docusign-and-applied-epic-integration/?video=true",
+                "desc": "2m"
+            }
+        ],
         "tags": {
             "Sign": "eSignature",
             "Integrate": "Applied Epic"
