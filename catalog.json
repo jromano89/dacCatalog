@@ -1741,5 +1741,20 @@
             "Sign": "eSignature",
             "Integrate": "Applied Epic"
         }
+    },
+    {
+        "name": "DocuSign + UIPath",
+        "logo": "img/uipath-logo.png",
+        "sort": "Partners",
+        "docs": [
+            {
+                "title": "UIPath Demo Guide",
+                "url": "https://docs.google.com/document/d/1eqemSciarYwSYbhKaQi7H3WFdVzmY4CMZnvlZ3ih040/edit#heading=h.ecd2lasz4q81"
+            }
+        ],
+        "tags": {
+            "Sign": "eSignature",
+            "Integrate": "UIPath"
+        }
     }
 ]
